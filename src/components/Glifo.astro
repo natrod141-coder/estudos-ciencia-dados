@@ -1,0 +1,11 @@
+---
+// Ícone do estado de um tópico. Os quatro desenhos ficam no HTML e o CSS mostra só o do
+// estado atual (atributo data-estado do elemento pai). O estado nunca depende só da cor:
+// cada um tem formato próprio.
+---
+<span class="glifo" aria-hidden="true">
+  <svg class="g-nao_iniciado" viewBox="0 0 14 14"><circle cx="7" cy="7" r="5.25" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2.4 2.2"/></svg>
+  <svg class="g-estudando" viewBox="0 0 14 14"><circle cx="7" cy="7" r="5.25" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M7 1.75a5.25 5.25 0 0 1 0 10.5z" fill="currentColor"/></svg>
+  <svg class="g-praticando" viewBox="0 0 14 14"><path d="M7 1.5l1.7 3.6 3.8.5-2.8 2.6.7 3.8L7 10.1l-3.4 1.9.7-3.8L1.5 5.6l3.8-.5z" fill="currentColor"/></svg>
+  <svg class="g-dominado" viewBox="0 0 14 14"><circle cx="7" cy="7" r="6" fill="#fff"/><path d="M4 7.3l2.1 2.1L10 5.2" fill="none" stroke="#0F4C4A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</span>

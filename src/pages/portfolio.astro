@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { config } from '../servidor.js';
+
+const meses = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
+function periodo(inicio, fim) {
+  const formatar = (ym) => {
+    const [ano, mes] = ym.split('-');
+    return `${meses[Number(mes) - 1]}/${ano}`;
+  };
+  return `${formatar(inicio)} a ${formatar(fim)}`;
+}
+---
+<Layout titulo="Portfólio" ativo="portfolio">
+  <header class="topo">
+    <div>
+      <p class="data">Um projeto por fase</p>
+      <h1>Portfólio</h1>
+    </div>
+  </header>
+
+  <section class="cartao" aria-labelledby="titulo-projetos">
+    <header>
+      <div>
+        <h2 id="titulo-projetos">Projetos planejados</h2>
+        <p>Cada fase termina com um projeto publicado no GitHub. Edite os projetos em conteudo/trilhas.json.</p>
+      </div>
+    </header>
+    <ul class="lista">
+      {config.fases.map((fase) => (
+        <li>
+          <div>
+            <p class="titulo-item">Fase {fase.numero}: {fase.projeto}</p>
+            <p class="detalhe-item">{fase.titulo}, {periodo(fase.inicio, fase.fim)}</p>
+          </div>
+          <span class="selo" data-tom="espera">Planejado</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+</Layout>

@@ -1,0 +1,365 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Glifo from '../../components/Glifo.astro';
+import { obterTrilha, paraJson } from '../../servidor.js';
+import { vizinhosDoTopico } from '../../dados/trilha.js';
+import { DIAS_ATE_REVISAO, META_QUIZ } from '../../dados/constantes.js';
+import { url } from '../../scripts/url.js';
+
+export async function getStaticPaths() {
+  const entradas = await getCollection('topicos');
+  return entradas.map((entrada) => ({ params: { id: entrada.id }, props: { entrada } }));
+}
+
+const { entrada } = Astro.props;
+const d = entrada.data;
+const trilha = await obterTrilha();
+const topico = trilha.topicosPorId[entrada.id];
+const modulo = trilha.modulosPorId[topico.modulo];
+const trilhaPai = trilha.trilhas.find((t) => t.id === topico.trilha);
+const { anterior, proximo } = vizinhosDoTopico(trilha, entrada.id);
+const { Content } = await render(entrada);
+
+const rascunho = d.estado === 'rascunho';
+const temQuiz = d.quiz.length > 0;
+const dadosDoTopico = {
+  id: entrada.id,
+  temQuiz,
+  temDesafio: Boolean(d.desafio),
+  aulas: d.aulas.map((a) => a.id),
+  quiz: d.quiz.map((q) => ({ correta: q.correta })),
+  desafioTotal: d.desafio ? d.desafio.testes : 0,
+  rubricaTotal: d.aberta ? d.aberta.rubrica.length : 0,
+  meta: META_QUIZ,
+  diasRevisao: DIAS_ATE_REVISAO,
+};
+
+const secoes = [
+  { id: 'criterios', rotulo: 'Critérios', mostrar: true },
+  { id: 'conteudo', rotulo: 'Conteúdo', mostrar: true },
+  { id: 'quiz', rotulo: 'Quiz', mostrar: temQuiz },
+  { id: 'aberta', rotulo: 'Pergunta aberta', mostrar: Boolean(d.aberta) },
+  { id: 'desafio', rotulo: 'Desafio', mostrar: Boolean(d.desafio) },
+].filter((s) => s.mostrar);
+
+function linhasDeComando(passo) {
+  return passo.comandos.filter((c) => !c.startsWith('#'));
+}
+function textoTipoAula(aula) {
+  return `${aula.tipo === 'video' ? 'Vídeo' : 'Leitura'}, ${aula.minutos} min`;
+}
+---
+<Layout titulo={d.titulo} ativo={topico.trilha}>
+  <nav class="migalhas" aria-label="Você está em">
+    <a href={url()}>Painel</a>
+    <span aria-hidden="true">/</span>
+    <a href={url(`trilha/${topico.trilha}/`)}>{trilhaPai.nome}</a>
+    <span aria-hidden="true">/</span>
+    <span>{modulo.nome}</span>
+    <span aria-hidden="true">/</span>
+    <span aria-current="page">{d.titulo}</span>
+  </nav>
+
+  <header class="topo">
+    <div class="cabeca-topico">
+      <h1>{d.titulo}</h1>
+      {d.resumo && <p class="resumo">{d.resumo}</p>}
+      <div class="selos">
+        <span class="chip" data-estado="nao_iniciado" data-estado-topico>
+          <Glifo />
+          <span data-rotulo-topico>Não iniciado</span>
+        </span>
+        <span class="selo">Fase {modulo.fase}</span>
+        <span class="selo">{d.horas} h estimadas</span>
+        {rascunho && <span class="selo" data-tom="exemplo">Rascunho</span>}
+      </div>
+    </div>
+    <div class="acoes">
+      <button type="button" class="botao" data-abrir-horas data-topico={entrada.id}>Registrar horas neste tópico</button>
+    </div>
+  </header>
+
+  <nav class="indice-secoes" aria-label="Seções do tópico">
+    {secoes.map((s) => <a href={`#${s.id}`}>{s.rotulo}</a>)}
+  </nav>
+
+  {rascunho ? (
+    <section class="cartao" id="criterios" aria-labelledby="titulo-criterios">
+      <h2 id="titulo-criterios">Tópico em rascunho</h2>
+      <div class="aviso-rascunho">
+        <strong>O conteúdo deste tópico ainda não foi escrito.</strong>
+        <p>
+          Ainda não há aulas, quiz nem desafio, então ele não pode ser dominado. Você já pode registrar horas de
+          estudo aqui, e o tópico passa a aparecer como "Estudando". Para escrever o conteúdo, siga o modelo de
+          <code>conteudo/topicos/estatistica/tendencia_central.md</code>.
+        </p>
+      </div>
+    </section>
+  ) : (
+    <section class="cartao" id="criterios" aria-labelledby="titulo-criterios">
+      <header>
+        <div>
+          <h2 id="titulo-criterios">Critérios de domínio</h2>
+          <p>Para o tópico contar como dominado, cumpra todos os que se aplicam.</p>
+        </div>
+        <div class="total-criterios">
+          <strong data-campo="criterios-total">0 de 3</strong>
+          <span>critérios cumpridos</span>
+        </div>
+      </header>
+      <div class="criterios">
+        <article class="criterio" data-criterio="quiz" data-situacao="pendente">
+          <div class="linha-titulo">
+            <h3 class="titulo"><span class="numero">1</span>Quiz com {META_QUIZ}% ou mais</h3>
+            <span class="situacao" data-campo="situacao">Não feito</span>
+          </div>
+          <div class="barra-marca">
+            <div class="barra" aria-hidden="true"><span data-campo="barra" style="width: 0%"></span></div>
+            <span class="marca" style={`left: ${META_QUIZ}%`} aria-hidden="true"></span>
+          </div>
+          <p class="detalhe" data-campo="detalhe"></p>
+        </article>
+
+        <article class="criterio" data-criterio="desafio" data-situacao="pendente">
+          <div class="linha-titulo">
+            <h3 class="titulo"><span class="numero">2</span>Desafio prático aprovado</h3>
+            <span class="situacao" data-campo="situacao">Não iniciado</span>
+          </div>
+          <div class="barra" aria-hidden="true"><span data-campo="barra" style="width: 0%"></span></div>
+          <p class="detalhe" data-campo="detalhe"></p>
+        </article>
+
+        <article class="criterio" data-criterio="revisao" data-situacao="pendente">
+          <div class="linha-titulo">
+            <h3 class="titulo"><span class="numero">3</span>Revisão depois de {DIAS_ATE_REVISAO} dias</h3>
+            <span class="situacao" data-campo="situacao">Bloqueada</span>
+          </div>
+          <div class="barra" aria-hidden="true"><span data-campo="barra" style="width: 0%"></span></div>
+          <p class="detalhe" data-campo="detalhe"></p>
+          <div class="acoes" data-campo="acoes-revisao" hidden>
+            <button type="button" class="botao-pequeno" data-acao="revisao-ok">Consegui sem consultar</button>
+            <button type="button" class="botao-pequeno" data-acao="revisao-nao">Ainda preciso rever</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  )}
+
+  <div class="grade-topico">
+    <div class="coluna">
+      <section class="cartao" id="conteudo" aria-labelledby="titulo-conteudo">
+        <header>
+          <div>
+            <h2 id="titulo-conteudo">Conteúdo</h2>
+            {d.aulas.length > 0 && <p data-campo="aulas-progresso"></p>}
+          </div>
+        </header>
+        {d.aulas.length > 0 && (
+          <ul class="aulas">
+            {d.aulas.map((aula) => (
+              <li>
+                <input type="checkbox" id={`aula-${aula.id}`} data-aula={aula.id} />
+                <label for={`aula-${aula.id}`}>
+                  <span class="titulo-item">{aula.titulo}</span>
+                  <span class="detalhe-item">{textoTipoAula(aula)}</span>
+                </label>
+                {aula.tipo === 'video' && aula.link && (
+                  <a href={aula.link} target="_blank" rel="noopener noreferrer">Assistir</a>
+                )}
+                {aula.tipo === 'video' && !aula.link && (
+                  <span class="detalhe-item">Link ainda não adicionado</span>
+                )}
+              </li>
+            ))}
+          </ul>
+        )}
+        {!rascunho && <div class="texto"><Content /></div>}
+        {rascunho && <p class="vazio">O material de leitura deste tópico ainda não foi escrito.</p>}
+      </section>
+
+      {temQuiz && (
+        <section class="cartao" id="quiz" aria-labelledby="titulo-quiz">
+          <header>
+            <div>
+              <h2 id="titulo-quiz">Quiz</h2>
+              <p>{d.quiz.length} perguntas. Nota mínima de {META_QUIZ}%. Você pode refazer quantas vezes quiser.</p>
+            </div>
+            <div class="historico" data-campo="historico-quiz"></div>
+          </header>
+          <form id="form-quiz" novalidate>
+            {d.quiz.map((q, i) => (
+              <div class="bloco-pergunta" data-pergunta={i}>
+              <fieldset class="pergunta">
+                <legend>
+                  <span class="numero-pergunta">Pergunta {i + 1} de {d.quiz.length}</span>
+                  {q.pergunta}
+                </legend>
+                <div class="opcoes">
+                  {q.opcoes.map((opcao, j) => (
+                    <label class="opcao">
+                      <input type="radio" name={`q${i}`} value={j} />
+                      <span>{opcao}</span>
+                      <span class="etiqueta" data-campo="etiqueta"></span>
+                    </label>
+                  ))}
+                </div>
+                <div class="explicacao" hidden>
+                  <strong>Explicação</strong>
+                  {q.explicacao}
+                </div>
+              </fieldset>
+              </div>
+            ))}
+            <div class="acoes">
+              <button type="submit" class="botao" id="corrigir-quiz">Corrigir quiz</button>
+              <button type="button" class="botao-secundario" id="refazer-quiz" hidden>Tentar de novo</button>
+            </div>
+            <div class="resultado-quiz" id="resultado-quiz" role="status" tabindex="-1" hidden></div>
+          </form>
+        </section>
+      )}
+
+      {d.aberta && (
+        <section class="cartao" id="aberta" aria-labelledby="titulo-aberta">
+          <header>
+            <div>
+              <h2 id="titulo-aberta">Pergunta aberta</h2>
+              <p>Escreva com suas palavras. Depois de enviar, confira sua resposta com a rubrica.</p>
+            </div>
+            <span class="selo" data-campo="aberta-estado">Não enviada</span>
+          </header>
+          <div class="aberta-grade">
+            <div class="coluna">
+              <label class="campo" for="resposta-aberta">
+                {d.aberta.pergunta}
+                <textarea id="resposta-aberta" maxlength="5000" placeholder="Escreva sua resposta aqui. O rascunho é salvo sozinho."></textarea>
+              </label>
+              <div class="acoes">
+                <button type="button" class="botao" id="enviar-aberta">Enviar resposta</button>
+                <span class="suave pequeno" data-campo="aberta-dica">Escreva ao menos uma frase para poder enviar.</span>
+              </div>
+              <div class="modelo-aberta" id="modelo-aberta" hidden>
+                <strong>Resposta modelo</strong>
+                <p>{d.aberta.modelo}</p>
+              </div>
+            </div>
+            <fieldset class="rubrica">
+              <legend>Rubrica de autocorreção</legend>
+              <p class="suave pequeno">Depois de enviar, marque o que a sua resposta cumpre.</p>
+              {d.aberta.rubrica.map((item, i) => (
+                <label>
+                  <input type="checkbox" data-rubrica={i} disabled />
+                  <span>{item}</span>
+                </label>
+              ))}
+            </fieldset>
+          </div>
+        </section>
+      )}
+    </div>
+
+    <aside class="coluna" aria-label="Informações do tópico">
+      <section class="cartao" aria-labelledby="titulo-neste-topico">
+        <h2 id="titulo-neste-topico">Neste tópico</h2>
+        <div>
+          <p class="par-info"><span>Horas registradas</span><strong data-campo="horas-topico">0 h</strong></p>
+          {d.aulas.length > 0 && <p class="par-info"><span>Aulas concluídas</span><strong data-campo="aulas-total">0</strong></p>}
+          {temQuiz && <p class="par-info"><span>Tentativas do quiz</span><strong data-campo="tentativas-quiz">0</strong></p>}
+          <p class="par-info"><span>Estimativa do plano</span><strong>{d.horas} h</strong></p>
+        </div>
+      </section>
+
+      {d.glossario.length > 0 && (
+        <section class="cartao" aria-labelledby="titulo-glossario">
+          <h2 id="titulo-glossario">Glossário</h2>
+          <ul class="glossario">
+            {d.glossario.map((termo) => (
+              <li><span class="pt">{termo.pt}</span><span class="en" lang="en">{termo.en}</span></li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {(anterior || proximo) && (
+        <section class="cartao" aria-labelledby="titulo-vizinhos">
+          <h2 id="titulo-vizinhos">No módulo</h2>
+          <div class="vizinhos">
+            {anterior && <a href={url(`topicos/${anterior.id}/`)}><small>Anterior</small>{anterior.titulo}</a>}
+            {proximo && <a href={url(`topicos/${proximo.id}/`)}><small>Próximo</small>{proximo.titulo}</a>}
+          </div>
+        </section>
+      )}
+    </aside>
+  </div>
+
+  {d.desafio && (
+    <section class="cartao" id="desafio" aria-labelledby="titulo-desafio">
+      <header>
+        <div>
+          <h2 id="titulo-desafio">Desafio prático: {d.desafio.titulo}</h2>
+          <p>{d.desafio.descricao}</p>
+        </div>
+        <span class="selo" data-campo="desafio-estado">Não iniciado</span>
+      </header>
+      <dl class="meta-desafio">
+        <div><dt>Tempo estimado</dt><dd>{d.desafio.tempo}</dd></div>
+        <div><dt>Ferramentas</dt><dd>{d.desafio.ferramentas}</dd></div>
+        <div><dt>Entrega</dt><dd>{d.desafio.entrega}</dd></div>
+      </dl>
+      <div class="desafio-grade">
+        <ol class="passos">
+          {d.desafio.passos.map((passo) => (
+            <li>
+              <div class="corpo">
+                <h3>{passo.titulo}</h3>
+                <p>{passo.descricao}</p>
+                {passo.comandos.length > 0 && (
+                  <div class="codigo" role="group" aria-label="Comandos do passo">
+                    {passo.comandos.map((comando) =>
+                      comando.startsWith('#') ? (
+                        <span class="linha com">{comando}</span>
+                      ) : (
+                        <span class="linha">{!passo.codigo && <span class="prompt">$ </span>}{comando}</span>
+                      ),
+                    )}
+                  </div>
+                )}
+                {!passo.codigo && linhasDeComando(passo).length > 0 && (
+                  <div>
+                    <button type="button" class="botao-pequeno" data-copiar={linhasDeComando(passo).join('\n')}>Copiar comandos</button>
+                  </div>
+                )}
+              </div>
+            </li>
+          ))}
+        </ol>
+        <div class="painel-lateral-desafio">
+          <div class="coluna">
+            <h3>Arquivos do desafio</h3>
+            <pre class="arvore">{`${d.desafio.pasta}/\n  README.md\n  solucao.py\n  pytest.ini\n  data/\n  tests/`}</pre>
+          </div>
+          <div class="coluna">
+            <h3>Registrar resultado</h3>
+            <p class="suave pequeno">
+              Depois de rodar <code>pytest -v</code>, informe quantos testes passaram. Com {`${d.desafio.testes} de ${d.desafio.testes}`}, o critério 2 é cumprido.
+            </p>
+            <form id="form-desafio" class="form-desafio" novalidate>
+              <label class="campo" for="testes-passando">
+                Testes passando (de {d.desafio.testes})
+                <input id="testes-passando" type="number" min="0" max={d.desafio.testes} step="1" inputmode="numeric" />
+              </label>
+              <button type="submit" class="botao">Registrar resultado</button>
+            </form>
+            <p class="estado-desafio" data-campo="desafio-detalhe" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <script is:inline type="application/json" id="dados-topico" set:html={paraJson(dadosDoTopico)} />
+  <script>
+    import '../../scripts/topico.js';
+  </script>
+</Layout>

@@ -1,0 +1,45 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import { obterTrilha } from '../servidor.js';
+import { url } from '../scripts/url.js';
+
+const trilha = await obterTrilha();
+const entradas = (await getCollection('topicos')).filter((e) => e.data.desafio);
+const desafios = entradas
+  .map((e) => ({ topico: trilha.topicosPorId[e.id], desafio: e.data.desafio }))
+  .sort((a, b) => a.topico.titulo.localeCompare(b.topico.titulo, 'pt-BR'));
+---
+<Layout titulo="Desafios" ativo="desafios">
+  <header class="topo">
+    <div>
+      <p class="data">Segundo critério de domínio</p>
+      <h1>Desafios práticos</h1>
+    </div>
+  </header>
+
+  <section class="cartao" aria-labelledby="titulo-lista">
+    <header>
+      <div>
+        <h2 id="titulo-lista">Desafios disponíveis</h2>
+        <p>Cada desafio tem testes automáticos. O tópico só cumpre o critério quando todos passam.</p>
+      </div>
+    </header>
+    {desafios.length === 0 ? (
+      <p class="vazio">Nenhum desafio criado ainda.</p>
+    ) : (
+      <ul class="lista">
+        {desafios.map(({ topico, desafio }) => (
+          <li>
+            <div>
+              <a class="titulo-item" href={url(`topicos/${topico.id}/#desafio`)}>{desafio.titulo}</a>
+              <p class="detalhe-item">{topico.titulo}, {desafio.testes} testes, cerca de {desafio.tempo}</p>
+            </div>
+            <span class="selo">{topico.moduloNome}</span>
+          </li>
+        ))}
+      </ul>
+    )}
+    <p class="suave pequeno">Os outros tópicos ainda não têm desafio. Eles aparecem aqui quando forem criados.</p>
+  </section>
+</Layout>

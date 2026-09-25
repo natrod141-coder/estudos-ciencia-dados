@@ -1,0 +1,89 @@
+{
+  "metaSemanalHoras": 5,
+  "marcos": [
+    {
+      "id": "dp600",
+      "titulo": "Prova DP-600",
+      "data": "2026-10-03",
+      "detalhe": "Sábado, 8h, Fabric Analytics Engineer Associate"
+    }
+  ],
+  "trilhas": [
+    {
+      "id": "dados",
+      "nome": "Trilha de dados"
+    },
+    {
+      "id": "ia",
+      "nome": "Trilha de IA"
+    }
+  ],
+  "fases": [
+    {
+      "numero": 1,
+      "titulo": "Python, SQL e estatística",
+      "inicio": "2026-10",
+      "fim": "2027-02",
+      "projeto": "Análise exploratória com SQL e Power BI"
+    },
+    {
+      "numero": 2,
+      "titulo": "Machine learning clássico",
+      "inicio": "2027-03",
+      "fim": "2027-05",
+      "projeto": "Modelo supervisionado completo, do dado à avaliação"
+    },
+    {
+      "numero": 3,
+      "titulo": "IA aplicada",
+      "inicio": "2027-06",
+      "fim": "2027-08",
+      "projeto": "Aplicativo de RAG publicado"
+    },
+    {
+      "numero": 4,
+      "titulo": "Aprofundamento",
+      "inicio": "2027-09",
+      "fim": "2027-12",
+      "projeto": "A definir"
+    }
+  ],
+  "modulos": [
+    {
+      "id": "estatistica",
+      "nome": "Estatística descritiva",
+      "trilha": "dados",
+      "fase": 1
+    },
+    {
+      "id": "manipulacao",
+      "nome": "Manipulação de dados",
+      "trilha": "dados",
+      "fase": 1
+    },
+    {
+      "id": "visualizacao",
+      "nome": "Visualização de dados",
+      "trilha": "dados",
+      "fase": 1
+    },
+    {
+      "id": "ml_classico",
+      "nome": "Machine learning clássico",
+      "trilha": "dados",
+      "fase": 2
+    },
+    {
+      "id": "ia_aplicada",
+      "nome": "IA aplicada",
+      "trilha": "ia",
+      "fase": 3
+    },
+    {
+      "id": "aprofundamento",
+      "nome": "Aprofundamento",
+      "trilha": "ia",
+      "fase": 4
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import MapaDaTrilha from '../../components/MapaDaTrilha.astro';
+import { obterTrilha, config, paraJson } from '../../servidor.js';
+
+export async function getStaticPaths() {
+  const { trilhas } = await obterTrilha();
+  return trilhas.map((t) => ({ params: { trilha: t.id }, props: { id: t.id } }));
+}
+
+const { id } = Astro.props;
+const completa = await obterTrilha();
+const trilha = completa.trilhas.find((t) => t.id === id);
+const dados = {
+  trilha: { ...completa, trilhas: [trilha] },
+  meta: config.metaSemanalHoras,
+  marcos: config.marcos,
+};
+---
+<Layout titulo={trilha.nome} ativo={trilha.id}>
+  <header class="topo">
+    <div>
+      <p class="data">{trilha.modulos.length} módulos, {trilha.horas} h estimadas</p>
+      <h1>{trilha.nome}</h1>
+    </div>
+    <div class="acoes">
+      <button type="button" class="botao" data-abrir-horas>Registrar horas</button>
+    </div>
+  </header>
+
+  <section class="cartao" aria-labelledby="titulo-progresso">
+    <div class="bloco-trilha">
+      <div class="cabeca">
+        <h2 id="titulo-progresso">Progresso da trilha</h2>
+        <span class="horas" data-trilha-horas={trilha.id}></span>
+        <span class="pct"><span data-trilha-pct={trilha.id}>0</span><small>%</small></span>
+      </div>
+      <div class="barra grossa" aria-hidden="true"><span data-trilha-barra={trilha.id} style="width: 0%"></span></div>
+    </div>
+  </section>
+
+  <section class="cartao" aria-labelledby="titulo-mapa">
+    <header>
+      <div>
+        <h2 id="titulo-mapa">Módulos e tópicos</h2>
+        <p>Clique em um tópico para estudar, fazer o quiz e o desafio.</p>
+      </div>
+    </header>
+    <MapaDaTrilha trilhas={[trilha]} />
+  </section>
+
+  <script is:inline type="application/json" id="dados-pagina" set:html={paraJson(dados)} />
+  <script>
+    import '../../scripts/painel.js';
+  </script>
+</Layout>

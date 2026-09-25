@@ -1,0 +1,46 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import { obterTrilha } from '../servidor.js';
+import { url } from '../scripts/url.js';
+import { META_QUIZ } from '../dados/constantes.js';
+
+const trilha = await obterTrilha();
+const entradas = (await getCollection('topicos')).filter((e) => e.data.quiz.length > 0);
+const quizzes = entradas
+  .map((e) => ({ topico: trilha.topicosPorId[e.id], perguntas: e.data.quiz.length }))
+  .sort((a, b) => a.topico.titulo.localeCompare(b.topico.titulo, 'pt-BR'));
+---
+<Layout titulo="Quizzes" ativo="quizzes">
+  <header class="topo">
+    <div>
+      <p class="data">Primeiro critério de domínio</p>
+      <h1>Quizzes</h1>
+    </div>
+  </header>
+
+  <section class="cartao" aria-labelledby="titulo-lista">
+    <header>
+      <div>
+        <h2 id="titulo-lista">Quizzes disponíveis</h2>
+        <p>Você pode refazer quantas vezes quiser. O critério é cumprido com nota {META_QUIZ}% ou mais.</p>
+      </div>
+    </header>
+    {quizzes.length === 0 ? (
+      <p class="vazio">Nenhum quiz criado ainda.</p>
+    ) : (
+      <ul class="lista">
+        {quizzes.map(({ topico, perguntas }) => (
+          <li>
+            <div>
+              <a class="titulo-item" href={url(`topicos/${topico.id}/#quiz`)}>{topico.titulo}</a>
+              <p class="detalhe-item">{perguntas} perguntas</p>
+            </div>
+            <span class="selo">{topico.moduloNome}</span>
+          </li>
+        ))}
+      </ul>
+    )}
+    <p class="suave pequeno">Os outros tópicos ainda não têm quiz. Eles aparecem aqui quando forem criados.</p>
+  </section>
+</Layout>

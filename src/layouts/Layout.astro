@@ -1,0 +1,112 @@
+---
+import '../styles/global.css';
+import { obterTrilha } from '../servidor.js';
+import { url } from '../scripts/url.js';
+
+const { titulo, ativo = '' } = Astro.props;
+const trilha = await obterTrilha();
+
+// Ícones no formato 24x24, só com traço.
+const navegacao = [
+  { chave: 'painel', rotulo: 'Painel', href: '', icone: 'M4 4h7v7H4zM13 4h7v4h-7zM13 10h7v10h-7zM4 13h7v7H4z' },
+  { chave: 'dados', rotulo: 'Trilha de dados', href: 'trilha/dados/', icone: 'M5 20V10M12 20V4M19 20v-7' },
+  { chave: 'ia', rotulo: 'Trilha de IA', href: 'trilha/ia/', icone: 'M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z' },
+  { chave: 'revisoes', rotulo: 'Revisões', href: 'revisoes/', icone: 'M20 12a8 8 0 1 1-2.4-5.7M20 4v5h-5' },
+  { chave: 'desafios', rotulo: 'Desafios', href: 'desafios/', icone: 'M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14' },
+  { chave: 'quizzes', rotulo: 'Quizzes', href: 'quizzes/', icone: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM8.5 12.5l2.5 2.5 4.5-5' },
+  { chave: 'portfolio', rotulo: 'Portfólio', href: 'portfolio/', icone: 'M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z' },
+];
+---
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{titulo} | Estudos</title>
+    <link rel="icon" type="image/svg+xml" href={url('favicon.svg')} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <a class="pular" href="#principal">Pular para o conteúdo</a>
+    <div class="app">
+      <aside class="lateral">
+        <a class="marca" href={url()}>
+          <svg width="36" height="36" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0F4C4A" /><path d="M8 22l5-6 4 3 7-9" fill="none" stroke="#F0B44C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          <span>Estudos<br />Dados e IA</span>
+        </a>
+        <nav class="nav-lateral" aria-label="Principal">
+          {navegacao.map((item) => (
+            <a href={url(item.href)} aria-current={item.chave === ativo ? 'page' : undefined}>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d={item.icone} /></svg>
+              <span>{item.rotulo}</span>
+            </a>
+          ))}
+        </nav>
+      </aside>
+
+      <main id="principal" class="principal">
+        <div id="faixa-mensagem" class="faixa" role="status" hidden>
+          <p id="texto-mensagem"></p>
+          <button type="button" id="fechar-mensagem" class="botao-texto">Fechar</button>
+        </div>
+
+        <slot />
+
+        <footer class="rodape">
+          <div>
+            <p>Seu progresso fica guardado neste navegador.</p>
+            <p id="backup-status" aria-live="polite"></p>
+          </div>
+          <div class="acoes">
+            <button type="button" id="btn-exportar" class="botao-pequeno">Exportar progresso</button>
+            <button type="button" id="btn-importar" class="botao-pequeno">Importar progresso</button>
+            <input type="file" id="arq-importar" accept="application/json,.json" hidden />
+          </div>
+        </footer>
+      </main>
+    </div>
+
+    <dialog id="dialogo-horas" aria-labelledby="titulo-dialogo-horas">
+      <form id="form-horas" novalidate>
+        <h2 id="titulo-dialogo-horas">Registrar horas</h2>
+        <label class="campo">
+          Data
+          <input type="date" name="data" required />
+        </label>
+        <label class="campo">
+          Horas estudadas
+          <input type="number" name="horas" min="0.25" max="24" step="0.25" inputmode="decimal" required />
+        </label>
+        <label class="campo">
+          Tópico
+          <select name="topico">
+            <option value="">Sem tópico específico</option>
+            {trilha.trilhas.flatMap((t) => t.modulos).filter((m) => m.topicos.length > 0).map((modulo) => (
+              <optgroup label={modulo.nome}>
+                {modulo.topicos.map((topico) => <option value={topico.id}>{topico.titulo}</option>)}
+              </optgroup>
+            ))}
+          </select>
+        </label>
+        <label class="campo">
+          Anotação (opcional)
+          <input type="text" name="nota" maxlength="200" />
+        </label>
+        <p id="erro-horas" class="erro-campo" role="alert" hidden></p>
+        <div class="acoes">
+          <button type="button" class="botao-secundario" data-fechar-horas>Cancelar</button>
+          <button type="submit" class="botao">Registrar horas</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script>
+      import '../scripts/global.js';
+    </script>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+---
+import Layout from '../layouts/Layout.astro';
+import MapaDaTrilha from '../components/MapaDaTrilha.astro';
+import Glifo from '../components/Glifo.astro';
+import { obterTrilha, config, paraJson } from '../servidor.js';
+import { ESTADOS, ROTULO_ESTADO } from '../dados/constantes.js';
+import { url } from '../scripts/url.js';
+
+const trilha = await obterTrilha();
+const dados = { trilha, meta: config.metaSemanalHoras, marcos: config.marcos };
+---
+<Layout titulo="Painel de estudos" ativo="painel">
+  <header class="topo">
+    <div>
+      <p class="data" data-campo="data-hoje">&nbsp;</p>
+      <h1>Painel de estudos</h1>
+    </div>
+    <div class="acoes">
+      <button type="button" class="botao" data-abrir-horas>Registrar horas</button>
+    </div>
+  </header>
+
+  <section class="grade-kpis" aria-label="Resumo do progresso">
+    <article class="cartao kpi">
+      <h2 class="titulo">Progresso geral</h2>
+      <p class="valor"><span class="numero" data-kpi="progresso-valor">0</span><span class="unidade">%</span></p>
+      <div class="barra" aria-hidden="true"><span data-kpi="progresso-barra" style="width: 0%"></span></div>
+      <p class="detalhe" data-kpi="progresso-detalhe"></p>
+    </article>
+
+    <article class="cartao kpi">
+      <h2 class="titulo">Horas nesta semana</h2>
+      <p class="valor"><span class="numero" data-kpi="horas-valor">0</span><span class="unidade">h</span></p>
+      <div class="barra" data-cor="ambar" aria-hidden="true"><span data-kpi="horas-barra" style="width: 0%"></span></div>
+      <p class="detalhe" data-kpi="horas-detalhe"></p>
+    </article>
+
+    <article class="cartao kpi">
+      <h2 class="titulo">Sequência</h2>
+      <p class="valor"><span class="numero" data-kpi="sequencia-valor">0</span><span class="unidade" data-kpi="sequencia-unidade">semanas</span></p>
+      <div class="semanas-mini" data-kpi="sequencia-semanas" aria-hidden="true"></div>
+      <p class="detalhe" data-kpi="sequencia-detalhe"></p>
+    </article>
+
+    <article class="cartao kpi">
+      <h2 class="titulo" data-kpi="marco-titulo">Próximo marco</h2>
+      <p class="valor"><span class="numero" data-kpi="marco-valor">-</span><span class="unidade" data-kpi="marco-unidade"></span></p>
+      <p class="detalhe" data-kpi="marco-detalhe"></p>
+    </article>
+  </section>
+
+  <div class="grade-2">
+    <section class="cartao" aria-labelledby="titulo-trilhas">
+      <header>
+        <div>
+          <h2 id="titulo-trilhas">Progresso por trilha</h2>
+          <p>Cada módulo pesa pelas horas estimadas dos seus tópicos.</p>
+        </div>
+      </header>
+      {trilha.trilhas.map((t) => (
+        <div class="bloco-trilha">
+          <div class="cabeca">
+            <h3>{t.nome}</h3>
+            <span class="horas" data-trilha-horas={t.id}></span>
+            <span class="pct"><span data-trilha-pct={t.id}>0</span><small>%</small></span>
+          </div>
+          <div class="barra grossa" aria-hidden="true"><span data-trilha-barra={t.id} style="width: 0%"></span></div>
+          {t.modulos.map((m) => (
+            <div class="linha-modulo">
+              <span class="nome">{m.nome}</span>
+              <div class="barra fina" aria-hidden="true"><span data-modulo-barra={m.id} style="width: 0%"></span></div>
+              <span class="pct-modulo" data-modulo-pct={m.id}>0%</span>
+            </div>
+          ))}
+        </div>
+      ))}
+    </section>
+
+    <section class="cartao" aria-labelledby="titulo-horas">
+      <header>
+        <div>
+          <h2 id="titulo-horas">Horas por semana</h2>
+          <p>Últimas 8 semanas, de segunda a domingo.</p>
+        </div>
+        <div class="resumo-direita">
+          <strong data-campo="total-semanas">0 h</strong>
+          <span>no período</span>
+        </div>
+      </header>
+      <div class="grafico" id="grafico" role="img" aria-label="Gráfico de horas por semana"></div>
+      <div class="rotulos-semanas" id="rotulos-semanas" aria-hidden="true"></div>
+      <div class="legenda" aria-hidden="true">
+        <span><i data-tipo="meta"></i>Meta cumprida</span>
+        <span><i></i>Abaixo da meta</span>
+        <span><i data-tipo="atual"></i>Semana atual</span>
+      </div>
+      <p class="vazio" id="grafico-vazio">Registre suas primeiras horas para ver o gráfico ganhar forma.</p>
+    </section>
+  </div>
+
+  <section class="cartao" aria-labelledby="titulo-mapa">
+    <header>
+      <div>
+        <h2 id="titulo-mapa">Mapa da trilha</h2>
+        <p>Clique em um tópico para estudar, fazer o quiz e o desafio.</p>
+      </div>
+      <div class="legenda-estados" aria-label="Legenda dos estados">
+        {ESTADOS.map((estado) => (
+          <span class="chip" data-estado={estado}><Glifo />{ROTULO_ESTADO[estado]}</span>
+        ))}
+      </div>
+    </header>
+    <MapaDaTrilha trilhas={trilha.trilhas} />
+  </section>
+
+  <div class="grade-2">
+    <section class="cartao" aria-labelledby="titulo-revisoes">
+      <header>
+        <div>
+          <h2 id="titulo-revisoes">Revisões pendentes</h2>
+          <p>Liberadas 7 dias depois de cumprir o quiz e o desafio.</p>
+        </div>
+        <a href={url('revisoes/')} class="botao-texto">Ver todas</a>
+      </header>
+      <div id="lista-revisoes" data-limite="5"></div>
+    </section>
+
+    <section class="cartao" aria-labelledby="titulo-sessoes">
+      <header>
+        <div>
+          <h2 id="titulo-sessoes">Últimas sessões</h2>
+          <p>Registradas por você. Remova se algo saiu errado.</p>
+        </div>
+      </header>
+      <div id="lista-sessoes"></div>
+    </section>
+  </div>
+
+  <script is:inline type="application/json" id="dados-pagina" set:html={paraJson(dados)} />
+  <script>
+    import '../scripts/painel.js';
+  </script>
+</Layout>

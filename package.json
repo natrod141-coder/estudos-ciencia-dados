@@ -1,0 +1,17 @@
+{
+  "name": "estudos",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Site de estudo para a trilha de ciência de dados e IA, com painel de progresso.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "test": "node --test \"tests/**/*.test.js\"",
+    "novo": "node scripts/novo_topico.mjs"
+  },
+  "dependencies": {
+    "astro": "^7.3.5"
+  }
+}

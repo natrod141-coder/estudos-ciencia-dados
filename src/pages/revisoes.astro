@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { obterTrilha, config, paraJson } from '../servidor.js';
+import { DIAS_ATE_REVISAO } from '../dados/constantes.js';
+
+const trilha = await obterTrilha();
+const dados = { trilha, meta: config.metaSemanalHoras, marcos: config.marcos };
+---
+<Layout titulo="Revisões" ativo="revisoes">
+  <header class="topo">
+    <div>
+      <p class="data">Terceiro critério de domínio</p>
+      <h1>Revisões</h1>
+    </div>
+  </header>
+
+  <section class="cartao" aria-labelledby="titulo-revisoes">
+    <header>
+      <div>
+        <h2 id="titulo-revisoes">Pendentes</h2>
+        <p>
+          Um tópico só vira dominado depois de uma revisão bem sucedida, feita {DIAS_ATE_REVISAO} dias ou mais depois
+          de cumprir o quiz e o desafio. Abra o tópico e registre o resultado no cartão do critério 3.
+        </p>
+      </div>
+      <div class="resumo-direita">
+        <strong data-campo="contagem-revisoes">0</strong>
+        <span>disponíveis agora</span>
+      </div>
+    </header>
+    <div id="lista-revisoes"></div>
+  </section>
+
+  <script is:inline type="application/json" id="dados-pagina" set:html={paraJson(dados)} />
+  <script>
+    import '../scripts/painel.js';
+  </script>
+</Layout>

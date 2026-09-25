@@ -1,0 +1,26 @@
+cidade,cep,escolaridade,satisfacao,dependentes,compras_no_ano,renda_mensal
+São Paulo,01310100,médio,muito satisfeito,3,5,1404.1
+Recife,51020010,médio,muito satisfeito,1,5,2094.04
+Belo Horizonte,30140071,superior,satisfeito,1,12,6202.33
+Salvador,41820020,superior,satisfeito,2,20,3521.65
+Salvador,40020000,médio,neutro,2,10,2802.86
+Curitiba,80010000,médio,muito satisfeito,3,8,2753.27
+São Paulo,04538133,pós-graduação,muito insatisfeito,1,4,3603.91
+Salvador,41820020,superior,satisfeito,1,14,4166.15
+Recife,50030230,superior,muito satisfeito,2,15,3016.21
+São Paulo,01310100,superior,muito satisfeito,4,18,3483.16
+Curitiba,80250104,médio,insatisfeito,1,6,4549.78
+São Paulo,01310100,médio,insatisfeito,0,2,8460.87
+Belo Horizonte,30130010,fundamental,satisfeito,2,5,3481.4
+São Paulo,01310100,médio,neutro,0,8,4553.37
+Curitiba,80250104,fundamental,neutro,0,12,4469.08
+Belo Horizonte,30130010,pós-graduação,neutro,1,9,4513.89
+Recife,51020010,pós-graduação,satisfeito,0,12,3924.28
+São Paulo,01310100,médio,satisfeito,1,11,3963.3
+Curitiba,80010000,superior,neutro,0,7,9180.27
+São Paulo,01310100,pós-graduação,muito insatisfeito,1,3,5632.94
+São Paulo,01310100,fundamental,satisfeito,2,24,2744.59
+Belo Horizonte,30130010,superior,insatisfeito,0,12,5516.29
+Recife,50030230,pós-graduação,satisfeito,0,6,5053.13
+São Paulo,05402000,superior,insatisfeito,2,30,6929.31
+Recife,50030230,médio,satisfeito,1,3,4566.63

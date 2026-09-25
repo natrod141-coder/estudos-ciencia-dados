@@ -1,0 +1,35 @@
+name: Testes
+
+# Roda em todo push e Pull Request: garante que a camada de dados do site, o build do
+# Astro e os desafios em Python continuam funcionando antes de aceitar uma mudança.
+on:
+  push:
+  pull_request:
+
+jobs:
+  site:
+    name: Testes do site (Node)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Testes da camada de dados
+        run: npm test
+      - name: Build do site
+        run: npm run build
+
+  desafios:
+    name: Desafios (Python)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r desafios/requirements.txt
+      - name: Cada desafio tem gabarito que passa e enunciado que falha sem solução
+        run: python scripts/verificar_desafios.py

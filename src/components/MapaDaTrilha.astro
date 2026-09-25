@@ -1,0 +1,37 @@
+---
+// Mostra os módulos e os tópicos de uma ou mais trilhas como "chips" clicáveis.
+// O script da página troca o atributo data-estado de cada chip conforme o progresso.
+import Glifo from './Glifo.astro';
+import { url } from '../scripts/url.js';
+
+const { trilhas } = Astro.props;
+---
+{trilhas.map((trilha) => (
+  <div class="mapa-trilha">
+    {trilhas.length > 1 && <h3>{trilha.nome}</h3>}
+    {trilha.modulos.map((modulo) => (
+      <div class="modulo-mapa">
+        <div class="identificacao">
+          <p class="fase">Fase {modulo.fase}</p>
+          <p class="nome">{modulo.nome}</p>
+          <p class="contagem" data-modulo-contagem={modulo.id}>0 de {modulo.topicos.length} dominados</p>
+        </div>
+        <div class="chips">
+          {modulo.topicos.map((topico) => (
+            <a
+              class="chip"
+              href={url(`topicos/${topico.id}/`)}
+              data-chip={topico.id}
+              data-estado="nao_iniciado"
+              title={topico.rascunho ? 'Conteúdo ainda não escrito' : `${topico.horas} h estimadas`}
+            >
+              <Glifo />
+              <span>{topico.titulo}</span>
+              <span class="so-leitor" data-rotulo-estado>Não iniciado</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+))}
