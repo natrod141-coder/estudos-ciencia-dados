@@ -1,0 +1,854 @@
+data,pedido,codigo_produto,produto,categoria,marca,codigo_loja,loja,cidade,uf,quantidade,preco_unitario,custo_unitario
+2025-01-06,V00001,P10,Cinta cardíaca,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,2,399.00,190.00
+2025-01-07,V00002,P08,Garrafa térmica,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,1,79.90,28.00
+2025-01-07,V00002,P04,Bermuda,Vestuário,Urbano,L01,Loja Centro,Curitiba,PR,3,119.90,45.00
+2025-01-08,V00003,P02,Tênis casual,Calçados,Urbano,L03,Loja Moinhos,Porto Alegre,RS,2,269.91,150.00
+2025-01-09,V00004,P09,Fone esportivo,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,3,299.00,140.00
+2025-01-10,V00005,P02,Tênis casual,Calçados,Urbano,L01,Loja Centro,Curitiba,PR,3,269.91,150.00
+2025-01-11,V00006,P06,Mochila,Acessórios,Trilha,L03,Loja Moinhos,Porto Alegre,RS,1,249.90,110.00
+2025-01-11,V00006,P04,Bermuda,Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,3,119.90,45.00
+2025-01-11,V00006,P07,Relógio GPS,Acessórios,Pulso,L03,Loja Moinhos,Porto Alegre,RS,1,1499.00,900.00
+2025-01-12,V00007,P02,Tênis casual,Calçados,Urbano,L05,Loja Savassi,Belo Horizonte,MG,3,299.90,150.00
+2025-01-12,V00007,P06,Mochila,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,2,249.90,110.00
+2025-01-13,V00008,P02,Tênis casual,Calçados,Urbano,L02,Loja Batel,Curitiba,PR,1,299.90,150.00
+2025-01-14,V00009,P04,Bermuda,Vestuário,Urbano,L02,Loja Batel,Curitiba,PR,2,119.90,45.00
+2025-01-15,V00010,P04,Bermuda,Vestuário,Urbano,L05,Loja Savassi,Belo Horizonte,MG,1,119.90,45.00
+2025-01-15,V00010,P07,Relógio GPS,Acessórios,Pulso,L05,Loja Savassi,Belo Horizonte,MG,1,1499.00,900.00
+2025-01-17,V00011,P03,Camiseta dry,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,2,89.90,32.00
+2025-01-17,V00011,P09,Fone esportivo,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,3,299.00,140.00
+2025-01-17,V00011,P10,Cinta cardíaca,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,3,399.00,190.00
+2025-01-19,V00012,P08,Garrafa térmica,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,3,71.91,28.00
+2025-01-23,V00013,P11,Meia (3 pares),Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,3,49.90,15.00
+2025-01-25,V00014,P04,Bermuda,Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,2,119.90,45.00
+2025-01-25,V00014,P01,Tênis corrida,Calçados,Veloz,L04,Loja Paulista,São Paulo,SP,3,399.90,210.00
+2025-01-27,V00015,P11,Meia (3 pares),Vestuário,Urbano,L05,Loja Savassi,Belo Horizonte,MG,2,49.90,15.00
+2025-01-29,V00016,P09,Fone esportivo,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,3,299.00,140.00
+2025-01-29,V00017,P04,Bermuda,Vestuário,Urbano,L02,Loja Batel,Curitiba,PR,1,119.90,45.00
+2025-01-29,V00017,P10,Cinta cardíaca,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,3,399.00,190.00
+2025-01-29,V00018,P08,Garrafa térmica,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,1,71.91,28.00
+2025-01-30,V00019,P08,Garrafa térmica,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,2,71.91,28.00
+2025-02-01,V00020,P03,Camiseta dry,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,2,89.90,32.00
+2025-02-02,V00021,P05,Jaqueta corta-vento,Vestuário,Veloz,L03,Loja Moinhos,Porto Alegre,RS,2,349.90,160.00
+2025-02-04,V00022,P11,Meia (3 pares),Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,2,49.90,15.00
+2025-02-04,V00023,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,3,299.90,150.00
+2025-02-06,V00024,P10,Cinta cardíaca,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,1,399.00,190.00
+2025-02-06,V00024,P01,Tênis corrida,Calçados,Veloz,L05,Loja Savassi,Belo Horizonte,MG,2,399.90,210.00
+2025-02-06,V00024,P05,Jaqueta corta-vento,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,3,349.90,160.00
+2025-02-08,V00025,P02,Tênis casual,Calçados,Urbano,L03,Loja Moinhos,Porto Alegre,RS,2,299.90,150.00
+2025-02-08,V00026,P01,Tênis corrida,Calçados,Veloz,L04,Loja Paulista,São Paulo,SP,1,399.90,210.00
+2025-02-09,V00027,P01,Tênis corrida,Calçados,Veloz,L05,Loja Savassi,Belo Horizonte,MG,2,399.90,210.00
+2025-02-10,V00028,P03,Camiseta dry,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,2,80.91,32.00
+2025-02-12,V00029,P06,Mochila,Acessórios,Trilha,L02,Loja Batel,Curitiba,PR,3,249.90,110.00
+2025-02-12,V00029,P12,Boné,Acessórios,Urbano,L02,Loja Batel,Curitiba,PR,2,69.90,22.00
+2025-02-12,V00030,P03,Camiseta dry,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,1,89.90,32.00
+2025-02-12,V00030,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,3,299.90,150.00
+2025-02-12,V00030,P10,Cinta cardíaca,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,2,399.00,190.00
+2025-02-13,V00031,P04,Bermuda,Vestuário,Urbano,L05,Loja Savassi,Belo Horizonte,MG,2,119.90,45.00
+2025-02-15,V00032,P07,Relógio GPS,Acessórios,Pulso,L03,Loja Moinhos,Porto Alegre,RS,1,1499.00,900.00
+2025-02-15,V00032,P09,Fone esportivo,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,2,299.00,140.00
+2025-02-15,V00032,P11,Meia (3 pares),Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,3,44.91,15.00
+2025-02-16,V00033,P06,Mochila,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,1,224.91,110.00
+2025-02-17,V00034,P04,Bermuda,Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,3,107.91,45.00
+2025-02-20,V00035,P01,Tênis corrida,Calçados,Veloz,L01,Loja Centro,Curitiba,PR,3,359.91,210.00
+2025-02-20,V00036,P05,Jaqueta corta-vento,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,1,349.90,160.00
+2025-02-20,V00036,P09,Fone esportivo,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,1,299.00,140.00
+2025-02-21,V00037,P12,Boné,Acessórios,Urbano,L01,Loja Centro,Curitiba,PR,1,69.90,22.00
+2025-02-21,V00037,P09,Fone esportivo,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,3,299.00,140.00
+2025-02-21,V00037,P02,Tênis casual,Calçados,Urbano,L01,Loja Centro,Curitiba,PR,1,299.90,150.00
+2025-02-22,V00038,P12,Boné,Acessórios,Urbano,L04,Loja Paulista,São Paulo,SP,1,69.90,22.00
+2025-02-22,V00038,P08,Garrafa térmica,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,1,71.91,28.00
+2025-02-27,V00039,P09,Fone esportivo,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,2,269.10,140.00
+2025-02-27,V00040,P03,Camiseta dry,Vestuário,Veloz,L01,Loja Centro,Curitiba,PR,2,80.91,32.00
+2025-02-27,V00040,P08,Garrafa térmica,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,3,79.90,28.00
+2025-03-02,V00041,P01,Tênis corrida,Calçados,Veloz,L03,Loja Moinhos,Porto Alegre,RS,3,359.91,210.00
+2025-03-02,V00041,P03,Camiseta dry,Vestuário,Veloz,L03,Loja Moinhos,Porto Alegre,RS,2,89.90,32.00
+2025-03-02,V00042,P09,Fone esportivo,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,3,269.10,140.00
+2025-03-02,V00042,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,2,299.90,150.00
+2025-03-03,V00043,P12,Boné,Acessórios,Urbano,L02,Loja Batel,Curitiba,PR,2,69.90,22.00
+2025-03-05,V00044,P09,Fone esportivo,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,3,299.00,140.00
+2025-03-06,V00045,P04,Bermuda,Vestuário,Urbano,L05,Loja Savassi,Belo Horizonte,MG,2,119.90,45.00
+2025-03-06,V00045,P09,Fone esportivo,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,2,269.10,140.00
+2025-03-07,V00046,P05,Jaqueta corta-vento,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,1,314.91,160.00
+2025-03-08,V00047,P07,Relógio GPS,Acessórios,Pulso,L02,Loja Batel,Curitiba,PR,1,1499.00,900.00
+2025-03-09,V00048,P04,Bermuda,Vestuário,Urbano,L01,Loja Centro,Curitiba,PR,1,119.90,45.00
+2025-03-12,V00049,P04,Bermuda,Vestuário,Urbano,L02,Loja Batel,Curitiba,PR,1,119.90,45.00
+2025-03-12,V00050,P10,Cinta cardíaca,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,2,359.10,190.00
+2025-03-12,V00050,P01,Tênis corrida,Calçados,Veloz,L05,Loja Savassi,Belo Horizonte,MG,1,399.90,210.00
+2025-03-12,V00051,P02,Tênis casual,Calçados,Urbano,L05,Loja Savassi,Belo Horizonte,MG,1,299.90,150.00
+2025-03-12,V00051,P05,Jaqueta corta-vento,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,3,349.90,160.00
+2025-03-13,V00052,P10,Cinta cardíaca,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,3,359.10,190.00
+2025-03-14,V00053,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,1,299.90,150.00
+2025-03-14,V00053,P07,Relógio GPS,Acessórios,Pulso,L04,Loja Paulista,São Paulo,SP,1,1499.00,900.00
+2025-03-18,V00054,P05,Jaqueta corta-vento,Vestuário,Veloz,L03,Loja Moinhos,Porto Alegre,RS,1,349.90,160.00
+2025-03-19,V00055,P01,Tênis corrida,Calçados,Veloz,L01,Loja Centro,Curitiba,PR,1,399.90,210.00
+2025-03-19,V00055,P12,Boné,Acessórios,Urbano,L01,Loja Centro,Curitiba,PR,3,62.91,22.00
+2025-03-19,V00055,P07,Relógio GPS,Acessórios,Pulso,L01,Loja Centro,Curitiba,PR,1,1499.00,900.00
+2025-03-21,V00056,P03,Camiseta dry,Vestuário,Veloz,L03,Loja Moinhos,Porto Alegre,RS,2,80.91,32.00
+2025-03-21,V00057,P01,Tênis corrida,Calçados,Veloz,L04,Loja Paulista,São Paulo,SP,3,359.91,210.00
+2025-03-21,V00057,P10,Cinta cardíaca,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,1,399.00,190.00
+2025-03-21,V00058,P03,Camiseta dry,Vestuário,Veloz,L01,Loja Centro,Curitiba,PR,1,89.90,32.00
+2025-03-21,V00058,P02,Tênis casual,Calçados,Urbano,L01,Loja Centro,Curitiba,PR,2,269.91,150.00
+2025-03-21,V00058,P01,Tênis corrida,Calçados,Veloz,L01,Loja Centro,Curitiba,PR,3,359.91,210.00
+2025-03-22,V00059,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,3,299.90,150.00
+2025-03-22,V00059,P11,Meia (3 pares),Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,3,44.91,15.00
+2025-03-22,V00060,P06,Mochila,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,3,249.90,110.00
+2025-03-22,V00060,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,3,299.90,150.00
+2025-03-22,V00060,P12,Boné,Acessórios,Urbano,L04,Loja Paulista,São Paulo,SP,2,69.90,22.00
+2025-03-23,V00061,P02,Tênis casual,Calçados,Urbano,L05,Loja Savassi,Belo Horizonte,MG,2,299.90,150.00
+2025-03-23,V00061,P08,Garrafa térmica,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,1,79.90,28.00
+2025-03-23,V00061,P01,Tênis corrida,Calçados,Veloz,L05,Loja Savassi,Belo Horizonte,MG,2,399.90,210.00
+2025-03-23,V00062,P01,Tênis corrida,Calçados,Veloz,L04,Loja Paulista,São Paulo,SP,1,399.90,210.00
+2025-03-24,V00063,P06,Mochila,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,2,249.90,110.00
+2025-03-24,V00064,P05,Jaqueta corta-vento,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,1,349.90,160.00
+2025-03-25,V00065,P01,Tênis corrida,Calçados,Veloz,L05,Loja Savassi,Belo Horizonte,MG,1,399.90,210.00
+2025-03-26,V00066,P02,Tênis casual,Calçados,Urbano,L01,Loja Centro,Curitiba,PR,2,299.90,150.00
+2025-03-28,V00067,P09,Fone esportivo,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,3,299.00,140.00
+2025-03-28,V00067,P11,Meia (3 pares),Vestuário,Urbano,L05,Loja Savassi,Belo Horizonte,MG,3,49.90,15.00
+2025-03-29,V00068,P04,Bermuda,Vestuário,Urbano,L05,Loja Savassi,Belo Horizonte,MG,1,119.90,45.00
+2025-03-29,V00068,P05,Jaqueta corta-vento,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,1,349.90,160.00
+2025-03-29,V00069,P03,Camiseta dry,Vestuário,Veloz,L03,Loja Moinhos,Porto Alegre,RS,2,89.90,32.00
+2025-03-30,V00070,P10,Cinta cardíaca,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,1,399.00,190.00
+2025-04-01,V00071,P04,Bermuda,Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,2,119.90,45.00
+2025-04-02,V00072,P08,Garrafa térmica,Acessórios,Trilha,L02,Loja Batel,Curitiba,PR,2,79.90,28.00
+2025-04-02,V00072,P03,Camiseta dry,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,1,89.90,32.00
+2025-04-02,V00072,P10,Cinta cardíaca,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,3,359.10,190.00
+2025-04-02,V00073,P12,Boné,Acessórios,Urbano,L01,Loja Centro,Curitiba,PR,1,62.91,22.00
+2025-04-03,V00074,P05,Jaqueta corta-vento,Vestuário,Veloz,L03,Loja Moinhos,Porto Alegre,RS,3,349.90,160.00
+2025-04-03,V00074,P12,Boné,Acessórios,Urbano,L03,Loja Moinhos,Porto Alegre,RS,3,69.90,22.00
+2025-04-04,V00075,P03,Camiseta dry,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,2,89.90,32.00
+2025-04-05,V00076,P03,Camiseta dry,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,1,89.90,32.00
+2025-04-06,V00077,P06,Mochila,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,1,249.90,110.00
+2025-04-06,V00078,P06,Mochila,Acessórios,Trilha,L03,Loja Moinhos,Porto Alegre,RS,2,249.90,110.00
+2025-04-09,V00079,P08,Garrafa térmica,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,3,79.90,28.00
+2025-04-09,V00080,P03,Camiseta dry,Vestuário,Veloz,L01,Loja Centro,Curitiba,PR,2,89.90,32.00
+2025-04-10,V00081,P06,Mochila,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,1,249.90,110.00
+2025-04-10,V00081,P08,Garrafa térmica,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,3,79.90,28.00
+2025-04-12,V00082,P03,Camiseta dry,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,2,80.91,32.00
+2025-04-13,V00083,P03,Camiseta dry,Vestuário,Veloz,L03,Loja Moinhos,Porto Alegre,RS,3,89.90,32.00
+2025-04-13,V00084,P07,Relógio GPS,Acessórios,Pulso,L05,Loja Savassi,Belo Horizonte,MG,1,1499.00,900.00
+2025-04-13,V00084,P01,Tênis corrida,Calçados,Veloz,L05,Loja Savassi,Belo Horizonte,MG,2,359.91,210.00
+2025-04-13,V00084,P08,Garrafa térmica,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,1,71.91,28.00
+2025-04-14,V00085,P10,Cinta cardíaca,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,2,359.10,190.00
+2025-04-16,V00086,P08,Garrafa térmica,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,3,71.91,28.00
+2025-04-16,V00086,P03,Camiseta dry,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,1,89.90,32.00
+2025-04-17,V00087,P06,Mochila,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,2,224.91,110.00
+2025-04-19,V00088,P01,Tênis corrida,Calçados,Veloz,L02,Loja Batel,Curitiba,PR,2,399.90,210.00
+2025-04-19,V00088,P05,Jaqueta corta-vento,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,3,314.91,160.00
+2025-04-20,V00089,P11,Meia (3 pares),Vestuário,Urbano,L01,Loja Centro,Curitiba,PR,1,49.90,15.00
+2025-04-21,V00090,P11,Meia (3 pares),Vestuário,Urbano,L01,Loja Centro,Curitiba,PR,3,44.91,15.00
+2025-04-21,V00090,P03,Camiseta dry,Vestuário,Veloz,L01,Loja Centro,Curitiba,PR,3,89.90,32.00
+2025-04-21,V00090,P04,Bermuda,Vestuário,Urbano,L01,Loja Centro,Curitiba,PR,1,119.90,45.00
+2025-04-21,V00091,P05,Jaqueta corta-vento,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,1,349.90,160.00
+2025-04-21,V00091,P02,Tênis casual,Calçados,Urbano,L02,Loja Batel,Curitiba,PR,1,299.90,150.00
+2025-04-22,V00092,P04,Bermuda,Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,1,107.91,45.00
+2025-04-24,V00093,P07,Relógio GPS,Acessórios,Pulso,L05,Loja Savassi,Belo Horizonte,MG,1,1499.00,900.00
+2025-04-25,V00094,P09,Fone esportivo,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,2,299.00,140.00
+2025-04-25,V00095,P04,Bermuda,Vestuário,Urbano,L05,Loja Savassi,Belo Horizonte,MG,2,119.90,45.00
+2025-04-25,V00095,P11,Meia (3 pares),Vestuário,Urbano,L05,Loja Savassi,Belo Horizonte,MG,1,49.90,15.00
+2025-04-25,V00095,P06,Mochila,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,2,224.91,110.00
+2025-04-27,V00096,P04,Bermuda,Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,1,107.91,45.00
+2025-04-28,V00097,P08,Garrafa térmica,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,1,79.90,28.00
+2025-04-28,V00097,P12,Boné,Acessórios,Urbano,L05,Loja Savassi,Belo Horizonte,MG,2,69.90,22.00
+2025-04-28,V00097,P05,Jaqueta corta-vento,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,3,349.90,160.00
+2025-05-02,V00098,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,2,299.90,150.00
+2025-05-02,V00099,P08,Garrafa térmica,Acessórios,Trilha,L02,Loja Batel,Curitiba,PR,1,79.90,28.00
+2025-05-03,V00100,P04,Bermuda,Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,3,119.90,45.00
+2025-05-04,V00101,P08,Garrafa térmica,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,1,79.90,28.00
+2025-05-04,V00102,P08,Garrafa térmica,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,1,79.90,28.00
+2025-05-05,V00103,P06,Mochila,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,2,249.90,110.00
+2025-05-06,V00104,P04,Bermuda,Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,3,107.91,45.00
+2025-05-06,V00104,P01,Tênis corrida,Calçados,Veloz,L04,Loja Paulista,São Paulo,SP,3,359.91,210.00
+2025-05-07,V00105,P11,Meia (3 pares),Vestuário,Urbano,L01,Loja Centro,Curitiba,PR,3,44.91,15.00
+2025-05-07,V00106,P09,Fone esportivo,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,2,269.10,140.00
+2025-05-08,V00107,P01,Tênis corrida,Calçados,Veloz,L01,Loja Centro,Curitiba,PR,3,359.91,210.00
+2025-05-09,V00108,P10,Cinta cardíaca,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,1,399.00,190.00
+2025-05-14,V00109,P11,Meia (3 pares),Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,3,44.91,15.00
+2025-05-15,V00110,P12,Boné,Acessórios,Urbano,L05,Loja Savassi,Belo Horizonte,MG,2,62.91,22.00
+2025-05-15,V00110,P05,Jaqueta corta-vento,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,1,349.90,160.00
+2025-05-15,V00110,P10,Cinta cardíaca,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,3,399.00,190.00
+2025-05-16,V00111,P08,Garrafa térmica,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,2,71.91,28.00
+2025-05-17,V00112,P09,Fone esportivo,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,1,269.10,140.00
+2025-05-19,V00113,P04,Bermuda,Vestuário,Urbano,L02,Loja Batel,Curitiba,PR,1,107.91,45.00
+2025-05-20,V00114,P11,Meia (3 pares),Vestuário,Urbano,L05,Loja Savassi,Belo Horizonte,MG,3,49.90,15.00
+2025-05-22,V00115,P07,Relógio GPS,Acessórios,Pulso,L03,Loja Moinhos,Porto Alegre,RS,1,1349.10,900.00
+2025-05-24,V00116,P11,Meia (3 pares),Vestuário,Urbano,L05,Loja Savassi,Belo Horizonte,MG,1,49.90,15.00
+2025-05-24,V00116,P09,Fone esportivo,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,3,269.10,140.00
+2025-05-24,V00116,P01,Tênis corrida,Calçados,Veloz,L05,Loja Savassi,Belo Horizonte,MG,3,359.91,210.00
+2025-05-25,V00117,P04,Bermuda,Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,1,119.90,45.00
+2025-05-25,V00118,P04,Bermuda,Vestuário,Urbano,L02,Loja Batel,Curitiba,PR,1,107.91,45.00
+2025-05-25,V00118,P09,Fone esportivo,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,1,299.00,140.00
+2025-05-26,V00119,P07,Relógio GPS,Acessórios,Pulso,L05,Loja Savassi,Belo Horizonte,MG,1,1499.00,900.00
+2025-05-27,V00120,P01,Tênis corrida,Calçados,Veloz,L05,Loja Savassi,Belo Horizonte,MG,2,399.90,210.00
+2025-05-27,V00121,P10,Cinta cardíaca,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,1,399.00,190.00
+2025-05-30,V00122,P04,Bermuda,Vestuário,Urbano,L02,Loja Batel,Curitiba,PR,3,119.90,45.00
+2025-05-30,V00122,P01,Tênis corrida,Calçados,Veloz,L02,Loja Batel,Curitiba,PR,1,399.90,210.00
+2025-05-31,V00123,P09,Fone esportivo,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,2,299.00,140.00
+2025-05-31,V00123,P11,Meia (3 pares),Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,1,49.90,15.00
+2025-06-01,V00124,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,1,299.90,150.00
+2025-06-01,V00125,P02,Tênis casual,Calçados,Urbano,L01,Loja Centro,Curitiba,PR,2,269.91,150.00
+2025-06-03,V00126,P03,Camiseta dry,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,3,89.90,32.00
+2025-06-04,V00127,P08,Garrafa térmica,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,2,79.90,28.00
+2025-06-05,V00128,P05,Jaqueta corta-vento,Vestuário,Veloz,L03,Loja Moinhos,Porto Alegre,RS,1,349.90,160.00
+2025-06-06,V00129,P06,Mochila,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,2,249.90,110.00
+2025-06-06,V00129,P05,Jaqueta corta-vento,Vestuário,Veloz,L01,Loja Centro,Curitiba,PR,3,349.90,160.00
+2025-06-07,V00130,P01,Tênis corrida,Calçados,Veloz,L04,Loja Paulista,São Paulo,SP,3,359.91,210.00
+2025-06-08,V00131,P07,Relógio GPS,Acessórios,Pulso,L04,Loja Paulista,São Paulo,SP,1,1499.00,900.00
+2025-06-08,V00131,P01,Tênis corrida,Calçados,Veloz,L04,Loja Paulista,São Paulo,SP,2,399.90,210.00
+2025-06-09,V00132,P10,Cinta cardíaca,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,2,399.00,190.00
+2025-06-09,V00133,P06,Mochila,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,1,224.91,110.00
+2025-06-14,V00134,P07,Relógio GPS,Acessórios,Pulso,L04,Loja Paulista,São Paulo,SP,1,1349.10,900.00
+2025-06-14,V00134,P12,Boné,Acessórios,Urbano,L04,Loja Paulista,São Paulo,SP,3,69.90,22.00
+2025-06-14,V00135,P09,Fone esportivo,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,1,299.00,140.00
+2025-06-18,V00136,P01,Tênis corrida,Calçados,Veloz,L01,Loja Centro,Curitiba,PR,1,359.91,210.00
+2025-06-19,V00137,P11,Meia (3 pares),Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,2,49.90,15.00
+2025-06-19,V00137,P10,Cinta cardíaca,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,2,399.00,190.00
+2025-06-19,V00137,P02,Tênis casual,Calçados,Urbano,L03,Loja Moinhos,Porto Alegre,RS,3,299.90,150.00
+2025-06-20,V00138,P11,Meia (3 pares),Vestuário,Urbano,L01,Loja Centro,Curitiba,PR,3,44.91,15.00
+2025-06-20,V00138,P07,Relógio GPS,Acessórios,Pulso,L01,Loja Centro,Curitiba,PR,1,1499.00,900.00
+2025-06-21,V00139,P01,Tênis corrida,Calçados,Veloz,L02,Loja Batel,Curitiba,PR,2,399.90,210.00
+2025-06-21,V00139,P04,Bermuda,Vestuário,Urbano,L02,Loja Batel,Curitiba,PR,2,119.90,45.00
+2025-06-21,V00139,P12,Boné,Acessórios,Urbano,L02,Loja Batel,Curitiba,PR,2,62.91,22.00
+2025-06-21,V00140,P05,Jaqueta corta-vento,Vestuário,Veloz,L01,Loja Centro,Curitiba,PR,2,349.90,160.00
+2025-06-21,V00140,P06,Mochila,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,3,249.90,110.00
+2025-06-21,V00140,P08,Garrafa térmica,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,3,79.90,28.00
+2025-06-22,V00141,P07,Relógio GPS,Acessórios,Pulso,L05,Loja Savassi,Belo Horizonte,MG,1,1349.10,900.00
+2025-06-22,V00141,P09,Fone esportivo,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,1,299.00,140.00
+2025-06-23,V00142,P07,Relógio GPS,Acessórios,Pulso,L04,Loja Paulista,São Paulo,SP,1,1499.00,900.00
+2025-06-23,V00143,P07,Relógio GPS,Acessórios,Pulso,L04,Loja Paulista,São Paulo,SP,1,1499.00,900.00
+2025-06-23,V00143,P06,Mochila,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,2,249.90,110.00
+2025-06-23,V00143,P08,Garrafa térmica,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,1,79.90,28.00
+2025-06-24,V00144,P04,Bermuda,Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,2,119.90,45.00
+2025-06-24,V00145,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,3,299.90,150.00
+2025-06-24,V00145,P11,Meia (3 pares),Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,1,44.91,15.00
+2025-06-25,V00146,P05,Jaqueta corta-vento,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,2,349.90,160.00
+2025-06-26,V00147,P04,Bermuda,Vestuário,Urbano,L01,Loja Centro,Curitiba,PR,1,119.90,45.00
+2025-06-26,V00147,P05,Jaqueta corta-vento,Vestuário,Veloz,L01,Loja Centro,Curitiba,PR,1,314.91,160.00
+2025-06-26,V00148,P01,Tênis corrida,Calçados,Veloz,L02,Loja Batel,Curitiba,PR,2,399.90,210.00
+2025-06-26,V00148,P09,Fone esportivo,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,1,299.00,140.00
+2025-06-27,V00149,P06,Mochila,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,3,249.90,110.00
+2025-07-01,V00150,P04,Bermuda,Vestuário,Urbano,L01,Loja Centro,Curitiba,PR,1,119.90,45.00
+2025-07-01,V00150,P02,Tênis casual,Calçados,Urbano,L01,Loja Centro,Curitiba,PR,2,299.90,150.00
+2025-07-01,V00150,P07,Relógio GPS,Acessórios,Pulso,L01,Loja Centro,Curitiba,PR,1,1349.10,900.00
+2025-07-02,V00151,P04,Bermuda,Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,1,119.90,45.00
+2025-07-02,V00152,P06,Mochila,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,3,249.90,110.00
+2025-07-04,V00153,P10,Cinta cardíaca,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,3,399.00,190.00
+2025-07-04,V00154,P10,Cinta cardíaca,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,2,399.00,190.00
+2025-07-04,V00154,P08,Garrafa térmica,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,1,79.90,28.00
+2025-07-07,V00155,P12,Boné,Acessórios,Urbano,L03,Loja Moinhos,Porto Alegre,RS,2,69.90,22.00
+2025-07-08,V00156,P06,Mochila,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,1,224.91,110.00
+2025-07-10,V00157,P08,Garrafa térmica,Acessórios,Trilha,L02,Loja Batel,Curitiba,PR,1,79.90,28.00
+2025-07-10,V00158,P12,Boné,Acessórios,Urbano,L02,Loja Batel,Curitiba,PR,3,69.90,22.00
+2025-07-11,V00159,P01,Tênis corrida,Calçados,Veloz,L04,Loja Paulista,São Paulo,SP,3,359.91,210.00
+2025-07-11,V00160,P03,Camiseta dry,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,3,80.91,32.00
+2025-07-13,V00161,P08,Garrafa térmica,Acessórios,Trilha,L02,Loja Batel,Curitiba,PR,2,79.90,28.00
+2025-07-14,V00162,P07,Relógio GPS,Acessórios,Pulso,L03,Loja Moinhos,Porto Alegre,RS,1,1499.00,900.00
+2025-07-14,V00163,P09,Fone esportivo,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,1,299.00,140.00
+2025-07-14,V00163,P11,Meia (3 pares),Vestuário,Urbano,L01,Loja Centro,Curitiba,PR,3,49.90,15.00
+2025-07-14,V00163,P01,Tênis corrida,Calçados,Veloz,L01,Loja Centro,Curitiba,PR,1,399.90,210.00
+2025-07-15,V00164,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,3,299.90,150.00
+2025-07-15,V00165,P08,Garrafa térmica,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,1,79.90,28.00
+2025-07-16,V00166,P03,Camiseta dry,Vestuário,Veloz,L03,Loja Moinhos,Porto Alegre,RS,3,89.90,32.00
+2025-07-16,V00167,P09,Fone esportivo,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,1,299.00,140.00
+2025-07-16,V00168,P12,Boné,Acessórios,Urbano,L02,Loja Batel,Curitiba,PR,1,69.90,22.00
+2025-07-17,V00169,P11,Meia (3 pares),Vestuário,Urbano,L01,Loja Centro,Curitiba,PR,1,49.90,15.00
+2025-07-19,V00170,P05,Jaqueta corta-vento,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,1,349.90,160.00
+2025-07-20,V00171,P10,Cinta cardíaca,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,1,399.00,190.00
+2025-07-22,V00172,P08,Garrafa térmica,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,1,79.90,28.00
+2025-07-25,V00173,P08,Garrafa térmica,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,2,79.90,28.00
+2025-07-25,V00173,P04,Bermuda,Vestuário,Urbano,L01,Loja Centro,Curitiba,PR,2,119.90,45.00
+2025-07-26,V00174,P02,Tênis casual,Calçados,Urbano,L05,Loja Savassi,Belo Horizonte,MG,3,269.91,150.00
+2025-07-27,V00175,P12,Boné,Acessórios,Urbano,L03,Loja Moinhos,Porto Alegre,RS,1,69.90,22.00
+2025-07-31,V00176,P12,Boné,Acessórios,Urbano,L05,Loja Savassi,Belo Horizonte,MG,1,69.90,22.00
+2025-07-31,V00177,P07,Relógio GPS,Acessórios,Pulso,L05,Loja Savassi,Belo Horizonte,MG,1,1499.00,900.00
+2025-07-31,V00177,P12,Boné,Acessórios,Urbano,L05,Loja Savassi,Belo Horizonte,MG,2,69.90,22.00
+2025-08-01,V00178,P06,Mochila,Acessórios,Trilha,L02,Loja Batel,Curitiba,PR,1,249.90,110.00
+2025-08-03,V00179,P05,Jaqueta corta-vento,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,1,314.91,160.00
+2025-08-03,V00179,P08,Garrafa térmica,Acessórios,Trilha,L02,Loja Batel,Curitiba,PR,3,71.91,28.00
+2025-08-05,V00180,P02,Tênis casual,Calçados,Urbano,L05,Loja Savassi,Belo Horizonte,MG,1,269.91,150.00
+2025-08-06,V00181,P05,Jaqueta corta-vento,Vestuário,Veloz,L03,Loja Moinhos,Porto Alegre,RS,3,349.90,160.00
+2025-08-06,V00181,P11,Meia (3 pares),Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,3,44.91,15.00
+2025-08-07,V00182,P02,Tênis casual,Calçados,Urbano,L02,Loja Batel,Curitiba,PR,1,269.91,150.00
+2025-08-07,V00182,P01,Tênis corrida,Calçados,Veloz,L02,Loja Batel,Curitiba,PR,1,359.91,210.00
+2025-08-08,V00183,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,1,269.91,150.00
+2025-08-08,V00184,P06,Mochila,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,2,249.90,110.00
+2025-08-09,V00185,P05,Jaqueta corta-vento,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,2,349.90,160.00
+2025-08-09,V00185,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,3,299.90,150.00
+2025-08-09,V00185,P03,Camiseta dry,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,3,89.90,32.00
+2025-08-10,V00186,P06,Mochila,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,2,224.91,110.00
+2025-08-10,V00186,P12,Boné,Acessórios,Urbano,L01,Loja Centro,Curitiba,PR,2,62.91,22.00
+2025-08-10,V00187,P12,Boné,Acessórios,Urbano,L05,Loja Savassi,Belo Horizonte,MG,3,62.91,22.00
+2025-08-10,V00187,P03,Camiseta dry,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,3,89.90,32.00
+2025-08-10,V00187,P06,Mochila,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,2,249.90,110.00
+2025-08-12,V00188,P04,Bermuda,Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,3,119.90,45.00
+2025-08-15,V00189,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,2,299.90,150.00
+2025-08-16,V00190,P09,Fone esportivo,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,2,269.10,140.00
+2025-08-16,V00190,P07,Relógio GPS,Acessórios,Pulso,L01,Loja Centro,Curitiba,PR,1,1499.00,900.00
+2025-08-16,V00190,P05,Jaqueta corta-vento,Vestuário,Veloz,L01,Loja Centro,Curitiba,PR,3,314.91,160.00
+2025-08-17,V00191,P09,Fone esportivo,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,3,269.10,140.00
+2025-08-18,V00192,P06,Mochila,Acessórios,Trilha,L02,Loja Batel,Curitiba,PR,1,249.90,110.00
+2025-08-18,V00193,P10,Cinta cardíaca,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,1,399.00,190.00
+2025-08-18,V00193,P01,Tênis corrida,Calçados,Veloz,L05,Loja Savassi,Belo Horizonte,MG,3,399.90,210.00
+2025-08-19,V00194,P03,Camiseta dry,Vestuário,Veloz,L01,Loja Centro,Curitiba,PR,3,80.91,32.00
+2025-08-19,V00195,P10,Cinta cardíaca,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,2,399.00,190.00
+2025-08-20,V00196,P10,Cinta cardíaca,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,3,399.00,190.00
+2025-08-20,V00196,P02,Tênis casual,Calçados,Urbano,L03,Loja Moinhos,Porto Alegre,RS,2,299.90,150.00
+2025-08-20,V00197,P06,Mochila,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,2,249.90,110.00
+2025-08-21,V00198,P04,Bermuda,Vestuário,Urbano,L01,Loja Centro,Curitiba,PR,2,119.90,45.00
+2025-08-21,V00198,P05,Jaqueta corta-vento,Vestuário,Veloz,L01,Loja Centro,Curitiba,PR,3,349.90,160.00
+2025-08-21,V00199,P12,Boné,Acessórios,Urbano,L03,Loja Moinhos,Porto Alegre,RS,1,69.90,22.00
+2025-08-22,V00200,P12,Boné,Acessórios,Urbano,L05,Loja Savassi,Belo Horizonte,MG,2,69.90,22.00
+2025-08-25,V00201,P04,Bermuda,Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,3,119.90,45.00
+2025-08-27,V00202,P11,Meia (3 pares),Vestuário,Urbano,L05,Loja Savassi,Belo Horizonte,MG,1,49.90,15.00
+2025-08-28,V00203,P06,Mochila,Acessórios,Trilha,L03,Loja Moinhos,Porto Alegre,RS,2,249.90,110.00
+2025-08-28,V00204,P07,Relógio GPS,Acessórios,Pulso,L03,Loja Moinhos,Porto Alegre,RS,1,1499.00,900.00
+2025-08-28,V00204,P09,Fone esportivo,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,2,299.00,140.00
+2025-08-29,V00205,P05,Jaqueta corta-vento,Vestuário,Veloz,L03,Loja Moinhos,Porto Alegre,RS,3,314.91,160.00
+2025-08-30,V00206,P04,Bermuda,Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,1,107.91,45.00
+2025-09-01,V00207,P04,Bermuda,Vestuário,Urbano,L01,Loja Centro,Curitiba,PR,2,119.90,45.00
+2025-09-01,V00207,P03,Camiseta dry,Vestuário,Veloz,L01,Loja Centro,Curitiba,PR,3,80.91,32.00
+2025-09-01,V00208,P07,Relógio GPS,Acessórios,Pulso,L05,Loja Savassi,Belo Horizonte,MG,1,1499.00,900.00
+2025-09-02,V00209,P08,Garrafa térmica,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,1,79.90,28.00
+2025-09-03,V00210,P07,Relógio GPS,Acessórios,Pulso,L01,Loja Centro,Curitiba,PR,1,1499.00,900.00
+2025-09-03,V00211,P02,Tênis casual,Calçados,Urbano,L01,Loja Centro,Curitiba,PR,1,299.90,150.00
+2025-09-03,V00212,P10,Cinta cardíaca,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,3,359.10,190.00
+2025-09-04,V00213,P10,Cinta cardíaca,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,3,359.10,190.00
+2025-09-04,V00213,P04,Bermuda,Vestuário,Urbano,L02,Loja Batel,Curitiba,PR,1,119.90,45.00
+2025-09-04,V00213,P06,Mochila,Acessórios,Trilha,L02,Loja Batel,Curitiba,PR,3,249.90,110.00
+2025-09-05,V00214,P09,Fone esportivo,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,3,299.00,140.00
+2025-09-05,V00214,P01,Tênis corrida,Calçados,Veloz,L03,Loja Moinhos,Porto Alegre,RS,3,399.90,210.00
+2025-09-07,V00215,P11,Meia (3 pares),Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,1,49.90,15.00
+2025-09-07,V00215,P01,Tênis corrida,Calçados,Veloz,L04,Loja Paulista,São Paulo,SP,2,399.90,210.00
+2025-09-07,V00215,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,1,299.90,150.00
+2025-09-10,V00216,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,2,299.90,150.00
+2025-09-10,V00217,P09,Fone esportivo,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,3,299.00,140.00
+2025-09-10,V00217,P03,Camiseta dry,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,2,89.90,32.00
+2025-09-11,V00218,P05,Jaqueta corta-vento,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,3,349.90,160.00
+2025-09-11,V00218,P10,Cinta cardíaca,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,2,399.00,190.00
+2025-09-12,V00219,P04,Bermuda,Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,2,119.90,45.00
+2025-09-13,V00220,P10,Cinta cardíaca,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,2,399.00,190.00
+2025-09-13,V00220,P02,Tênis casual,Calçados,Urbano,L05,Loja Savassi,Belo Horizonte,MG,1,299.90,150.00
+2025-09-14,V00221,P08,Garrafa térmica,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,1,79.90,28.00
+2025-09-15,V00222,P09,Fone esportivo,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,1,299.00,140.00
+2025-09-17,V00223,P01,Tênis corrida,Calçados,Veloz,L04,Loja Paulista,São Paulo,SP,2,399.90,210.00
+2025-09-17,V00224,P01,Tênis corrida,Calçados,Veloz,L05,Loja Savassi,Belo Horizonte,MG,1,399.90,210.00
+2025-09-18,V00225,P10,Cinta cardíaca,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,3,359.10,190.00
+2025-09-18,V00225,P02,Tênis casual,Calçados,Urbano,L02,Loja Batel,Curitiba,PR,2,269.91,150.00
+2025-09-19,V00226,P05,Jaqueta corta-vento,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,3,349.90,160.00
+2025-09-20,V00227,P03,Camiseta dry,Vestuário,Veloz,L01,Loja Centro,Curitiba,PR,1,89.90,32.00
+2025-09-22,V00228,P09,Fone esportivo,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,1,269.10,140.00
+2025-09-24,V00229,P07,Relógio GPS,Acessórios,Pulso,L04,Loja Paulista,São Paulo,SP,1,1499.00,900.00
+2025-09-24,V00229,P05,Jaqueta corta-vento,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,1,314.91,160.00
+2025-09-24,V00230,P03,Camiseta dry,Vestuário,Veloz,L03,Loja Moinhos,Porto Alegre,RS,3,89.90,32.00
+2025-09-25,V00231,P05,Jaqueta corta-vento,Vestuário,Veloz,L03,Loja Moinhos,Porto Alegre,RS,2,349.90,160.00
+2025-09-25,V00231,P02,Tênis casual,Calçados,Urbano,L03,Loja Moinhos,Porto Alegre,RS,3,299.90,150.00
+2025-09-25,V00231,P04,Bermuda,Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,3,119.90,45.00
+2025-09-28,V00232,P06,Mochila,Acessórios,Trilha,L03,Loja Moinhos,Porto Alegre,RS,1,249.90,110.00
+2025-09-28,V00232,P11,Meia (3 pares),Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,3,49.90,15.00
+2025-09-29,V00233,P07,Relógio GPS,Acessórios,Pulso,L02,Loja Batel,Curitiba,PR,1,1499.00,900.00
+2025-09-30,V00234,P03,Camiseta dry,Vestuário,Veloz,L01,Loja Centro,Curitiba,PR,3,89.90,32.00
+2025-09-30,V00234,P09,Fone esportivo,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,2,269.10,140.00
+2025-09-30,V00235,P09,Fone esportivo,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,3,299.00,140.00
+2025-10-02,V00236,P02,Tênis casual,Calçados,Urbano,L01,Loja Centro,Curitiba,PR,2,269.91,150.00
+2025-10-05,V00237,P12,Boné,Acessórios,Urbano,L05,Loja Savassi,Belo Horizonte,MG,3,69.90,22.00
+2025-10-06,V00238,P05,Jaqueta corta-vento,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,2,314.91,160.00
+2025-10-09,V00239,P09,Fone esportivo,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,1,269.10,140.00
+2025-10-10,V00240,P04,Bermuda,Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,3,119.90,45.00
+2025-10-10,V00241,P09,Fone esportivo,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,3,299.00,140.00
+2025-10-14,V00242,P12,Boné,Acessórios,Urbano,L03,Loja Moinhos,Porto Alegre,RS,1,69.90,22.00
+2025-10-15,V00243,P01,Tênis corrida,Calçados,Veloz,L02,Loja Batel,Curitiba,PR,1,399.90,210.00
+2025-10-15,V00244,P12,Boné,Acessórios,Urbano,L05,Loja Savassi,Belo Horizonte,MG,3,69.90,22.00
+2025-10-15,V00244,P01,Tênis corrida,Calçados,Veloz,L05,Loja Savassi,Belo Horizonte,MG,2,359.91,210.00
+2025-10-15,V00244,P03,Camiseta dry,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,1,89.90,32.00
+2025-10-16,V00245,P10,Cinta cardíaca,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,1,359.10,190.00
+2025-10-17,V00246,P11,Meia (3 pares),Vestuário,Urbano,L02,Loja Batel,Curitiba,PR,3,49.90,15.00
+2025-10-17,V00246,P02,Tênis casual,Calçados,Urbano,L02,Loja Batel,Curitiba,PR,1,299.90,150.00
+2025-10-17,V00246,P03,Camiseta dry,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,1,89.90,32.00
+2025-10-19,V00247,P01,Tênis corrida,Calçados,Veloz,L01,Loja Centro,Curitiba,PR,3,399.90,210.00
+2025-10-20,V00248,P09,Fone esportivo,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,2,299.00,140.00
+2025-10-20,V00249,P07,Relógio GPS,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,1,1499.00,900.00
+2025-10-21,V00250,P04,Bermuda,Vestuário,Urbano,L05,Loja Savassi,Belo Horizonte,MG,1,107.91,45.00
+2025-10-21,V00250,P02,Tênis casual,Calçados,Urbano,L05,Loja Savassi,Belo Horizonte,MG,3,299.90,150.00
+2025-10-22,V00251,P05,Jaqueta corta-vento,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,2,314.91,160.00
+2025-10-22,V00252,P11,Meia (3 pares),Vestuário,Urbano,L01,Loja Centro,Curitiba,PR,2,44.91,15.00
+2025-10-22,V00252,P01,Tênis corrida,Calçados,Veloz,L01,Loja Centro,Curitiba,PR,1,359.91,210.00
+2025-10-23,V00253,P09,Fone esportivo,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,1,299.00,140.00
+2025-10-23,V00254,P12,Boné,Acessórios,Urbano,L05,Loja Savassi,Belo Horizonte,MG,2,69.90,22.00
+2025-10-25,V00255,P09,Fone esportivo,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,1,299.00,140.00
+2025-10-27,V00256,P06,Mochila,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,1,224.91,110.00
+2025-10-27,V00257,P07,Relógio GPS,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,1,1499.00,900.00
+2025-10-31,V00258,P10,Cinta cardíaca,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,3,359.10,190.00
+2025-10-31,V00259,P09,Fone esportivo,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,2,299.00,140.00
+2025-11-01,V00260,P11,Meia (3 pares),Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,3,49.90,15.00
+2025-11-03,V00261,P03,Camiseta dry,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,2,80.91,32.00
+2025-11-03,V00261,P05,Jaqueta corta-vento,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,2,349.90,160.00
+2025-11-03,V00262,P03,Camiseta dry,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,3,89.90,32.00
+2025-11-04,V00263,P01,Tênis corrida,Calçados,Veloz,L02,Loja Batel,Curitiba,PR,3,399.90,210.00
+2025-11-04,V00264,P07,Relógio GPS,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,1,1349.10,900.00
+2025-11-06,V00265,P06,Mochila,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,3,249.90,110.00
+2025-11-06,V00265,P05,Jaqueta corta-vento,Vestuário,Veloz,L01,Loja Centro,Curitiba,PR,1,349.90,160.00
+2025-11-06,V00266,P01,Tênis corrida,Calçados,Veloz,L02,Loja Batel,Curitiba,PR,2,399.90,210.00
+2025-11-06,V00267,P09,Fone esportivo,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,1,299.00,140.00
+2025-11-06,V00267,P10,Cinta cardíaca,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,3,399.00,190.00
+2025-11-07,V00268,P03,Camiseta dry,Vestuário,Veloz,L03,Loja Moinhos,Porto Alegre,RS,2,89.90,32.00
+2025-11-08,V00269,P12,Boné,Acessórios,Urbano,L02,Loja Batel,Curitiba,PR,2,62.91,22.00
+2025-11-08,V00269,P06,Mochila,Acessórios,Trilha,L02,Loja Batel,Curitiba,PR,1,249.90,110.00
+2025-11-09,V00270,P01,Tênis corrida,Calçados,Veloz,L01,Loja Centro,Curitiba,PR,3,399.90,210.00
+2025-11-09,V00270,P07,Relógio GPS,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,1,1499.00,900.00
+2025-11-09,V00271,P04,Bermuda,Vestuário,Urbano,L05,Loja Savassi,Belo Horizonte,MG,2,107.91,45.00
+2025-11-09,V00271,P05,Jaqueta corta-vento,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,3,349.90,160.00
+2025-11-09,V00271,P09,Fone esportivo,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,1,299.00,140.00
+2025-11-10,V00272,P06,Mochila,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,3,224.91,110.00
+2025-11-10,V00272,P07,Relógio GPS,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,1,1499.00,900.00
+2025-11-10,V00273,P06,Mochila,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,3,249.90,110.00
+2025-11-11,V00274,P07,Relógio GPS,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,1,1349.10,900.00
+2025-11-11,V00274,P05,Jaqueta corta-vento,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,1,349.90,160.00
+2025-11-12,V00275,P07,Relógio GPS,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,1,1349.10,900.00
+2025-11-13,V00276,P07,Relógio GPS,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,1,1499.00,900.00
+2025-11-13,V00277,P10,Cinta cardíaca,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,2,399.00,190.00
+2025-11-13,V00277,P11,Meia (3 pares),Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,1,49.90,15.00
+2025-11-14,V00278,P08,Garrafa térmica,Acessórios,Trilha,L02,Loja Batel,Curitiba,PR,1,71.91,28.00
+2025-11-14,V00278,P05,Jaqueta corta-vento,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,1,314.91,160.00
+2025-11-14,V00278,P02,Tênis casual,Calçados,Urbano,L02,Loja Batel,Curitiba,PR,2,299.90,150.00
+2025-11-14,V00279,P07,Relógio GPS,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,1,1499.00,900.00
+2025-11-14,V00279,P08,Garrafa térmica,Acessórios,Trilha,L02,Loja Batel,Curitiba,PR,2,71.91,28.00
+2025-11-14,V00279,P05,Jaqueta corta-vento,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,1,314.91,160.00
+2025-11-15,V00280,P06,Mochila,Acessórios,Trilha,L02,Loja Batel,Curitiba,PR,2,249.90,110.00
+2025-11-17,V00281,P10,Cinta cardíaca,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,3,399.00,190.00
+2025-11-17,V00281,P12,Boné,Acessórios,Urbano,L04,Loja Paulista,São Paulo,SP,1,69.90,22.00
+2025-11-17,V00282,P09,Fone esportivo,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,2,299.00,140.00
+2025-11-18,V00283,P12,Boné,Acessórios,Urbano,L02,Loja Batel,Curitiba,PR,2,69.90,22.00
+2025-11-18,V00284,P04,Bermuda,Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,1,119.90,45.00
+2025-11-18,V00284,P08,Garrafa térmica,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,2,71.91,28.00
+2025-11-18,V00284,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,1,269.91,150.00
+2025-11-19,V00285,P07,Relógio GPS,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,1,1349.10,900.00
+2025-11-20,V00286,P11,Meia (3 pares),Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,2,49.90,15.00
+2025-11-20,V00286,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,2,299.90,150.00
+2025-11-22,V00287,P09,Fone esportivo,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,3,269.10,140.00
+2025-11-23,V00288,P05,Jaqueta corta-vento,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,3,349.90,160.00
+2025-11-23,V00288,P06,Mochila,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,1,249.90,110.00
+2025-11-24,V00289,P12,Boné,Acessórios,Urbano,L01,Loja Centro,Curitiba,PR,1,69.90,22.00
+2025-11-25,V00290,P06,Mochila,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,3,224.91,110.00
+2025-11-25,V00290,P10,Cinta cardíaca,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,1,399.00,190.00
+2025-11-25,V00291,P08,Garrafa térmica,Acessórios,Trilha,L03,Loja Moinhos,Porto Alegre,RS,1,79.90,28.00
+2025-11-27,V00292,P09,Fone esportivo,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,3,299.00,140.00
+2025-11-27,V00293,P07,Relógio GPS,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,1,1499.00,900.00
+2025-11-27,V00293,P04,Bermuda,Vestuário,Urbano,L01,Loja Centro,Curitiba,PR,1,119.90,45.00
+2025-11-27,V00293,P10,Cinta cardíaca,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,3,359.10,190.00
+2025-11-28,V00294,P08,Garrafa térmica,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,2,79.90,28.00
+2025-11-28,V00295,P04,Bermuda,Vestuário,Urbano,L01,Loja Centro,Curitiba,PR,1,119.90,45.00
+2025-11-28,V00295,P11,Meia (3 pares),Vestuário,Urbano,L01,Loja Centro,Curitiba,PR,2,44.91,15.00
+2025-11-29,V00296,P11,Meia (3 pares),Vestuário,Urbano,L01,Loja Centro,Curitiba,PR,1,44.91,15.00
+2025-11-30,V00297,P03,Camiseta dry,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,2,89.90,32.00
+2025-11-30,V00297,P12,Boné,Acessórios,Urbano,L02,Loja Batel,Curitiba,PR,2,62.91,22.00
+2025-11-30,V00297,P05,Jaqueta corta-vento,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,3,349.90,160.00
+2025-12-02,V00298,P10,Cinta cardíaca,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,3,399.00,190.00
+2025-12-02,V00299,P06,Mochila,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,2,249.90,110.00
+2025-12-02,V00300,P07,Relógio GPS,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,1,1349.10,900.00
+2025-12-02,V00300,P03,Camiseta dry,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,3,89.90,32.00
+2025-12-03,V00301,P11,Meia (3 pares),Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,2,49.90,15.00
+2025-12-04,V00302,P03,Camiseta dry,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,1,80.91,32.00
+2025-12-04,V00303,P09,Fone esportivo,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,3,299.00,140.00
+2025-12-05,V00304,P08,Garrafa térmica,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,2,71.91,28.00
+2025-12-05,V00305,P04,Bermuda,Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,1,119.90,45.00
+2025-12-05,V00305,P09,Fone esportivo,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,1,299.00,140.00
+2025-12-05,V00305,P10,Cinta cardíaca,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,1,399.00,190.00
+2025-12-06,V00306,P01,Tênis corrida,Calçados,Veloz,L05,Loja Savassi,Belo Horizonte,MG,2,399.90,210.00
+2025-12-06,V00307,P07,Relógio GPS,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,1,1499.00,900.00
+2025-12-08,V00308,P02,Tênis casual,Calçados,Urbano,L01,Loja Centro,Curitiba,PR,2,299.90,150.00
+2025-12-08,V00309,P10,Cinta cardíaca,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,1,399.00,190.00
+2025-12-08,V00310,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,2,299.90,150.00
+2025-12-08,V00310,P06,Mochila,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,1,249.90,110.00
+2025-12-09,V00311,P09,Fone esportivo,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,1,299.00,140.00
+2025-12-10,V00312,P08,Garrafa térmica,Acessórios,Trilha,L03,Loja Moinhos,Porto Alegre,RS,3,71.91,28.00
+2025-12-11,V00313,P11,Meia (3 pares),Vestuário,Urbano,L05,Loja Savassi,Belo Horizonte,MG,2,44.91,15.00
+2025-12-11,V00313,P08,Garrafa térmica,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,3,79.90,28.00
+2025-12-11,V00314,P12,Boné,Acessórios,Urbano,L03,Loja Moinhos,Porto Alegre,RS,1,69.90,22.00
+2025-12-12,V00315,P11,Meia (3 pares),Vestuário,Urbano,L05,Loja Savassi,Belo Horizonte,MG,2,49.90,15.00
+2025-12-12,V00316,P08,Garrafa térmica,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,1,79.90,28.00
+2025-12-12,V00316,P05,Jaqueta corta-vento,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,3,349.90,160.00
+2025-12-13,V00317,P04,Bermuda,Vestuário,Urbano,L02,Loja Batel,Curitiba,PR,3,119.90,45.00
+2025-12-14,V00318,P07,Relógio GPS,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,1,1499.00,900.00
+2025-12-14,V00318,P08,Garrafa térmica,Acessórios,Trilha,L02,Loja Batel,Curitiba,PR,3,79.90,28.00
+2025-12-14,V00319,P10,Cinta cardíaca,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,1,399.00,190.00
+2025-12-14,V00320,P12,Boné,Acessórios,Urbano,L02,Loja Batel,Curitiba,PR,2,69.90,22.00
+2025-12-15,V00321,P03,Camiseta dry,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,3,89.90,32.00
+2025-12-15,V00322,P03,Camiseta dry,Vestuário,Veloz,L01,Loja Centro,Curitiba,PR,1,89.90,32.00
+2025-12-17,V00323,P05,Jaqueta corta-vento,Vestuário,Veloz,L01,Loja Centro,Curitiba,PR,1,349.90,160.00
+2025-12-18,V00324,P04,Bermuda,Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,1,119.90,45.00
+2025-12-18,V00324,P06,Mochila,Acessórios,Trilha,L03,Loja Moinhos,Porto Alegre,RS,1,249.90,110.00
+2025-12-19,V00325,P03,Camiseta dry,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,3,89.90,32.00
+2025-12-20,V00326,P10,Cinta cardíaca,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,2,399.00,190.00
+2025-12-20,V00326,P11,Meia (3 pares),Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,3,49.90,15.00
+2025-12-20,V00327,P10,Cinta cardíaca,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,3,399.00,190.00
+2025-12-21,V00328,P07,Relógio GPS,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,1,1499.00,900.00
+2025-12-22,V00329,P08,Garrafa térmica,Acessórios,Trilha,L03,Loja Moinhos,Porto Alegre,RS,1,79.90,28.00
+2025-12-22,V00329,P01,Tênis corrida,Calçados,Veloz,L03,Loja Moinhos,Porto Alegre,RS,1,399.90,210.00
+2025-12-22,V00329,P09,Fone esportivo,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,1,299.00,140.00
+2025-12-22,V00330,P06,Mochila,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,3,224.91,110.00
+2025-12-22,V00330,P12,Boné,Acessórios,Urbano,L05,Loja Savassi,Belo Horizonte,MG,3,69.90,22.00
+2025-12-22,V00330,P09,Fone esportivo,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,2,299.00,140.00
+2025-12-23,V00331,P12,Boné,Acessórios,Urbano,L04,Loja Paulista,São Paulo,SP,2,69.90,22.00
+2025-12-23,V00332,P09,Fone esportivo,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,2,269.10,140.00
+2025-12-23,V00333,P05,Jaqueta corta-vento,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,3,349.90,160.00
+2025-12-23,V00333,P01,Tênis corrida,Calçados,Veloz,L05,Loja Savassi,Belo Horizonte,MG,3,399.90,210.00
+2025-12-23,V00333,P09,Fone esportivo,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,1,299.00,140.00
+2025-12-24,V00334,P09,Fone esportivo,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,1,299.00,140.00
+2025-12-24,V00334,P04,Bermuda,Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,3,119.90,45.00
+2025-12-26,V00335,P05,Jaqueta corta-vento,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,2,349.90,160.00
+2025-12-26,V00336,P04,Bermuda,Vestuário,Urbano,L05,Loja Savassi,Belo Horizonte,MG,3,119.90,45.00
+2025-12-27,V00337,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,3,299.90,150.00
+2025-12-27,V00337,P09,Fone esportivo,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,2,269.10,140.00
+2025-12-27,V00338,P11,Meia (3 pares),Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,2,49.90,15.00
+2025-12-27,V00339,P06,Mochila,Acessórios,Trilha,L02,Loja Batel,Curitiba,PR,3,224.91,110.00
+2025-12-28,V00340,P04,Bermuda,Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,2,119.90,45.00
+2025-12-28,V00341,P05,Jaqueta corta-vento,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,1,349.90,160.00
+2025-12-28,V00342,P03,Camiseta dry,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,2,89.90,32.00
+2025-12-28,V00343,P04,Bermuda,Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,1,107.91,45.00
+2025-12-28,V00343,P03,Camiseta dry,Vestuário,Veloz,L03,Loja Moinhos,Porto Alegre,RS,3,89.90,32.00
+2025-12-28,V00343,P01,Tênis corrida,Calçados,Veloz,L03,Loja Moinhos,Porto Alegre,RS,3,359.91,210.00
+2025-12-29,V00344,P12,Boné,Acessórios,Urbano,L04,Loja Paulista,São Paulo,SP,1,69.90,22.00
+2025-12-29,V00344,P05,Jaqueta corta-vento,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,1,349.90,160.00
+2025-12-29,V00345,P09,Fone esportivo,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,1,269.10,140.00
+2025-12-29,V00345,P12,Boné,Acessórios,Urbano,L05,Loja Savassi,Belo Horizonte,MG,2,69.90,22.00
+2025-12-30,V00346,P03,Camiseta dry,Vestuário,Veloz,L03,Loja Moinhos,Porto Alegre,RS,3,89.90,32.00
+2025-12-30,V00346,P12,Boné,Acessórios,Urbano,L03,Loja Moinhos,Porto Alegre,RS,1,62.91,22.00
+2025-12-30,V00346,P06,Mochila,Acessórios,Trilha,L03,Loja Moinhos,Porto Alegre,RS,2,249.90,110.00
+2025-12-30,V00347,P05,Jaqueta corta-vento,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,2,349.90,160.00
+2025-12-30,V00347,P02,Tênis casual,Calçados,Urbano,L05,Loja Savassi,Belo Horizonte,MG,2,269.91,150.00
+2025-12-31,V00348,P12,Boné,Acessórios,Urbano,L02,Loja Batel,Curitiba,PR,2,69.90,22.00
+2025-12-31,V00349,P06,Mochila,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,1,249.90,110.00
+2025-12-31,V00349,P11,Meia (3 pares),Vestuário,Urbano,L05,Loja Savassi,Belo Horizonte,MG,3,49.90,15.00
+2026-01-01,V00350,P08,Garrafa térmica,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,1,79.90,28.00
+2026-01-01,V00351,P02,Tênis casual,Calçados,Urbano,L03,Loja Moinhos,Porto Alegre,RS,1,299.90,150.00
+2026-01-01,V00351,P08,Garrafa térmica,Acessórios,Trilha,L03,Loja Moinhos,Porto Alegre,RS,2,79.90,28.00
+2026-01-02,V00352,P10,Cinta cardíaca,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,3,359.10,190.00
+2026-01-02,V00352,P05,Jaqueta corta-vento,Vestuário,Veloz,L01,Loja Centro,Curitiba,PR,3,349.90,160.00
+2026-01-03,V00353,P05,Jaqueta corta-vento,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,3,314.91,160.00
+2026-01-04,V00354,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,2,299.90,150.00
+2026-01-04,V00354,P11,Meia (3 pares),Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,3,49.90,15.00
+2026-01-05,V00355,P01,Tênis corrida,Calçados,Veloz,L02,Loja Batel,Curitiba,PR,2,399.90,210.00
+2026-01-07,V00356,P07,Relógio GPS,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,1,1349.10,900.00
+2026-01-07,V00356,P09,Fone esportivo,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,1,269.10,140.00
+2026-01-08,V00357,P02,Tênis casual,Calçados,Urbano,L01,Loja Centro,Curitiba,PR,1,299.90,150.00
+2026-01-08,V00358,P11,Meia (3 pares),Vestuário,Urbano,L02,Loja Batel,Curitiba,PR,3,49.90,15.00
+2026-01-08,V00358,P05,Jaqueta corta-vento,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,1,349.90,160.00
+2026-01-08,V00358,P03,Camiseta dry,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,2,80.91,32.00
+2026-01-09,V00359,P11,Meia (3 pares),Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,1,49.90,15.00
+2026-01-09,V00360,P02,Tênis casual,Calçados,Urbano,L05,Loja Savassi,Belo Horizonte,MG,2,269.91,150.00
+2026-01-10,V00361,P08,Garrafa térmica,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,1,79.90,28.00
+2026-01-11,V00362,P06,Mochila,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,1,249.90,110.00
+2026-01-12,V00363,P11,Meia (3 pares),Vestuário,Urbano,L05,Loja Savassi,Belo Horizonte,MG,3,49.90,15.00
+2026-01-12,V00363,P09,Fone esportivo,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,2,269.10,140.00
+2026-01-12,V00364,P02,Tênis casual,Calçados,Urbano,L05,Loja Savassi,Belo Horizonte,MG,3,299.90,150.00
+2026-01-13,V00365,P05,Jaqueta corta-vento,Vestuário,Veloz,L01,Loja Centro,Curitiba,PR,3,349.90,160.00
+2026-01-13,V00365,P06,Mochila,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,3,224.91,110.00
+2026-01-13,V00365,P07,Relógio GPS,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,1,1499.00,900.00
+2026-01-13,V00366,P08,Garrafa térmica,Acessórios,Trilha,L02,Loja Batel,Curitiba,PR,1,79.90,28.00
+2026-01-13,V00366,P03,Camiseta dry,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,3,89.90,32.00
+2026-01-14,V00367,P04,Bermuda,Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,3,119.90,45.00
+2026-01-14,V00367,P03,Camiseta dry,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,1,89.90,32.00
+2026-01-14,V00368,P03,Camiseta dry,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,2,80.91,32.00
+2026-01-15,V00369,P05,Jaqueta corta-vento,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,3,349.90,160.00
+2026-01-17,V00370,P04,Bermuda,Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,2,119.90,45.00
+2026-01-17,V00370,P09,Fone esportivo,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,3,299.00,140.00
+2026-01-17,V00370,P03,Camiseta dry,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,2,89.90,32.00
+2026-01-17,V00371,P01,Tênis corrida,Calçados,Veloz,L04,Loja Paulista,São Paulo,SP,2,399.90,210.00
+2026-01-18,V00372,P06,Mochila,Acessórios,Trilha,L03,Loja Moinhos,Porto Alegre,RS,2,224.91,110.00
+2026-01-18,V00372,P09,Fone esportivo,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,3,299.00,140.00
+2026-01-20,V00373,P01,Tênis corrida,Calçados,Veloz,L04,Loja Paulista,São Paulo,SP,2,399.90,210.00
+2026-01-20,V00374,P01,Tênis corrida,Calçados,Veloz,L05,Loja Savassi,Belo Horizonte,MG,3,399.90,210.00
+2026-01-21,V00375,P05,Jaqueta corta-vento,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,3,349.90,160.00
+2026-01-21,V00376,P07,Relógio GPS,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,1,1499.00,900.00
+2026-01-22,V00377,P06,Mochila,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,3,249.90,110.00
+2026-01-23,V00378,P01,Tênis corrida,Calçados,Veloz,L02,Loja Batel,Curitiba,PR,1,399.90,210.00
+2026-01-23,V00378,P10,Cinta cardíaca,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,3,359.10,190.00
+2026-01-23,V00378,P07,Relógio GPS,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,1,1499.00,900.00
+2026-01-23,V00379,P06,Mochila,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,1,249.90,110.00
+2026-01-24,V00380,P03,Camiseta dry,Vestuário,Veloz,L01,Loja Centro,Curitiba,PR,3,89.90,32.00
+2026-01-25,V00381,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,1,299.90,150.00
+2026-01-26,V00382,P04,Bermuda,Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,3,107.91,45.00
+2026-01-26,V00382,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,1,299.90,150.00
+2026-01-26,V00383,P01,Tênis corrida,Calçados,Veloz,L04,Loja Paulista,São Paulo,SP,3,399.90,210.00
+2026-01-26,V00383,P12,Boné,Acessórios,Urbano,L04,Loja Paulista,São Paulo,SP,2,69.90,22.00
+2026-01-27,V00384,P09,Fone esportivo,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,2,299.00,140.00
+2026-01-27,V00385,P08,Garrafa térmica,Acessórios,Trilha,L03,Loja Moinhos,Porto Alegre,RS,2,79.90,28.00
+2026-01-27,V00385,P03,Camiseta dry,Vestuário,Veloz,L03,Loja Moinhos,Porto Alegre,RS,3,89.90,32.00
+2026-01-27,V00386,P01,Tênis corrida,Calçados,Veloz,L05,Loja Savassi,Belo Horizonte,MG,1,399.90,210.00
+2026-01-28,V00387,P09,Fone esportivo,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,2,299.00,140.00
+2026-01-28,V00387,P08,Garrafa térmica,Acessórios,Trilha,L02,Loja Batel,Curitiba,PR,2,79.90,28.00
+2026-01-28,V00388,P12,Boné,Acessórios,Urbano,L05,Loja Savassi,Belo Horizonte,MG,2,69.90,22.00
+2026-01-29,V00389,P03,Camiseta dry,Vestuário,Veloz,L03,Loja Moinhos,Porto Alegre,RS,3,89.90,32.00
+2026-01-30,V00390,P03,Camiseta dry,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,3,89.90,32.00
+2026-01-30,V00390,P06,Mochila,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,3,249.90,110.00
+2026-02-01,V00391,P10,Cinta cardíaca,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,1,399.00,190.00
+2026-02-01,V00391,P01,Tênis corrida,Calçados,Veloz,L01,Loja Centro,Curitiba,PR,2,399.90,210.00
+2026-02-01,V00392,P12,Boné,Acessórios,Urbano,L05,Loja Savassi,Belo Horizonte,MG,3,69.90,22.00
+2026-02-02,V00393,P08,Garrafa térmica,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,3,79.90,28.00
+2026-02-02,V00393,P09,Fone esportivo,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,2,299.00,140.00
+2026-02-03,V00394,P06,Mochila,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,1,249.90,110.00
+2026-02-05,V00395,P03,Camiseta dry,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,1,89.90,32.00
+2026-02-05,V00396,P01,Tênis corrida,Calçados,Veloz,L04,Loja Paulista,São Paulo,SP,2,399.90,210.00
+2026-02-05,V00397,P02,Tênis casual,Calçados,Urbano,L01,Loja Centro,Curitiba,PR,1,299.90,150.00
+2026-02-06,V00398,P06,Mochila,Acessórios,Trilha,L03,Loja Moinhos,Porto Alegre,RS,2,224.91,110.00
+2026-02-06,V00398,P05,Jaqueta corta-vento,Vestuário,Veloz,L03,Loja Moinhos,Porto Alegre,RS,3,349.90,160.00
+2026-02-06,V00398,P01,Tênis corrida,Calçados,Veloz,L03,Loja Moinhos,Porto Alegre,RS,1,399.90,210.00
+2026-02-07,V00399,P02,Tênis casual,Calçados,Urbano,L02,Loja Batel,Curitiba,PR,1,299.90,150.00
+2026-02-08,V00400,P06,Mochila,Acessórios,Trilha,L03,Loja Moinhos,Porto Alegre,RS,3,224.91,110.00
+2026-02-08,V00401,P04,Bermuda,Vestuário,Urbano,L01,Loja Centro,Curitiba,PR,3,119.90,45.00
+2026-02-09,V00402,P04,Bermuda,Vestuário,Urbano,L02,Loja Batel,Curitiba,PR,3,107.91,45.00
+2026-02-10,V00403,P02,Tênis casual,Calçados,Urbano,L05,Loja Savassi,Belo Horizonte,MG,1,299.90,150.00
+2026-02-11,V00404,P08,Garrafa térmica,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,2,79.90,28.00
+2026-02-11,V00405,P07,Relógio GPS,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,1,1349.10,900.00
+2026-02-11,V00405,P09,Fone esportivo,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,2,299.00,140.00
+2026-02-12,V00406,P03,Camiseta dry,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,3,89.90,32.00
+2026-02-12,V00406,P07,Relógio GPS,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,1,1499.00,900.00
+2026-02-13,V00407,P09,Fone esportivo,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,3,299.00,140.00
+2026-02-13,V00407,P11,Meia (3 pares),Vestuário,Urbano,L02,Loja Batel,Curitiba,PR,1,44.91,15.00
+2026-02-13,V00408,P09,Fone esportivo,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,1,299.00,140.00
+2026-02-13,V00408,P02,Tênis casual,Calçados,Urbano,L03,Loja Moinhos,Porto Alegre,RS,3,299.90,150.00
+2026-02-15,V00409,P05,Jaqueta corta-vento,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,1,349.90,160.00
+2026-02-15,V00410,P02,Tênis casual,Calçados,Urbano,L05,Loja Savassi,Belo Horizonte,MG,3,299.90,150.00
+2026-02-15,V00411,P11,Meia (3 pares),Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,2,49.90,15.00
+2026-02-16,V00412,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,2,299.90,150.00
+2026-02-18,V00413,P01,Tênis corrida,Calçados,Veloz,L04,Loja Paulista,São Paulo,SP,3,399.90,210.00
+2026-02-18,V00414,P08,Garrafa térmica,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,1,79.90,28.00
+2026-02-19,V00415,P02,Tênis casual,Calçados,Urbano,L01,Loja Centro,Curitiba,PR,1,299.90,150.00
+2026-02-20,V00416,P03,Camiseta dry,Vestuário,Veloz,L01,Loja Centro,Curitiba,PR,2,80.91,32.00
+2026-02-20,V00417,P06,Mochila,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,2,224.91,110.00
+2026-02-20,V00418,P04,Bermuda,Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,3,119.90,45.00
+2026-02-21,V00419,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,1,299.90,150.00
+2026-02-21,V00419,P06,Mochila,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,3,249.90,110.00
+2026-02-21,V00419,P11,Meia (3 pares),Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,2,49.90,15.00
+2026-02-21,V00420,P05,Jaqueta corta-vento,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,3,314.91,160.00
+2026-02-22,V00421,P05,Jaqueta corta-vento,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,3,349.90,160.00
+2026-02-22,V00422,P12,Boné,Acessórios,Urbano,L04,Loja Paulista,São Paulo,SP,3,69.90,22.00
+2026-02-22,V00422,P05,Jaqueta corta-vento,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,3,349.90,160.00
+2026-02-24,V00423,P01,Tênis corrida,Calçados,Veloz,L05,Loja Savassi,Belo Horizonte,MG,2,359.91,210.00
+2026-02-24,V00423,P09,Fone esportivo,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,1,299.00,140.00
+2026-02-24,V00423,P04,Bermuda,Vestuário,Urbano,L05,Loja Savassi,Belo Horizonte,MG,3,119.90,45.00
+2026-02-25,V00424,P12,Boné,Acessórios,Urbano,L02,Loja Batel,Curitiba,PR,3,62.91,22.00
+2026-02-26,V00425,P11,Meia (3 pares),Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,3,49.90,15.00
+2026-02-27,V00426,P10,Cinta cardíaca,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,3,399.00,190.00
+2026-02-27,V00427,P02,Tênis casual,Calçados,Urbano,L03,Loja Moinhos,Porto Alegre,RS,2,269.91,150.00
+2026-02-28,V00428,P05,Jaqueta corta-vento,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,1,349.90,160.00
+2026-03-01,V00429,P07,Relógio GPS,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,1,1349.10,900.00
+2026-03-01,V00430,P09,Fone esportivo,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,1,299.00,140.00
+2026-03-03,V00431,P04,Bermuda,Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,3,119.90,45.00
+2026-03-03,V00431,P06,Mochila,Acessórios,Trilha,L03,Loja Moinhos,Porto Alegre,RS,3,224.91,110.00
+2026-03-03,V00431,P01,Tênis corrida,Calçados,Veloz,L03,Loja Moinhos,Porto Alegre,RS,3,399.90,210.00
+2026-03-05,V00432,P04,Bermuda,Vestuário,Urbano,L02,Loja Batel,Curitiba,PR,1,119.90,45.00
+2026-03-05,V00432,P12,Boné,Acessórios,Urbano,L02,Loja Batel,Curitiba,PR,1,69.90,22.00
+2026-03-05,V00433,P05,Jaqueta corta-vento,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,2,314.91,160.00
+2026-03-08,V00434,P08,Garrafa térmica,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,1,79.90,28.00
+2026-03-09,V00435,P01,Tênis corrida,Calçados,Veloz,L01,Loja Centro,Curitiba,PR,2,399.90,210.00
+2026-03-09,V00435,P06,Mochila,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,3,249.90,110.00
+2026-03-09,V00435,P11,Meia (3 pares),Vestuário,Urbano,L01,Loja Centro,Curitiba,PR,2,49.90,15.00
+2026-03-12,V00436,P09,Fone esportivo,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,1,299.00,140.00
+2026-03-12,V00437,P03,Camiseta dry,Vestuário,Veloz,L03,Loja Moinhos,Porto Alegre,RS,3,89.90,32.00
+2026-03-12,V00437,P11,Meia (3 pares),Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,3,49.90,15.00
+2026-03-12,V00437,P01,Tênis corrida,Calçados,Veloz,L03,Loja Moinhos,Porto Alegre,RS,1,399.90,210.00
+2026-03-13,V00438,P12,Boné,Acessórios,Urbano,L01,Loja Centro,Curitiba,PR,2,69.90,22.00
+2026-03-14,V00439,P04,Bermuda,Vestuário,Urbano,L05,Loja Savassi,Belo Horizonte,MG,3,119.90,45.00
+2026-03-15,V00440,P07,Relógio GPS,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,1,1499.00,900.00
+2026-03-15,V00441,P05,Jaqueta corta-vento,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,2,349.90,160.00
+2026-03-16,V00442,P09,Fone esportivo,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,3,299.00,140.00
+2026-03-17,V00443,P10,Cinta cardíaca,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,2,399.00,190.00
+2026-03-18,V00444,P04,Bermuda,Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,3,107.91,45.00
+2026-03-18,V00445,P05,Jaqueta corta-vento,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,3,314.91,160.00
+2026-03-18,V00445,P11,Meia (3 pares),Vestuário,Urbano,L02,Loja Batel,Curitiba,PR,2,49.90,15.00
+2026-03-19,V00446,P09,Fone esportivo,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,1,299.00,140.00
+2026-03-19,V00446,P03,Camiseta dry,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,1,89.90,32.00
+2026-03-19,V00446,P04,Bermuda,Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,2,119.90,45.00
+2026-03-20,V00447,P08,Garrafa térmica,Acessórios,Trilha,L02,Loja Batel,Curitiba,PR,3,79.90,28.00
+2026-03-20,V00447,P11,Meia (3 pares),Vestuário,Urbano,L02,Loja Batel,Curitiba,PR,3,49.90,15.00
+2026-03-20,V00447,P06,Mochila,Acessórios,Trilha,L02,Loja Batel,Curitiba,PR,1,249.90,110.00
+2026-03-21,V00448,P12,Boné,Acessórios,Urbano,L01,Loja Centro,Curitiba,PR,2,62.91,22.00
+2026-03-22,V00449,P08,Garrafa térmica,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,3,79.90,28.00
+2026-03-23,V00450,P01,Tênis corrida,Calçados,Veloz,L02,Loja Batel,Curitiba,PR,3,399.90,210.00
+2026-03-24,V00451,P11,Meia (3 pares),Vestuário,Urbano,L01,Loja Centro,Curitiba,PR,2,49.90,15.00
+2026-03-24,V00451,P01,Tênis corrida,Calçados,Veloz,L01,Loja Centro,Curitiba,PR,3,399.90,210.00
+2026-03-24,V00451,P03,Camiseta dry,Vestuário,Veloz,L01,Loja Centro,Curitiba,PR,2,89.90,32.00
+2026-03-24,V00452,P02,Tênis casual,Calçados,Urbano,L02,Loja Batel,Curitiba,PR,2,269.91,150.00
+2026-03-26,V00453,P09,Fone esportivo,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,2,269.10,140.00
+2026-03-27,V00454,P03,Camiseta dry,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,1,80.91,32.00
+2026-03-28,V00455,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,1,299.90,150.00
+2026-03-29,V00456,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,3,269.91,150.00
+2026-03-29,V00456,P11,Meia (3 pares),Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,3,49.90,15.00
+2026-03-30,V00457,P11,Meia (3 pares),Vestuário,Urbano,L02,Loja Batel,Curitiba,PR,3,49.90,15.00
+2026-03-31,V00458,P01,Tênis corrida,Calçados,Veloz,L05,Loja Savassi,Belo Horizonte,MG,2,399.90,210.00
+2026-03-31,V00458,P03,Camiseta dry,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,1,89.90,32.00
+2026-04-01,V00459,P08,Garrafa térmica,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,2,79.90,28.00
+2026-04-01,V00460,P10,Cinta cardíaca,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,3,399.00,190.00
+2026-04-01,V00460,P05,Jaqueta corta-vento,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,1,349.90,160.00
+2026-04-02,V00461,P05,Jaqueta corta-vento,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,1,314.91,160.00
+2026-04-02,V00461,P01,Tênis corrida,Calçados,Veloz,L04,Loja Paulista,São Paulo,SP,3,399.90,210.00
+2026-04-02,V00462,P08,Garrafa térmica,Acessórios,Trilha,L03,Loja Moinhos,Porto Alegre,RS,1,79.90,28.00
+2026-04-03,V00463,P09,Fone esportivo,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,1,269.10,140.00
+2026-04-03,V00464,P07,Relógio GPS,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,1,1499.00,900.00
+2026-04-04,V00465,P11,Meia (3 pares),Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,3,49.90,15.00
+2026-04-04,V00465,P12,Boné,Acessórios,Urbano,L04,Loja Paulista,São Paulo,SP,3,69.90,22.00
+2026-04-04,V00466,P07,Relógio GPS,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,1,1499.00,900.00
+2026-04-04,V00466,P10,Cinta cardíaca,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,1,399.00,190.00
+2026-04-04,V00467,P03,Camiseta dry,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,1,89.90,32.00
+2026-04-06,V00468,P10,Cinta cardíaca,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,1,399.00,190.00
+2026-04-06,V00468,P04,Bermuda,Vestuário,Urbano,L01,Loja Centro,Curitiba,PR,3,119.90,45.00
+2026-04-06,V00468,P06,Mochila,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,1,249.90,110.00
+2026-04-07,V00469,P07,Relógio GPS,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,1,1499.00,900.00
+2026-04-08,V00470,P12,Boné,Acessórios,Urbano,L05,Loja Savassi,Belo Horizonte,MG,3,69.90,22.00
+2026-04-08,V00470,P08,Garrafa térmica,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,1,79.90,28.00
+2026-04-09,V00471,P12,Boné,Acessórios,Urbano,L05,Loja Savassi,Belo Horizonte,MG,3,69.90,22.00
+2026-04-09,V00471,P07,Relógio GPS,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,1,1499.00,900.00
+2026-04-11,V00472,P02,Tênis casual,Calçados,Urbano,L02,Loja Batel,Curitiba,PR,3,299.90,150.00
+2026-04-12,V00473,P07,Relógio GPS,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,1,1499.00,900.00
+2026-04-13,V00474,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,2,299.90,150.00
+2026-04-14,V00475,P06,Mochila,Acessórios,Trilha,L02,Loja Batel,Curitiba,PR,2,249.90,110.00
+2026-04-15,V00476,P01,Tênis corrida,Calçados,Veloz,L05,Loja Savassi,Belo Horizonte,MG,1,399.90,210.00
+2026-04-15,V00477,P02,Tênis casual,Calçados,Urbano,L01,Loja Centro,Curitiba,PR,2,299.90,150.00
+2026-04-16,V00478,P09,Fone esportivo,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,1,299.00,140.00
+2026-04-17,V00479,P06,Mochila,Acessórios,Trilha,L03,Loja Moinhos,Porto Alegre,RS,3,249.90,110.00
+2026-04-18,V00480,P04,Bermuda,Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,3,119.90,45.00
+2026-04-18,V00480,P10,Cinta cardíaca,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,3,399.00,190.00
+2026-04-18,V00480,P05,Jaqueta corta-vento,Vestuário,Veloz,L03,Loja Moinhos,Porto Alegre,RS,3,349.90,160.00
+2026-04-18,V00481,P02,Tênis casual,Calçados,Urbano,L05,Loja Savassi,Belo Horizonte,MG,1,299.90,150.00
+2026-04-19,V00482,P05,Jaqueta corta-vento,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,1,314.91,160.00
+2026-04-19,V00482,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,3,299.90,150.00
+2026-04-19,V00483,P01,Tênis corrida,Calçados,Veloz,L02,Loja Batel,Curitiba,PR,2,399.90,210.00
+2026-04-21,V00484,P06,Mochila,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,2,249.90,110.00
+2026-04-22,V00485,P04,Bermuda,Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,3,119.90,45.00
+2026-04-23,V00486,P06,Mochila,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,3,249.90,110.00
+2026-04-24,V00487,P09,Fone esportivo,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,3,299.00,140.00
+2026-04-24,V00488,P12,Boné,Acessórios,Urbano,L04,Loja Paulista,São Paulo,SP,3,69.90,22.00
+2026-04-26,V00489,P05,Jaqueta corta-vento,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,2,349.90,160.00
+2026-04-27,V00490,P01,Tênis corrida,Calçados,Veloz,L01,Loja Centro,Curitiba,PR,1,399.90,210.00
+2026-04-27,V00490,P06,Mochila,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,1,249.90,110.00
+2026-04-27,V00491,P01,Tênis corrida,Calçados,Veloz,L01,Loja Centro,Curitiba,PR,3,359.91,210.00
+2026-04-28,V00492,P03,Camiseta dry,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,2,89.90,32.00
+2026-04-28,V00492,P04,Bermuda,Vestuário,Urbano,L05,Loja Savassi,Belo Horizonte,MG,2,119.90,45.00
+2026-04-28,V00493,P10,Cinta cardíaca,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,2,399.00,190.00
+2026-04-28,V00493,P06,Mochila,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,1,249.90,110.00
+2026-04-29,V00494,P08,Garrafa térmica,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,3,79.90,28.00
+2026-04-30,V00495,P06,Mochila,Acessórios,Trilha,L02,Loja Batel,Curitiba,PR,2,249.90,110.00
+2026-04-30,V00496,P06,Mochila,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,1,249.90,110.00
+2026-05-01,V00497,P11,Meia (3 pares),Vestuário,Urbano,L02,Loja Batel,Curitiba,PR,2,49.90,15.00
+2026-05-01,V00498,P08,Garrafa térmica,Acessórios,Trilha,L03,Loja Moinhos,Porto Alegre,RS,2,79.90,28.00
+2026-05-02,V00499,P07,Relógio GPS,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,1,1499.00,900.00
+2026-05-03,V00500,P04,Bermuda,Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,3,119.90,45.00
+2026-05-03,V00500,P10,Cinta cardíaca,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,1,399.00,190.00
+2026-05-03,V00501,P04,Bermuda,Vestuário,Urbano,L02,Loja Batel,Curitiba,PR,3,119.90,45.00
+2026-05-03,V00501,P08,Garrafa térmica,Acessórios,Trilha,L02,Loja Batel,Curitiba,PR,2,79.90,28.00
+2026-05-04,V00502,P03,Camiseta dry,Vestuário,Veloz,L03,Loja Moinhos,Porto Alegre,RS,2,89.90,32.00
+2026-05-04,V00503,P07,Relógio GPS,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,1,1499.00,900.00
+2026-05-05,V00504,P05,Jaqueta corta-vento,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,1,349.90,160.00
+2026-05-06,V00505,P08,Garrafa térmica,Acessórios,Trilha,L02,Loja Batel,Curitiba,PR,1,71.91,28.00
+2026-05-06,V00505,P05,Jaqueta corta-vento,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,3,314.91,160.00
+2026-05-06,V00506,P12,Boné,Acessórios,Urbano,L02,Loja Batel,Curitiba,PR,1,69.90,22.00
+2026-05-07,V00507,P05,Jaqueta corta-vento,Vestuário,Veloz,L01,Loja Centro,Curitiba,PR,3,349.90,160.00
+2026-05-07,V00507,P08,Garrafa térmica,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,2,71.91,28.00
+2026-05-08,V00508,P01,Tênis corrida,Calçados,Veloz,L04,Loja Paulista,São Paulo,SP,2,399.90,210.00
+2026-05-08,V00509,P07,Relógio GPS,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,1,1349.10,900.00
+2026-05-08,V00509,P10,Cinta cardíaca,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,1,359.10,190.00
+2026-05-08,V00510,P03,Camiseta dry,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,3,89.90,32.00
+2026-05-09,V00511,P07,Relógio GPS,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,1,1499.00,900.00
+2026-05-09,V00511,P05,Jaqueta corta-vento,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,2,349.90,160.00
+2026-05-10,V00512,P06,Mochila,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,2,224.91,110.00
+2026-05-11,V00513,P08,Garrafa térmica,Acessórios,Trilha,L02,Loja Batel,Curitiba,PR,3,79.90,28.00
+2026-05-14,V00514,P08,Garrafa térmica,Acessórios,Trilha,L03,Loja Moinhos,Porto Alegre,RS,1,79.90,28.00
+2026-05-15,V00515,P05,Jaqueta corta-vento,Vestuário,Veloz,L03,Loja Moinhos,Porto Alegre,RS,3,349.90,160.00
+2026-05-16,V00516,P12,Boné,Acessórios,Urbano,L04,Loja Paulista,São Paulo,SP,3,69.90,22.00
+2026-05-16,V00516,P10,Cinta cardíaca,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,3,399.00,190.00
+2026-05-16,V00517,P11,Meia (3 pares),Vestuário,Urbano,L02,Loja Batel,Curitiba,PR,1,44.91,15.00
+2026-05-16,V00517,P07,Relógio GPS,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,1,1499.00,900.00
+2026-05-17,V00518,P10,Cinta cardíaca,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,2,359.10,190.00
+2026-05-18,V00519,P08,Garrafa térmica,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,1,79.90,28.00
+2026-05-18,V00520,P05,Jaqueta corta-vento,Vestuário,Veloz,L01,Loja Centro,Curitiba,PR,2,349.90,160.00
+2026-05-18,V00520,P12,Boné,Acessórios,Urbano,L01,Loja Centro,Curitiba,PR,2,69.90,22.00
+2026-05-18,V00521,P12,Boné,Acessórios,Urbano,L04,Loja Paulista,São Paulo,SP,1,69.90,22.00
+2026-05-18,V00521,P09,Fone esportivo,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,2,269.10,140.00
+2026-05-20,V00522,P01,Tênis corrida,Calçados,Veloz,L04,Loja Paulista,São Paulo,SP,1,399.90,210.00
+2026-05-20,V00523,P01,Tênis corrida,Calçados,Veloz,L02,Loja Batel,Curitiba,PR,2,399.90,210.00
+2026-05-20,V00523,P05,Jaqueta corta-vento,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,3,349.90,160.00
+2026-05-21,V00524,P12,Boné,Acessórios,Urbano,L01,Loja Centro,Curitiba,PR,3,62.91,22.00
+2026-05-21,V00524,P06,Mochila,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,3,224.91,110.00
+2026-05-22,V00525,P08,Garrafa térmica,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,1,79.90,28.00
+2026-05-22,V00525,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,3,299.90,150.00
+2026-05-22,V00525,P10,Cinta cardíaca,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,2,359.10,190.00
+2026-05-23,V00526,P06,Mochila,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,1,249.90,110.00
+2026-05-23,V00526,P05,Jaqueta corta-vento,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,1,349.90,160.00
+2026-05-23,V00526,P07,Relógio GPS,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,1,1499.00,900.00
+2026-05-23,V00527,P04,Bermuda,Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,2,119.90,45.00
+2026-05-24,V00528,P10,Cinta cardíaca,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,2,399.00,190.00
+2026-05-24,V00528,P12,Boné,Acessórios,Urbano,L03,Loja Moinhos,Porto Alegre,RS,1,69.90,22.00
+2026-05-25,V00529,P06,Mochila,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,1,249.90,110.00
+2026-05-25,V00529,P07,Relógio GPS,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,1,1499.00,900.00
+2026-05-25,V00530,P09,Fone esportivo,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,1,299.00,140.00
+2026-05-25,V00530,P08,Garrafa térmica,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,1,79.90,28.00
+2026-05-25,V00531,P04,Bermuda,Vestuário,Urbano,L01,Loja Centro,Curitiba,PR,3,119.90,45.00
+2026-05-26,V00532,P04,Bermuda,Vestuário,Urbano,L01,Loja Centro,Curitiba,PR,2,119.90,45.00
+2026-05-27,V00533,P05,Jaqueta corta-vento,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,2,349.90,160.00
+2026-05-27,V00533,P10,Cinta cardíaca,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,1,399.00,190.00
+2026-05-28,V00534,P12,Boné,Acessórios,Urbano,L02,Loja Batel,Curitiba,PR,2,69.90,22.00
+2026-05-28,V00534,P10,Cinta cardíaca,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,1,399.00,190.00
+2026-05-28,V00535,P03,Camiseta dry,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,2,80.91,32.00
+2026-05-29,V00536,P10,Cinta cardíaca,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,1,399.00,190.00
+2026-05-29,V00536,P12,Boné,Acessórios,Urbano,L03,Loja Moinhos,Porto Alegre,RS,1,62.91,22.00
+2026-05-29,V00537,P10,Cinta cardíaca,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,3,359.10,190.00
+2026-05-29,V00537,P08,Garrafa térmica,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,1,79.90,28.00
+2026-05-30,V00538,P02,Tênis casual,Calçados,Urbano,L03,Loja Moinhos,Porto Alegre,RS,1,299.90,150.00
+2026-05-30,V00539,P10,Cinta cardíaca,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,1,399.00,190.00
+2026-05-31,V00540,P10,Cinta cardíaca,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,1,359.10,190.00
+2026-05-31,V00541,P03,Camiseta dry,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,1,89.90,32.00
+2026-06-01,V00542,P11,Meia (3 pares),Vestuário,Urbano,L02,Loja Batel,Curitiba,PR,2,49.90,15.00
+2026-06-02,V00543,P07,Relógio GPS,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,1,1499.00,900.00
+2026-06-02,V00543,P06,Mochila,Acessórios,Trilha,L02,Loja Batel,Curitiba,PR,3,249.90,110.00
+2026-06-03,V00544,P09,Fone esportivo,Eletrônicos,Pulso,L05,Loja Savassi,Belo Horizonte,MG,3,269.10,140.00
+2026-06-05,V00545,P08,Garrafa térmica,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,1,79.90,28.00
+2026-06-06,V00546,P06,Mochila,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,1,249.90,110.00
+2026-06-06,V00547,P03,Camiseta dry,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,1,89.90,32.00
+2026-06-06,V00547,P12,Boné,Acessórios,Urbano,L04,Loja Paulista,São Paulo,SP,1,69.90,22.00
+2026-06-06,V00548,P12,Boné,Acessórios,Urbano,L04,Loja Paulista,São Paulo,SP,1,62.91,22.00
+2026-06-06,V00548,P01,Tênis corrida,Calçados,Veloz,L04,Loja Paulista,São Paulo,SP,1,359.91,210.00
+2026-06-06,V00548,P02,Tênis casual,Calçados,Urbano,L04,Loja Paulista,São Paulo,SP,2,269.91,150.00
+2026-06-07,V00549,P03,Camiseta dry,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,1,80.91,32.00
+2026-06-07,V00550,P01,Tênis corrida,Calçados,Veloz,L02,Loja Batel,Curitiba,PR,1,399.90,210.00
+2026-06-08,V00551,P07,Relógio GPS,Eletrônicos,Pulso,L01,Loja Centro,Curitiba,PR,1,1499.00,900.00
+2026-06-09,V00552,P11,Meia (3 pares),Vestuário,Urbano,L05,Loja Savassi,Belo Horizonte,MG,3,49.90,15.00
+2026-06-09,V00552,P04,Bermuda,Vestuário,Urbano,L05,Loja Savassi,Belo Horizonte,MG,1,119.90,45.00
+2026-06-09,V00553,P11,Meia (3 pares),Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,2,44.91,15.00
+2026-06-09,V00553,P06,Mochila,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,1,249.90,110.00
+2026-06-09,V00554,P06,Mochila,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,3,249.90,110.00
+2026-06-10,V00555,P09,Fone esportivo,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,2,299.00,140.00
+2026-06-10,V00555,P11,Meia (3 pares),Vestuário,Urbano,L02,Loja Batel,Curitiba,PR,2,44.91,15.00
+2026-06-11,V00556,P08,Garrafa térmica,Acessórios,Trilha,L05,Loja Savassi,Belo Horizonte,MG,2,79.90,28.00
+2026-06-11,V00557,P10,Cinta cardíaca,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,2,399.00,190.00
+2026-06-11,V00557,P08,Garrafa térmica,Acessórios,Trilha,L02,Loja Batel,Curitiba,PR,3,79.90,28.00
+2026-06-12,V00558,P09,Fone esportivo,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,2,299.00,140.00
+2026-06-12,V00559,P11,Meia (3 pares),Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,2,49.90,15.00
+2026-06-12,V00560,P10,Cinta cardíaca,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,3,399.00,190.00
+2026-06-13,V00561,P07,Relógio GPS,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,1,1349.10,900.00
+2026-06-13,V00562,P11,Meia (3 pares),Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,3,49.90,15.00
+2026-06-13,V00562,P12,Boné,Acessórios,Urbano,L04,Loja Paulista,São Paulo,SP,2,62.91,22.00
+2026-06-13,V00562,P07,Relógio GPS,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,1,1499.00,900.00
+2026-06-14,V00563,P03,Camiseta dry,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,1,89.90,32.00
+2026-06-15,V00564,P06,Mochila,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,3,249.90,110.00
+2026-06-15,V00565,P08,Garrafa térmica,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,2,71.91,28.00
+2026-06-15,V00566,P12,Boné,Acessórios,Urbano,L05,Loja Savassi,Belo Horizonte,MG,2,69.90,22.00
+2026-06-16,V00567,P09,Fone esportivo,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,2,299.00,140.00
+2026-06-16,V00567,P10,Cinta cardíaca,Eletrônicos,Pulso,L04,Loja Paulista,São Paulo,SP,3,359.10,190.00
+2026-06-16,V00567,P03,Camiseta dry,Vestuário,Veloz,L04,Loja Paulista,São Paulo,SP,1,80.91,32.00
+2026-06-18,V00568,P05,Jaqueta corta-vento,Vestuário,Veloz,L01,Loja Centro,Curitiba,PR,1,349.90,160.00
+2026-06-20,V00569,P03,Camiseta dry,Vestuário,Veloz,L05,Loja Savassi,Belo Horizonte,MG,1,89.90,32.00
+2026-06-21,V00570,P04,Bermuda,Vestuário,Urbano,L02,Loja Batel,Curitiba,PR,1,119.90,45.00
+2026-06-21,V00570,P03,Camiseta dry,Vestuário,Veloz,L02,Loja Batel,Curitiba,PR,3,80.91,32.00
+2026-06-21,V00570,P10,Cinta cardíaca,Eletrônicos,Pulso,L02,Loja Batel,Curitiba,PR,1,359.10,190.00
+2026-06-22,V00571,P06,Mochila,Acessórios,Trilha,L04,Loja Paulista,São Paulo,SP,2,249.90,110.00
+2026-06-23,V00572,P11,Meia (3 pares),Vestuário,Urbano,L03,Loja Moinhos,Porto Alegre,RS,3,49.90,15.00
+2026-06-23,V00573,P11,Meia (3 pares),Vestuário,Urbano,L02,Loja Batel,Curitiba,PR,2,44.91,15.00
+2026-06-24,V00574,P04,Bermuda,Vestuário,Urbano,L04,Loja Paulista,São Paulo,SP,2,119.90,45.00
+2026-06-27,V00575,P01,Tênis corrida,Calçados,Veloz,L01,Loja Centro,Curitiba,PR,3,399.90,210.00
+2026-06-28,V00576,P07,Relógio GPS,Eletrônicos,Pulso,L03,Loja Moinhos,Porto Alegre,RS,1,1349.10,900.00
+2026-06-29,V00577,P02,Tênis casual,Calçados,Urbano,L01,Loja Centro,Curitiba,PR,1,299.90,150.00
+2026-06-29,V00577,P08,Garrafa térmica,Acessórios,Trilha,L01,Loja Centro,Curitiba,PR,3,71.91,28.00
+2026-06-29,V00578,P12,Boné,Acessórios,Urbano,L04,Loja Paulista,São Paulo,SP,2,69.90,22.00
+2026-06-30,V00579,P04,Bermuda,Vestuário,Urbano,L05,Loja Savassi,Belo Horizonte,MG,1,119.90,45.00
+2026-06-30,V00579,P12,Boné,Acessórios,Urbano,L05,Loja Savassi,Belo Horizonte,MG,3,69.90,22.00
+2026-06-30,V00579,P11,Meia (3 pares),Vestuário,Urbano,L05,Loja Savassi,Belo Horizonte,MG,3,49.90,15.00

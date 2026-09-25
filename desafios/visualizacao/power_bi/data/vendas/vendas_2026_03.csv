@@ -1,0 +1,141 @@
+data;loja;produto;quantidade;valor
+17/03/2026;l02;Tênis corrida;2;719,82
+07/03/2026;L02;Relógio GPS;1;1499,00
+27/03/2026;L04;Bermuda;1;119,90
+06/03/2026;l05;Bermuda;1;107,91
+08/03/2026;L01;Tênis corrida;3;1199,70
+23/03/2026; L06;Tênis corrida;2;799,80
+07/03/2026;L01;Relógio GPS;1;1349,10
+19/03/2026;L05;Relógio GPS;1;1349,10
+12/03/2026;L02;Mochila;3;749,70
+05/03/2026;l05 ;Tênis corrida;1;399,90
+14/03/2026;L01;Relógio GPS;1;1499,00
+24/03/2026;L05;Garrafa térmica;2;159,80
+10/03/2026;L06;Tênis corrida;4;1599,60
+04/03/2026;l05;Garrafa térmica;3;239,70
+08/03/2026;L01;Tênis corrida;1;359,91
+22/03/2026;L01;Relógio GPS;2;2998,00
+31/03/2026;L04;Tênis corrida;2;799,80
+19/03/2026;L05;Bermuda;3;359,70
+15/03/2026;l06 ;Mochila;2;499,80
+28/03/2026; L05;Bermuda;4;431,64
+09/03/2026; L01;Tênis corrida;2;799,80
+07/03/2026;l03 ;Camiseta dry;3;269,70
+06/03/2026;L06;Relógio GPS;2;2998,00
+20/03/2026; L01;Tênis corrida;3;1199,70
+08/03/2026;L04;Bermuda;3;359,70
+06/03/2026;L04;Relógio GPS;1;1499,00
+12/03/2026;L04;Garrafa térmica;2;159,80
+17/03/2026;L03;Camiseta dry;1;80,91
+27/03/2026;L03;Camiseta dry;4;359,60
+06/03/2026; L05;Garrafa térmica;3;239,70
+31/03/2026;L05;Garrafa térmica;2;159,80
+13/03/2026;l01 ;Camiseta dry;3;242,73
+30/03/2026;L03;Relógio GPS;1;1499,00
+30/03/2026;l02;Mochila;2;499,80
+22/03/2026;l01;Camiseta dry;2;179,80
+05/03/2026;L05;Bermuda;3;359,70
+24/03/2026;l02 ;Mochila;1;249,90
+19/03/2026;L01;Bermuda;2;239,80
+30/03/2026;L02;Mochila;3;749,70
+07/03/2026;L01;Camiseta dry;2;179,80
+28/03/2026;L01;Relógio GPS;2;2998,00
+27/03/2026;L04;Tênis corrida;2;799,80
+03/03/2026;L05;Mochila;3;674,73
+13/03/2026;L03;Bermuda;3;359,70
+27/03/2026;L03;Camiseta dry;4;359,60
+31/03/2026;L06;Camiseta dry;2;161,82
+06/03/2026;L04;Tênis corrida;3;1199,70
+09/03/2026;L06;Tênis corrida;4;1599,60
+03/03/2026;l02 ;Garrafa térmica;4;319,60
+26/03/2026;L02;Tênis corrida;1;399,90
+29/03/2026;L02;Camiseta dry;1;89,90
+09/03/2026;L05;Relógio GPS;1;1349,10
+22/03/2026;l01 ;Mochila;3;749,70
+08/03/2026;l03;Mochila;4;899,64
+11/03/2026;L06;Garrafa térmica;2;159,80
+23/03/2026;L03;Tênis corrida;3;1199,70
+03/03/2026;L02;Bermuda;3;359,70
+30/03/2026;l02 ;Mochila;1;249,90
+14/03/2026;L04;Tênis corrida;1;359,91
+16/03/2026;L01;Relógio GPS;1;1499,00
+08/03/2026;l06 ;Camiseta dry;3;269,70
+29/03/2026; L01;Camiseta dry;3;242,73
+10/03/2026; L06;Relógio GPS;2;2698,20
+03/03/2026;L01;Tênis corrida;1;399,90
+19/03/2026;L03;Mochila;1;249,90
+15/03/2026;L02;Bermuda;3;359,70
+24/03/2026;l03 ;Relógio GPS;1;1499,00
+23/03/2026;l04;Tênis corrida;4;1439,64
+17/03/2026;L02;Mochila;2;499,80
+07/03/2026;L02;Garrafa térmica;2;159,80
+14/03/2026;l04 ;Mochila;1;249,90
+27/03/2026; L02;Tênis corrida;4;1599,60
+25/03/2026;L04;Mochila;4;999,60
+06/03/2026;L05;Relógio GPS;2;2998,00
+25/03/2026; L03;Relógio GPS;1;1349,10
+31/03/2026;L05;Relógio GPS;2;2998,00
+26/03/2026;L04;Relógio GPS;1;1499,00
+30/03/2026; L01;Bermuda;1;119,90
+03/03/2026;L01;Tênis corrida;4;1599,60
+29/03/2026;L04;Garrafa térmica;3;215,73
+19/03/2026;L04;Tênis corrida;4;1599,60
+26/03/2026;L01;Bermuda;2;215,82
+13/03/2026;L06;Camiseta dry;1;80,91
+08/03/2026;L05;Garrafa térmica;1;71,91
+24/03/2026;L01;Garrafa térmica;4;319,60
+04/03/2026;l01;Mochila;4;999,60
+27/03/2026;l02 ;Camiseta dry;4;359,60
+15/03/2026;L05;Camiseta dry;4;323,64
+27/03/2026;L03;Mochila;1;249,90
+02/03/2026;L01;Camiseta dry;3;269,70
+03/03/2026;L02;Mochila;3;749,70
+14/03/2026;L06;Mochila;2;499,80
+12/03/2026;L06;Camiseta dry;3;269,70
+12/03/2026;L05;Mochila;1;224,91
+02/03/2026; L04;Garrafa térmica;3;239,70
+16/03/2026;L04;Garrafa térmica;1;79,90
+15/03/2026;L03;Camiseta dry;2;179,80
+19/03/2026;L05;Tênis corrida;1;399,90
+18/03/2026;L03;Camiseta dry;1;89,90
+22/03/2026;l05;Garrafa térmica;4;319,60
+02/03/2026;L04;Relógio GPS;1;1349,10
+24/03/2026;L05;Tênis corrida;3;1199,70
+31/03/2026;L03;Relógio GPS;1;1499,00
+21/03/2026;l01;Garrafa térmica;4;319,60
+04/03/2026;L01;Garrafa térmica;3;239,70
+13/03/2026;L02;Bermuda;4;479,60
+16/03/2026;L06;Garrafa térmica;4;319,60
+02/03/2026;L02;Garrafa térmica;2;143,82
+13/03/2026;L02;Bermuda;4;479,60
+12/03/2026; L05;Garrafa térmica;1;71,91
+10/03/2026;L01;Mochila;2;499,80
+04/03/2026;l02;Camiseta dry;3;269,70
+10/03/2026;L06;Tênis corrida;2;799,80
+18/03/2026;l03 ;Mochila;1;249,90
+16/03/2026;L02;Relógio GPS;2;2698,20
+30/03/2026;L05;Relógio GPS;2;2698,20
+13/03/2026;L04;Garrafa térmica;3;239,70
+21/03/2026;L06;Tênis corrida;4;1599,60
+04/03/2026;L06;Bermuda;3;359,70
+13/03/2026;L03;Bermuda;2;215,82
+14/03/2026;l02;Tênis corrida;4;1599,60
+10/03/2026;L02;Bermuda;3;359,70
+02/03/2026;L04;Bermuda;2;239,80
+17/03/2026;L01;Mochila;4;999,60
+05/03/2026;L06;Relógio GPS;2;2998,00
+05/03/2026;L03;Garrafa térmica;4;319,60
+11/03/2026;L02;Bermuda;3;323,73
+31/03/2026;l06 ;Mochila;3;674,73
+30/03/2026;L01;Relógio GPS;1;1349,10
+11/03/2026;L03;Tênis corrida;2;799,80
+18/03/2026;L06;Tênis corrida;4;1439,64
+20/03/2026;L03;Tênis corrida;1;399,90
+22/03/2026;l02;Bermuda;2;215,82
+09/03/2026;L01;Relógio GPS;2;2998,00
+01/03/2026;l01;Mochila;3;749,70
+07/03/2026;L06;Garrafa térmica;4;319,60
+31/03/2026;L06;Tênis corrida;1;399,90
+31/03/2026;L01;Tênis corrida;3;1079,73
+27/03/2026;L04;Relógio GPS;2;2998,00
+13/03/2026;L03;Relógio GPS;2;2998,00

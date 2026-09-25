@@ -1,0 +1,13 @@
+id_produto,codigo_produto,produto,categoria,marca,custo_unitario
+1,P01,Tênis corrida,Calçados,Veloz,210.0
+2,P02,Tênis casual,Calçados,Urbano,150.0
+3,P03,Camiseta dry,Vestuário,Veloz,32.0
+4,P04,Bermuda,Vestuário,Urbano,45.0
+5,P05,Jaqueta corta-vento,Vestuário,Veloz,160.0
+6,P06,Mochila,Acessórios,Trilha,110.0
+7,P07,Relógio GPS,Eletrônicos,Pulso,900.0
+8,P08,Garrafa térmica,Acessórios,Trilha,28.0
+9,P09,Fone esportivo,Eletrônicos,Pulso,140.0
+10,P10,Cinta cardíaca,Eletrônicos,Pulso,190.0
+11,P11,Meia (3 pares),Vestuário,Urbano,15.0
+12,P12,Boné,Acessórios,Urbano,22.0

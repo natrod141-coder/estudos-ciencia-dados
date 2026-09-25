@@ -591,6 +591,7 @@ dialog .acoes { justify-content: flex-end; }
   color: var(--ambar-texto);
 }
 .aviso-rascunho strong { display: block; margin-bottom: 4px; }
+.aviso-rascunho p { overflow-wrap: anywhere; } /* o caminho do tópico modelo não cabe no celular */
 
 .aulas { list-style: none; margin: 0; padding: 0; }
 .aulas li {
@@ -726,7 +727,7 @@ dialog .acoes { justify-content: flex-end; }
 }
 .passos .corpo { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
 .passos .corpo h3 { padding-top: 4px; font-family: var(--fonte-texto); font-size: 15px; }
-.passos .corpo p { color: var(--suave); font-size: 13px; }
+.passos .corpo p { color: var(--suave); font-size: 13px; overflow-wrap: anywhere; } /* caminhos longos quebram no celular */
 .codigo {
   position: relative;
   padding: 12px 16px;

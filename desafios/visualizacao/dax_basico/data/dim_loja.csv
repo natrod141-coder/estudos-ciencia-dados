@@ -1,0 +1,6 @@
+id_loja,codigo_loja,loja,cidade,uf
+1,L01,Loja Centro,Curitiba,PR
+2,L02,Loja Batel,Curitiba,PR
+3,L03,Loja Moinhos,Porto Alegre,RS
+4,L04,Loja Paulista,São Paulo,SP
+5,L05,Loja Savassi,Belo Horizonte,MG

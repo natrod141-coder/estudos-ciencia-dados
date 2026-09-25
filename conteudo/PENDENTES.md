@@ -1,13 +1,15 @@
 # Tópicos ainda em rascunho
 
-Dos 35 tópicos que começaram em rascunho, 13 já foram escritos (os módulos de estatística e de
-manipulação de dados, marcados com [x] abaixo). Os 22 restantes têm só o cabeçalho (título, módulo,
-horas). Falta escrever o texto de leitura, as aulas, o quiz, a pergunta aberta e o desafio.
+Dos 35 tópicos que começaram em rascunho, 18 já foram escritos (toda a Fase 1: estatística,
+manipulação de dados e visualização de dados, marcados com [x] abaixo). Os 17 restantes têm só o
+cabeçalho (título, módulo, horas). Falta escrever o texto de leitura, as aulas, o quiz, a pergunta
+aberta e o desafio. Use `conteudo/topicos/estatistica/tendencia_central.md` como modelo do formato
+completo.
 
 Todo tópico tem desafio prático em Python com testes, mesmo os de ferramentas que não são Python:
-o desafio de Excel lê e gera planilhas, o de BigQuery usa o DuckDB, e o de Git roda os comandos em
-repositórios temporários.
-Use `conteudo/topicos/estatistica/tendencia_central.md` como modelo do formato completo.
+o desafio de Excel lê e gera planilhas, o de BigQuery usa o DuckDB, o de Git roda os comandos em
+repositórios temporários, o de Power BI refaz as etapas do Power Query em pandas, e o de DAX
+implementa o contexto de filtro e as medidas em Python.
 
 Um tópico em rascunho já aparece no mapa da trilha e aceita registro de horas, mas nunca
 chega a "dominado" porque não tem como cumprir os critérios.
@@ -42,11 +44,11 @@ chega a "dominado" porque não tem como cumprir os critérios.
 - [x] git_github — Git e GitHub
 
 ### Visualização de dados
-- [ ] power_bi — Power BI
-- [ ] dax_basico — DAX básico
-- [ ] modelagem_dados — Modelagem de dados
-- [ ] visualizacao_python — Visualização em Python
-- [ ] storytelling — Storytelling com dados
+- [x] power_bi — Power BI
+- [x] modelagem_dados — Modelagem de dados (vem antes de DAX, porque o DAX depende do modelo)
+- [x] dax_basico — DAX básico
+- [x] visualizacao_python — Visualização em Python
+- [x] storytelling — Storytelling com dados
 
 ### Machine learning clássico
 - [ ] regressao_linear — Regressão linear
