@@ -1,10 +1,10 @@
 ---
-titulo: "Deep Learning"
-modulo: aprofundamento
-ordem: 3
-horas: 30
+titulo: "Limites e alucinação"
+modulo: fundamentos_ia
+ordem: 2
+horas: 3
 estado: rascunho
-resumo: "Redes neurais, backpropagation, função de perda e otimizadores."
+resumo: "Por que o modelo erra com confiança e em que tipo de tarefa de dados isso costuma acontecer."
 ---
 
 <!-- Escreva o material de leitura aqui. Para o formato completo (aulas, quiz, pergunta

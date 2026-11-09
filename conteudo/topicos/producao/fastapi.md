@@ -1,10 +1,10 @@
 ---
-titulo: "Embeddings e bancos vetoriais"
-modulo: ia_aplicada
-ordem: 3
+titulo: "FastAPI"
+modulo: producao
+ordem: 1
 horas: 10
 estado: rascunho
-resumo: "Representar textos como vetores e buscar por significado."
+resumo: "Expor um modelo ou uma aplicação de IA como uma API."
 ---
 
 <!-- Escreva o material de leitura aqui. Para o formato completo (aulas, quiz, pergunta

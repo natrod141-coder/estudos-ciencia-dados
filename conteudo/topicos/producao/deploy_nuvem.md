@@ -1,10 +1,10 @@
 ---
-titulo: "RAG"
-modulo: ia_aplicada
-ordem: 4
-horas: 16
+titulo: "Publicar na nuvem"
+modulo: producao
+ordem: 3
+horas: 8
 estado: rascunho
-resumo: "Geração com recuperação: responder com base em documentos seus."
+resumo: "Colocar a API no ar em um serviço de nuvem, com variáveis de ambiente e custo sob controle."
 ---
 
 <!-- Escreva o material de leitura aqui. Para o formato completo (aulas, quiz, pergunta

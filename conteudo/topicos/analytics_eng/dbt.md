@@ -1,10 +1,10 @@
 ---
-titulo: "Clusterização e PCA"
-modulo: aprofundamento
+titulo: "dbt"
+modulo: analytics_eng
 ordem: 1
-horas: 15
+horas: 10
 estado: rascunho
-resumo: "K-Means, DBSCAN e redução de dimensionalidade."
+resumo: "Transformar dados com SQL versionado: modelos, camadas, ref e documentação."
 ---
 
 <!-- Escreva o material de leitura aqui. Para o formato completo (aulas, quiz, pergunta

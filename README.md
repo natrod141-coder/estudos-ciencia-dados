@@ -4,6 +4,23 @@ Site de estudo com painel de progresso para a trilha de ciência de dados e IA. 
 tem material de leitura, aulas, quiz, uma pergunta aberta e um desafio prático em Python. O
 painel acompanha as horas estudadas e quando cada tópico foi dominado.
 
+## Como a trilha está organizada
+
+São duas trilhas estudadas **em paralelo**, e não uma depois da outra: a de dados dá a base
+(SQL, Python, estatística, modelagem, ML) e a de IA ensina a usar e a construir sistemas com
+LLMs em cima dessa base. O plano vai de novembro de 2026 a dezembro de 2027, com meta de 5 h
+por semana (cerca de 296 h), e termina junto com a graduação em ADS.
+
+| Fase | Período | Trilha de dados | Trilha de IA | Projeto da fase |
+|---|---|---|---|---|
+| 1 | nov/2026 a mar/2027 | Estatística, manipulação de dados | Fundamentos de IA generativa | Análise exploratória com SQL e pandas |
+| 2 | mar a jun/2027 | Visualização, analytics engineering | APIs de LLM | Modelo dimensional em dbt com testes |
+| 3 | jun a out/2027 | Machine learning clássico | Busca, RAG e avaliação | Assistente de RAG com avaliação |
+| 4 | out a dez/2027 | Colocar em produção | IA sobre dados | Agente text-to-SQL avaliado e publicado |
+
+Fases, módulos, marcos e projetos ficam em `conteudo/trilhas.json`. O que ainda falta escrever
+está em `conteudo/PENDENTES.md`.
+
 ## Como rodar
 
 Pré-requisito: Node.js 22 ou superior.

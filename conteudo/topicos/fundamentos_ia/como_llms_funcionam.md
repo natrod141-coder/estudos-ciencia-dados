@@ -1,10 +1,10 @@
 ---
-titulo: "Séries temporais"
-modulo: aprofundamento
-ordem: 2
-horas: 20
+titulo: "Como um LLM funciona"
+modulo: fundamentos_ia
+ordem: 1
+horas: 4
 estado: rascunho
-resumo: "Tendência, sazonalidade e previsão ao longo do tempo."
+resumo: "Tokens, janela de contexto, previsão do próximo token e temperatura, sem matemática pesada."
 ---
 
 <!-- Escreva o material de leitura aqui. Para o formato completo (aulas, quiz, pergunta

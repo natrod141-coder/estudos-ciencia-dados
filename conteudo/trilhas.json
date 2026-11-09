@@ -2,10 +2,28 @@
   "metaSemanalHoras": 5,
   "marcos": [
     {
-      "id": "dp600",
-      "titulo": "Prova DP-600",
-      "data": "2026-10-03",
-      "detalhe": "Sábado, 8h, Fabric Analytics Engineer Associate"
+      "id": "fim_fase_1",
+      "titulo": "Fim da Fase 1",
+      "data": "2027-03-14",
+      "detalhe": "Fundamentos de dados e de IA concluídos, projeto da fase publicado"
+    },
+    {
+      "id": "fim_fase_2",
+      "titulo": "Fim da Fase 2",
+      "data": "2027-06-10",
+      "detalhe": "Modelo em dbt com testes e primeiras chamadas a APIs de LLM"
+    },
+    {
+      "id": "fim_fase_3",
+      "titulo": "Fim da Fase 3",
+      "data": "2027-10-22",
+      "detalhe": "Machine learning clássico e assistente de RAG com avaliação"
+    },
+    {
+      "id": "fim_fase_4",
+      "titulo": "Fim da Fase 4",
+      "data": "2027-12-28",
+      "detalhe": "Projeto final publicado, junto com a conclusão do ADS"
     }
   ],
   "trilhas": [
@@ -21,31 +39,31 @@
   "fases": [
     {
       "numero": 1,
-      "titulo": "Python, SQL e estatística",
-      "inicio": "2026-10",
-      "fim": "2027-02",
-      "projeto": "Análise exploratória com SQL e Power BI"
+      "titulo": "Fundamentos de dados e de IA",
+      "inicio": "2026-11",
+      "fim": "2027-03",
+      "projeto": "Análise exploratória de uma base pública com SQL e pandas, com as conclusões conferidas à mão"
     },
     {
       "numero": 2,
-      "titulo": "Machine learning clássico",
+      "titulo": "Analytics engineering e APIs de LLM",
       "inicio": "2027-03",
-      "fim": "2027-05",
-      "projeto": "Modelo supervisionado completo, do dado à avaliação"
+      "fim": "2027-06",
+      "projeto": "Modelo dimensional em dbt, com testes de qualidade, métricas definidas e um painel em cima dele"
     },
     {
       "numero": 3,
-      "titulo": "IA aplicada",
+      "titulo": "Machine learning e RAG",
       "inicio": "2027-06",
-      "fim": "2027-08",
-      "projeto": "Aplicativo de RAG publicado"
+      "fim": "2027-10",
+      "projeto": "Assistente de perguntas sobre documentos (RAG) com conjunto de avaliação e taxa de acerto medida"
     },
     {
       "numero": 4,
-      "titulo": "Aprofundamento",
-      "inicio": "2027-09",
+      "titulo": "IA sobre dados e produção",
+      "inicio": "2027-10",
       "fim": "2027-12",
-      "projeto": "A definir"
+      "projeto": "Agente que responde perguntas em linguagem natural sobre o modelo da Fase 2 (text-to-SQL), avaliado e publicado como API"
     }
   ],
   "modulos": [
@@ -65,23 +83,47 @@
       "id": "visualizacao",
       "nome": "Visualização de dados",
       "trilha": "dados",
-      "fase": 1
+      "fase": 2
+    },
+    {
+      "id": "analytics_eng",
+      "nome": "Analytics engineering",
+      "trilha": "dados",
+      "fase": 2
     },
     {
       "id": "ml_classico",
       "nome": "Machine learning clássico",
       "trilha": "dados",
-      "fase": 2
+      "fase": 3
+    },
+    {
+      "id": "producao",
+      "nome": "Colocar em produção",
+      "trilha": "dados",
+      "fase": 4
+    },
+    {
+      "id": "fundamentos_ia",
+      "nome": "Fundamentos de IA generativa",
+      "trilha": "ia",
+      "fase": 1
     },
     {
       "id": "ia_aplicada",
-      "nome": "IA aplicada",
+      "nome": "APIs de LLM",
+      "trilha": "ia",
+      "fase": 2
+    },
+    {
+      "id": "ia_documentos",
+      "nome": "Busca, RAG e avaliação",
       "trilha": "ia",
       "fase": 3
     },
     {
-      "id": "aprofundamento",
-      "nome": "Aprofundamento",
+      "id": "ia_dados",
+      "nome": "IA sobre dados",
       "trilha": "ia",
       "fase": 4
     }

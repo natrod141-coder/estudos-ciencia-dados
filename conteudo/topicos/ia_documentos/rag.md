@@ -1,10 +1,10 @@
 ---
-titulo: "Cloud"
-modulo: aprofundamento
-ordem: 4
-horas: 15
+titulo: "RAG"
+modulo: ia_documentos
+ordem: 2
+horas: 16
 estado: rascunho
-resumo: "Colocar projetos de dados e IA em um provedor de nuvem."
+resumo: "Geração com recuperação: responder com base em documentos seus."
 ---
 
 <!-- Escreva o material de leitura aqui. Para o formato completo (aulas, quiz, pergunta
