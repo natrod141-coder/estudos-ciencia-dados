@@ -1,0 +1,8 @@
+# Onde o dbt grava as tabelas: um arquivo do DuckDB nesta pasta. Não precisa mexer neste arquivo.
+loja:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "{{ env_var('LOJA_DUCKDB', 'loja.duckdb') }}"
+      threads: 1

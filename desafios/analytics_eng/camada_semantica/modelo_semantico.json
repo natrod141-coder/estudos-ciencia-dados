@@ -1,0 +1,53 @@
+{
+  "tabela": "pedidos",
+  "coluna_de_tempo": "data_pedido",
+  "dimensoes": ["regiao", "canal", "status"],
+  "medidas": {
+    "valor_vendido": {"agregacao": "sum", "coluna": "valor"},
+    "quantidade_pedidos": {"agregacao": "count"},
+    "clientes_distintos": {"agregacao": "count_distinct", "coluna": "cliente_id"}
+  },
+  "metricas": {
+    "receita": {
+      "tipo": "simples",
+      "medida": "valor_vendido",
+      "filtro": "status = 'aprovado'",
+      "descricao": "Soma do valor dos pedidos aprovados. Pedidos cancelados não entram."
+    },
+    "pedidos": {
+      "tipo": "simples",
+      "medida": "quantidade_pedidos",
+      "descricao": "Quantidade de pedidos, de qualquer status."
+    },
+    "pedidos_aprovados": {
+      "tipo": "simples",
+      "medida": "quantidade_pedidos",
+      "filtro": "status = 'aprovado'",
+      "descricao": "Quantidade de pedidos aprovados."
+    },
+    "pedidos_cancelados": {
+      "tipo": "simples",
+      "medida": "quantidade_pedidos",
+      "filtro": "status = 'cancelado'",
+      "descricao": "Quantidade de pedidos cancelados."
+    },
+    "clientes_compradores": {
+      "tipo": "simples",
+      "medida": "clientes_distintos",
+      "filtro": "status = 'aprovado'",
+      "descricao": "Clientes diferentes com pelo menos um pedido aprovado no período."
+    },
+    "ticket_medio": {
+      "tipo": "razao",
+      "numerador": "receita",
+      "denominador": "pedidos_aprovados",
+      "descricao": "Receita dividida pela quantidade de pedidos aprovados."
+    },
+    "taxa_cancelamento": {
+      "tipo": "razao",
+      "numerador": "pedidos_cancelados",
+      "denominador": "pedidos",
+      "descricao": "Pedidos cancelados divididos pelo total de pedidos."
+    }
+  }
+}

@@ -1,0 +1,12 @@
+-- stg_pedidos: uma linha por pedido, lida da fonte loja, tabela pedidos.
+--
+-- O que este modelo precisa ter:
+-- 1. Ler a fonte com a função source do dbt, como em stg_clientes.sql.
+-- 2. Estas colunas, nesta ordem:
+--      pedido_id    vem de id
+--      cliente_id   vem de id_cliente
+--      data_pedido  vem de criado_em, convertida para date
+--      status       em minúsculas e sem espaços nas pontas: aprovado, cancelado ou pendente
+-- 3. Deixar de fora os pedidos do cliente 0, que são pedidos de teste da equipe.
+
+-- escreva a consulta aqui

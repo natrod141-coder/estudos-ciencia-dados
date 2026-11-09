@@ -1,0 +1,11 @@
+-- stg_itens: uma linha por item de pedido, lida da fonte loja, tabela itens_pedido.
+--
+-- Escreva antes a macro em macros/centavos_para_reais.sql: este modelo usa a macro.
+-- Estas colunas, nesta ordem:
+--      pedido_id       vem de id_pedido
+--      produto
+--      quantidade
+--      preco_unitario  em reais: preco_unitario_centavos convertido com a macro
+--      valor_item      em reais: quantidade vezes preco_unitario_centavos, convertido com a macro
+
+-- escreva a consulta aqui

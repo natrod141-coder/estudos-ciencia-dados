@@ -2,9 +2,11 @@
 
 Para cada desafio que tem gabarito em desafios/_gabaritos/, verifica três coisas:
 
-1. Com o arquivo inicial (solucao.py que você recebe), todos os testes precisam falhar.
+1. Com os arquivos iniciais (o solucao.py que você recebe), todos os testes precisam falhar.
    Se algum passar sem nenhum código escrito, esse teste não está testando nada.
-2. Com o gabarito no lugar do solucao.py, todos os testes precisam passar.
+2. Com o gabarito no lugar dos arquivos iniciais, todos os testes precisam passar. Em geral o
+   gabarito é só o solucao.py; no desafio de dbt, são os modelos SQL, a macro e o YAML. Todos os
+   arquivos da pasta do gabarito são copiados por cima de uma cópia do desafio.
 3. A quantidade de testes é a mesma do campo "testes" do tópico que aponta para o desafio.
    Se for diferente, o critério "desafio aprovado" do painel nunca é cumprido.
 
@@ -23,6 +25,8 @@ RAIZ = Path(__file__).resolve().parent.parent
 DESAFIOS = RAIZ / "desafios"
 GABARITOS = DESAFIOS / "_gabaritos"
 TOPICOS = RAIZ / "conteudo" / "topicos"
+# Arquivos gerados ao rodar os desafios, que não fazem parte do enunciado nem do gabarito
+IGNORAR = shutil.ignore_patterns("__pycache__", ".pytest_cache", "target", "logs", "*.duckdb", "*.duckdb.wal")
 
 
 def rodar_pytest(pasta: Path) -> subprocess.CompletedProcess:
@@ -53,10 +57,11 @@ def testes_por_pasta() -> dict:
 
 
 def listar_desafios():
-    for gabarito in sorted(GABARITOS.rglob("solucao.py")):
-        relativo = gabarito.parent.relative_to(GABARITOS)
+    """Cada pasta _gabaritos/<modulo>/<desafio> corresponde a desafios/<modulo>/<desafio>."""
+    for gabarito in sorted(GABARITOS.glob("*/*")):
+        relativo = gabarito.relative_to(GABARITOS)
         pasta = DESAFIOS / relativo
-        if pasta.is_dir():
+        if gabarito.is_dir() and pasta.is_dir():
             yield relativo, pasta, gabarito
 
 
@@ -70,7 +75,7 @@ def main() -> int:
 
         with tempfile.TemporaryDirectory() as tmp:
             copia = Path(tmp) / "desafio"
-            shutil.copytree(pasta, copia, ignore=shutil.ignore_patterns("__pycache__", ".pytest_cache"))
+            shutil.copytree(pasta, copia, ignore=IGNORAR)
 
             inicial = rodar_pytest(copia)
             passaram_sem_solucao = contar(inicial.stdout, "passed")
@@ -89,7 +94,7 @@ def main() -> int:
             else:
                 print("  arquivo inicial: todos os testes falham, como esperado")
 
-            shutil.copyfile(gabarito, copia / "solucao.py")
+            shutil.copytree(gabarito, copia, dirs_exist_ok=True, ignore=IGNORAR)
             com_gabarito = rodar_pytest(copia)
             passaram = contar(com_gabarito.stdout, "passed")
             if com_gabarito.returncode != 0:

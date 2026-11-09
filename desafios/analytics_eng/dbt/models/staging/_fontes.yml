@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: loja
+    description: "Dados brutos do sistema da loja, carregados no esquema raw pelo carregar_dados.py."
+    schema: raw
+    tables:
+      - name: clientes
+        description: "Um cliente por linha. O cliente 0 é o cadastro de teste da equipe."
+      - name: pedidos
+        description: "Um pedido por linha, com o status digitado de jeitos diferentes."
+      - name: itens_pedido
+        description: "Um item de pedido por linha, com o preço unitário em centavos."

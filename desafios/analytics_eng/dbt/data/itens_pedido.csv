@@ -1,0 +1,16 @@
+id_pedido,produto,quantidade,preco_unitario_centavos
+101,Caderno,2,2490
+101,Caneta,5,350
+102,Mochila,1,18990
+103,Caderno,1,2490
+104,Garrafa,2,4500
+105,Caneta,1,350
+107,Agenda,1,5990
+107,Caneta,3,350
+107,Marca-texto,4,690
+108,Mochila,1,18990
+109,Estojo,2,3290
+110,Caderno,3,2490
+110,Agenda,1,5990
+112,Mochila,2,18990
+112,Caneta,10,350

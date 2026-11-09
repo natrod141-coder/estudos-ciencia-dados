@@ -1,0 +1,12 @@
+-- dim_clientes: uma linha por cliente, inclusive os que nunca compraram.
+--
+-- Estas colunas, nesta ordem:
+--      cliente_id, nome, uf   de stg_clientes
+--      regiao                 do seed uf_regiao
+--      primeiro_pedido        data do primeiro pedido aprovado; vazio se não houver
+--      pedidos_aprovados      quantidade de pedidos com status aprovado; 0 se não houver
+--      valor_aprovado         soma do valor_total dos pedidos aprovados; 0 se não houver
+--
+-- Leia os pedidos de fct_pedidos, com a função ref.
+
+-- escreva a consulta aqui

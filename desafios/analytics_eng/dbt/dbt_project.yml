@@ -1,0 +1,17 @@
+# Configuração do projeto dbt da loja. Não precisa mexer neste arquivo.
+name: loja
+version: "1.0.0"
+profile: loja
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+# Os testes em SQL do dbt ficam em testes_dbt. A pasta tests é do pytest, que confere o desafio.
+test-paths: ["testes_dbt"]
+
+models:
+  loja:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table

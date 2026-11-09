@@ -1,0 +1,25 @@
+version: 2
+
+# Acrescente os testes de qualidade nas colunas, com a chave data_tests.
+# O desafio pede pelo menos estes:
+#   fct_pedidos.pedido_id: unique e not_null
+#   fct_pedidos.cliente_id: relationships, apontando para a coluna cliente_id de dim_clientes
+#   fct_pedidos.status: accepted_values, com os valores aprovado, cancelado e pendente
+#   dim_clientes.cliente_id: unique e not_null
+
+models:
+  - name: fct_pedidos
+    description: "Uma linha por pedido, com o valor total e a região do cliente."
+    columns:
+      - name: pedido_id
+        description: "Identificador do pedido."
+      - name: cliente_id
+        description: "Cliente que fez o pedido."
+      - name: status
+        description: "Situação do pedido: aprovado, cancelado ou pendente."
+
+  - name: dim_clientes
+    description: "Uma linha por cliente, com os totais dos pedidos aprovados."
+    columns:
+      - name: cliente_id
+        description: "Identificador do cliente."

@@ -15,3 +15,10 @@ __pycache__/
 .vscode/*
 !.vscode/extensions.json
 .DS_Store
+
+# dbt: o banco e os arquivos que o dbt gera ao rodar o desafio de analytics engineering
+*.duckdb
+*.duckdb.wal
+desafios/**/target/
+desafios/**/logs/
+desafios/**/dbt_packages/

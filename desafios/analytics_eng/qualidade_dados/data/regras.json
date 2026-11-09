@@ -1,0 +1,21 @@
+[
+  {"nome": "pedido_id sem repetição", "tipo": "unico", "coluna": "pedido_id", "severidade": "erro"},
+  {"nome": "cliente_id preenchido", "tipo": "nao_nulo", "coluna": "cliente_id", "severidade": "erro"},
+  {
+    "nome": "cliente existe no cadastro",
+    "tipo": "relacao",
+    "coluna": "cliente_id",
+    "tabela": "clientes",
+    "coluna_referencia": "cliente_id",
+    "severidade": "erro"
+  },
+  {
+    "nome": "status conhecido",
+    "tipo": "valores_aceitos",
+    "coluna": "status",
+    "valores": ["aprovado", "cancelado", "pendente"],
+    "severidade": "erro"
+  },
+  {"nome": "valor entre 0 e 50 mil", "tipo": "intervalo", "coluna": "valor", "minimo": 0, "maximo": 50000, "severidade": "erro"},
+  {"nome": "valor acima de 10 mil é raro", "tipo": "intervalo", "coluna": "valor", "maximo": 10000, "severidade": "aviso"}
+]

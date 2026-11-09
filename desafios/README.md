@@ -46,7 +46,9 @@ Copie a pasta de um desafio existente, troque o enunciado, os dados, o `solucao.
 coloque a solução de referência em `_gabaritos/`. Depois aponte o tópico para a pasta do desafio, no
 campo `desafio` do arquivo em `conteudo/topicos/`, e rode `python scripts/verificar_desafios.py`. Ele
 confere três coisas: o `solucao.py` inicial faz todos os testes falharem, o gabarito faz todos
-passarem, e a quantidade de testes é a mesma do campo `testes` do tópico.
+passarem, e a quantidade de testes é a mesma do campo `testes` do tópico. O gabarito pode ter mais
+de um arquivo: o script copia a pasta inteira do gabarito por cima de uma cópia do desafio, como no
+desafio de dbt, em que a solução são os modelos SQL e o YAML.
 
 Dois cuidados que já apareceram:
 

@@ -1,0 +1,12 @@
+-- fct_pedidos: uma linha por pedido, com o valor total e a região do cliente.
+--
+-- Estas colunas, nesta ordem:
+--      pedido_id, cliente_id, data_pedido, status   de stg_pedidos
+--      regiao        a região do estado do cliente: use stg_clientes e o seed uf_regiao
+--      unidades      soma das quantidades dos itens do pedido; 0 se o pedido não tem itens
+--      valor_total   soma do valor_item dos itens do pedido; 0 se o pedido não tem itens
+--
+-- Leia os outros modelos e o seed com a função ref do dbt, nunca pelo nome da tabela.
+-- Cuidado com a granularidade: agrupe os itens por pedido antes de juntar com os pedidos.
+
+-- escreva a consulta aqui

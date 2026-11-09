@@ -1,0 +1,9 @@
+id,nome,email,uf,criado_em
+0,Cliente de Teste,teste@loja.com.br,SP,2025-12-01 09:00:00
+1,Ana Souza,ANA.SOUZA@email.com,SP,2026-01-05 10:12:00
+2,Bruno Lima,bruno.lima@email.com,rj,2026-01-09 16:40:00
+3,Carla Mendes,carla.mendes@email.com,BA,2026-01-15 08:05:00
+4,Diego Rocha,Diego.Rocha@email.com,RS,2026-02-02 19:22:00
+5,Elisa Prado,elisa.prado@email.com,PE,2026-02-10 11:30:00
+6,Fábio Nunes,fabio.nunes@email.com,am,2026-02-18 14:00:00
+7,Gabriela Costa,gabi.costa@email.com,MG,2026-03-01 09:45:00

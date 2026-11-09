@@ -1,8 +1,8 @@
 # Tópicos ainda em rascunho
 
-A trilha tem 42 tópicos. 22 já foram escritos (estatística, manipulação de dados, visualização
-de dados e fundamentos de IA generativa, marcados com [x] abaixo). Os 20 restantes têm só o
-cabeçalho (título, módulo, horas).
+A trilha tem 42 tópicos. 25 já foram escritos (estatística, manipulação de dados, visualização
+de dados, fundamentos de IA generativa e analytics engineering, marcados com [x] abaixo). Os 17
+restantes têm só o cabeçalho (título, módulo, horas).
 Falta escrever o texto de leitura, as aulas, o quiz, a pergunta aberta e o desafio. Use
 `conteudo/topicos/estatistica/tendencia_central.md` como modelo do formato completo.
 
@@ -10,8 +10,8 @@ Todo tópico tem desafio prático em Python com testes, mesmo os de ferramentas 
 o desafio de Excel lê e gera planilhas, o de BigQuery usa o DuckDB, o de Git roda os comandos em
 repositórios temporários, o de Power BI refaz as etapas do Power Query em pandas, e o de DAX
 implementa o contexto de filtro e as medidas em Python. Os tópicos novos seguem a mesma ideia: o
-de dbt pode usar o dbt com DuckDB, e os de IA podem testar a lógica com respostas de modelo
-gravadas em arquivo, para que os testes rodem sem chave de API e sem custo.
+de dbt roda um projeto dbt de verdade com DuckDB, e os de IA testam a lógica com respostas de
+modelo gravadas em arquivo, para que os testes rodem sem chave de API e sem custo.
 
 Um tópico em rascunho já aparece no mapa da trilha e aceita registro de horas, mas nunca
 chega a "dominado" porque não tem como cumprir os critérios.
@@ -68,9 +68,9 @@ A ordem abaixo segue o calendário: escreva primeiro o que será estudado primei
 - [x] storytelling: Storytelling com dados
 
 ### Fase 2, trilha de dados: Analytics engineering
-- [ ] dbt: dbt (depende de modelagem de dados e SQL avançado)
-- [ ] qualidade_dados: Testes de qualidade de dados
-- [ ] camada_semantica: Métricas e camada semântica
+- [x] dbt: dbt (depende de modelagem de dados e SQL avançado)
+- [x] qualidade_dados: Testes de qualidade de dados
+- [x] camada_semantica: Métricas e camada semântica
 
 ### Fase 2, trilha de IA: APIs de LLM
 - [ ] apis_llm: APIs de LLM
