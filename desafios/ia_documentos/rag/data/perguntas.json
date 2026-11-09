@@ -1,0 +1,50 @@
+[
+ {
+  "id": "p1",
+  "pergunta": "Qual é o limite para alimentação numa viagem a trabalho?",
+  "trecho_relevante": "reembolso_despesas#limites-por-categoria",
+  "resposta_gravada": "O limite de alimentação em viagem é de R$ 80 por dia [reembolso_despesas#limites-por-categoria]."
+ },
+ {
+  "id": "p2",
+  "pergunta": "Em quantos períodos posso dividir minhas férias?",
+  "trecho_relevante": "ferias#divisao-em-periodos",
+  "resposta_gravada": "Em até três períodos. Um deles precisa ter pelo menos 14 dias seguidos, e os outros, pelo menos 5 dias cada [ferias#divisao-em-periodos]."
+ },
+ {
+  "id": "p3",
+  "pergunta": "Quantos dias por semana posso trabalhar de casa?",
+  "trecho_relevante": "home_office#dias-de-home-office",
+  "resposta_gravada": "Até três dias por semana, combinados com a liderança do time. As reuniões de planejamento de segunda-feira são presenciais [home_office#dias-de-home-office]."
+ },
+ {
+  "id": "p4",
+  "pergunta": "Posso colar dados de clientes numa ferramenta de IA para resumir?",
+  "trecho_relevante": "seguranca_informacao#dados-de-clientes",
+  "resposta_gravada": "Não sem a aprovação do time de segurança. Use apenas as ferramentas aprovadas, listadas na intranet [seguranca_informacao#dados-de-clientes]."
+ },
+ {
+  "id": "p5",
+  "pergunta": "A empresa paga academia?",
+  "trecho_relevante": null,
+  "resposta_gravada": "Não encontrei essa informação nos documentos."
+ },
+ {
+  "id": "p6",
+  "pergunta": "Em quanto tempo preciso avisar um incidente de segurança?",
+  "trecho_relevante": "seguranca_informacao#incidentes",
+  "resposta_gravada": "Em até uma hora, pelo e-mail seguranca@empresa.com.br [seguranca_informacao#prazos]."
+ },
+ {
+  "id": "p7",
+  "pergunta": "Qual é o valor do auxílio home office?",
+  "trecho_relevante": "home_office#auxilio-home-office",
+  "resposta_gravada": "O auxílio é de R$ 120 por mês, pago na folha de pagamento."
+ },
+ {
+  "id": "p8",
+  "pergunta": "Até quando posso pedir o reembolso de uma despesa?",
+  "trecho_relevante": "reembolso_despesas#prazo-para-pedir",
+  "resposta_gravada": "Em até 30 dias depois da despesa [reembolso_despesas#prazo-para-pedir]. Pedidos fora do prazo precisam de aprovação, com 30 dias de antecedência [ferias#como-marcar]."
+ }
+]

@@ -1,8 +1,9 @@
 # Tópicos ainda em rascunho
 
-A trilha tem 43 tópicos. 35 já foram escritos (estatística, manipulação de dados, visualização
-de dados, fundamentos de IA generativa, analytics engineering, APIs de LLM e machine learning
-clássico, marcados com [x] abaixo). Os 8 restantes têm só o cabeçalho (título, módulo, horas).
+A trilha tem 43 tópicos. 38 já foram escritos (estatística, manipulação de dados, visualização
+de dados, fundamentos de IA generativa, analytics engineering, APIs de LLM, machine learning
+clássico e busca, RAG e avaliação, marcados com [x] abaixo). Os 5 restantes têm só o cabeçalho
+(título, módulo, horas).
 Falta escrever o texto de leitura, as aulas, o quiz, a pergunta aberta e o desafio. Use
 `conteudo/topicos/estatistica/tendencia_central.md` como modelo do formato completo.
 
@@ -22,7 +23,7 @@ A ordem abaixo segue o calendário: escreva primeiro o que será estudado primei
 
 1. Fundamentos de IA generativa (Fase 1, estudado em paralelo com estatística e manipulação): escrito
 2. Analytics engineering e APIs de LLM (Fase 2): escrito
-3. Machine learning clássico e Busca, RAG e avaliação (Fase 3)
+3. Machine learning clássico e Busca, RAG e avaliação (Fase 3): escrito
 4. IA sobre dados e Colocar em produção (Fase 4)
 
 ## Como tirar um tópico do rascunho
@@ -87,9 +88,9 @@ A ordem abaixo segue o calendário: escreva primeiro o que será estudado primei
 - [x] metricas: Métricas de classificação
 
 ### Fase 3, trilha de IA: Busca, RAG e avaliação
-- [ ] embeddings: Embeddings e bancos vetoriais
-- [ ] rag: RAG
-- [ ] avaliacao_llm: Avaliação de sistemas com LLM
+- [x] embeddings: Embeddings e bancos vetoriais
+- [x] rag: RAG
+- [x] avaliacao_llm: Avaliação de sistemas com LLM
 
 ### Fase 4, trilha de dados: Colocar em produção
 - [ ] fastapi: FastAPI

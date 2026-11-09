@@ -1,0 +1,270 @@
+{
+ "dimensoes": [
+  "pagamento",
+  "entrega",
+  "assinatura",
+  "conta",
+  "devolucao",
+  "aplicativo",
+  "nota_fiscal",
+  "promocao"
+ ],
+ "artigos": [
+  {
+   "id": "a01",
+   "titulo": "Formas de pagamento aceitas",
+   "categoria": "pagamento",
+   "texto": "Aceitamos cartão de crédito, Pix e boleto. O boleto vence em três dias úteis.",
+   "vetor": [
+    0.9,
+    0.016,
+    0.002,
+    0.001,
+    0.049,
+    0.055,
+    0.036,
+    0.1
+   ]
+  },
+  {
+   "id": "a02",
+   "titulo": "Pagamento recusado no cartão",
+   "categoria": "pagamento",
+   "texto": "Se o banco recusar a transação, confira o limite e os dados do cartão, ou tente o Pix.",
+   "vetor": [
+    0.85,
+    0.057,
+    0.009,
+    0.057,
+    0.019,
+    0.2,
+    0.05,
+    0.025
+   ]
+  },
+  {
+   "id": "a03",
+   "titulo": "Prazo e rastreio da entrega",
+   "categoria": "entrega",
+   "texto": "O prazo aparece no carrinho, antes de fechar a compra. Depois do envio, o código de rastreio chega por e-mail.",
+   "vetor": [
+    0.016,
+    0.9,
+    0.049,
+    0.006,
+    0.036,
+    0.044,
+    0.011,
+    0.003
+   ]
+  },
+  {
+   "id": "a04",
+   "titulo": "Entrega atrasada",
+   "categoria": "entrega",
+   "texto": "Se o pedido passou do prazo, abra um chamado com o número do pedido.",
+   "vetor": [
+    0.005,
+    0.85,
+    0.048,
+    0.035,
+    0.15,
+    0.026,
+    0.029,
+    0.01
+   ]
+  },
+  {
+   "id": "a05",
+   "titulo": "Como cancelar a assinatura",
+   "categoria": "assinatura",
+   "texto": "Em Minha conta, escolha Assinatura e depois Cancelar. O acesso continua até o fim do período já cobrado.",
+   "vetor": [
+    0.25,
+    0.031,
+    0.9,
+    0.25,
+    0.036,
+    0.023,
+    0.048,
+    0.01
+   ]
+  },
+  {
+   "id": "a06",
+   "titulo": "Pausar a assinatura",
+   "categoria": "assinatura",
+   "texto": "Você pode pausar a assinatura por até dois meses sem perder o histórico.",
+   "vetor": [
+    0.048,
+    0.048,
+    0.8,
+    0.017,
+    0.003,
+    0.023,
+    0.025,
+    0.2
+   ]
+  },
+  {
+   "id": "a07",
+   "titulo": "Esqueci minha senha",
+   "categoria": "conta",
+   "texto": "Na tela de entrada, toque em Esqueci a senha e siga o link enviado por e-mail.",
+   "vetor": [
+    0.032,
+    0.021,
+    0.022,
+    0.9,
+    0.059,
+    0.2,
+    0.04,
+    0.02
+   ]
+  },
+  {
+   "id": "a08",
+   "titulo": "Alterar o e-mail da conta",
+   "categoria": "conta",
+   "texto": "Em Minha conta, edite o e-mail e confirme a mudança pelo link enviado.",
+   "vetor": [
+    0.038,
+    0.054,
+    0.047,
+    0.85,
+    0.018,
+    0.052,
+    0.0,
+    0.049
+   ]
+  },
+  {
+   "id": "a09",
+   "titulo": "Como pedir reembolso",
+   "categoria": "devolucao",
+   "texto": "O estorno é feito no mesmo meio de pagamento em até 10 dias úteis depois que o produto chega ao nosso centro.",
+   "vetor": [
+    0.35,
+    0.059,
+    0.019,
+    0.047,
+    0.9,
+    0.023,
+    0.026,
+    0.022
+   ]
+  },
+  {
+   "id": "a10",
+   "titulo": "Trocar um produto",
+   "categoria": "devolucao",
+   "texto": "Você tem 30 dias para pedir a troca por outro tamanho ou cor.",
+   "vetor": [
+    0.052,
+    0.2,
+    0.036,
+    0.047,
+    0.85,
+    0.055,
+    0.052,
+    0.055
+   ]
+  },
+  {
+   "id": "a11",
+   "titulo": "Erro E-403 no aplicativo",
+   "categoria": "aplicativo",
+   "texto": "O erro E-403 aparece quando a sessão expira. Saia e entre de novo no aplicativo.",
+   "vetor": [
+    0.057,
+    0.012,
+    0.05,
+    0.35,
+    0.031,
+    0.9,
+    0.041,
+    0.051
+   ]
+  },
+  {
+   "id": "a12",
+   "titulo": "Aplicativo lento ou travando",
+   "categoria": "aplicativo",
+   "texto": "Atualize o aplicativo para a versão mais recente e limpe o cache do celular.",
+   "vetor": [
+    0.008,
+    0.03,
+    0.036,
+    0.002,
+    0.009,
+    0.85,
+    0.004,
+    0.008
+   ]
+  },
+  {
+   "id": "a13",
+   "titulo": "Segunda via da nota fiscal",
+   "categoria": "nota_fiscal",
+   "texto": "A nota fiscal fica em Meus pedidos, no botão Baixar nota.",
+   "vetor": [
+    0.015,
+    0.057,
+    0.011,
+    0.011,
+    0.021,
+    0.014,
+    0.9,
+    0.007
+   ]
+  },
+  {
+   "id": "a14",
+   "titulo": "Nota fiscal com dados errados",
+   "categoria": "nota_fiscal",
+   "texto": "Para corrigir o CPF ou o endereço da nota, envie um chamado em até 30 dias.",
+   "vetor": [
+    0.052,
+    0.051,
+    0.049,
+    0.2,
+    0.005,
+    0.057,
+    0.85,
+    0.0
+   ]
+  },
+  {
+   "id": "a15",
+   "titulo": "Cupom de desconto não funciona",
+   "categoria": "promocao",
+   "texto": "Confira a validade e o valor mínimo do pedido. Cupons não se somam a outras promoções.",
+   "vetor": [
+    0.25,
+    0.022,
+    0.042,
+    0.052,
+    0.038,
+    0.033,
+    0.046,
+    0.9
+   ]
+  },
+  {
+   "id": "a16",
+   "titulo": "Programa de pontos",
+   "categoria": "promocao",
+   "texto": "Cada real gasto vira um ponto, que pode ser trocado por descontos.",
+   "vetor": [
+    0.15,
+    0.049,
+    0.021,
+    0.003,
+    0.034,
+    0.009,
+    0.043,
+    0.85
+   ]
+  }
+ ]
+}

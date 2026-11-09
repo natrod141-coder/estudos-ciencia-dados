@@ -1,0 +1,82 @@
+{
+ "e01": {
+  "v1": "{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}",
+  "v2": "```json\n{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}\n```"
+ },
+ "e02": {
+  "v1": "```json\n{\"nota\": 2, \"justificativa\": \"A resposta tem informação errada ou incompleta.\"}\n```",
+  "v2": "Avaliação:\n{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}"
+ },
+ "e03": {
+  "v1": "Avaliação:\n{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}",
+  "v2": "{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}"
+ },
+ "e04": {
+  "v1": "{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}",
+  "v2": "```json\n{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}\n```"
+ },
+ "e05": {
+  "v1": "```json\n{\"nota\": 4, \"justificativa\": \"A resposta está de acordo com a referência.\"}\n```",
+  "v2": "Avaliação:\n{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}"
+ },
+ "e06": {
+  "v1": "Avaliação:\n{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}",
+  "v2": "{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}"
+ },
+ "e07": {
+  "v1": "{\"nota\": 3, \"justificativa\": \"A resposta tem informação errada ou incompleta.\"}",
+  "v2": "```json\n{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}\n```"
+ },
+ "e08": {
+  "v1": "```json\n{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}\n```",
+  "v2": "Avaliação:\n{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}"
+ },
+ "e09": {
+  "v1": "Avaliação:\n{\"nota\": 3, \"justificativa\": \"A resposta tem informação errada ou incompleta.\"}",
+  "v2": "{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}"
+ },
+ "e10": {
+  "v1": "{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}",
+  "v2": "```json\n{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}\n```"
+ },
+ "e11": {
+  "v1": "```json\n{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}\n```",
+  "v2": "Avaliação:\n{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}"
+ },
+ "e12": {
+  "v1": "Avaliação:\n{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}",
+  "v2": "{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}"
+ },
+ "e13": {
+  "v1": "{\"nota\": 4, \"justificativa\": \"A resposta está de acordo com a referência.\"}",
+  "v2": "```json\n{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}\n```"
+ },
+ "e14": {
+  "v1": "```json\n{\"nota\": 2, \"justificativa\": \"A resposta tem informação errada ou incompleta.\"}\n```",
+  "v2": "Avaliação:\n{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}"
+ },
+ "e15": {
+  "v1": "Avaliação:\n{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}",
+  "v2": "{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}"
+ },
+ "e16": {
+  "v1": "{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}",
+  "v2": "```json\n{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}\n```"
+ },
+ "e17": {
+  "v1": "```json\n{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}\n```",
+  "v2": "Avaliação:\n{\"nota\": 4, \"justificativa\": \"A resposta está de acordo com a referência.\"}"
+ },
+ "e18": {
+  "v1": "Avaliação:\n{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}",
+  "v2": "{\"nota\": 4, \"justificativa\": \"A resposta está de acordo com a referência.\"}"
+ },
+ "e19": {
+  "v1": "{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}",
+  "v2": "```json\n{\"nota\": 3, \"justificativa\": \"A resposta tem informação errada ou incompleta.\"}\n```"
+ },
+ "e20": {
+  "v1": "```json\n{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}\n```",
+  "v2": "Avaliação:\n{\"nota\": 5, \"justificativa\": \"A resposta está de acordo com a referência.\"}"
+ }
+}

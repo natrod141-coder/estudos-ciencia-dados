@@ -1,0 +1,157 @@
+[
+ {
+  "id": "e01",
+  "pergunta": "Qual é o limite de alimentação numa viagem a trabalho?",
+  "tipo": "factual",
+  "fatos": [
+   "R$ 80",
+   "por dia"
+  ]
+ },
+ {
+  "id": "e02",
+  "pergunta": "Qual é o limite de hospedagem numa capital?",
+  "tipo": "factual",
+  "fatos": [
+   "R$ 350"
+  ]
+ },
+ {
+  "id": "e03",
+  "pergunta": "Qual é o limite de hospedagem fora das capitais?",
+  "tipo": "factual",
+  "fatos": [
+   "R$ 250"
+  ]
+ },
+ {
+  "id": "e04",
+  "pergunta": "Qual é o prazo para pedir reembolso?",
+  "tipo": "factual",
+  "fatos": [
+   "30 dias"
+  ]
+ },
+ {
+  "id": "e05",
+  "pergunta": "Quantos dias de home office posso fazer por semana?",
+  "tipo": "factual",
+  "fatos": [
+   "três dias"
+  ]
+ },
+ {
+  "id": "e06",
+  "pergunta": "Qual é o valor do auxílio home office?",
+  "tipo": "factual",
+  "fatos": [
+   "R$ 120"
+  ]
+ },
+ {
+  "id": "e07",
+  "pergunta": "Que equipamentos a empresa empresta para o home office?",
+  "tipo": "factual",
+  "fatos": [
+   "notebook",
+   "monitor",
+   "cadeira"
+  ]
+ },
+ {
+  "id": "e08",
+  "pergunta": "Com quanta antecedência preciso marcar as férias?",
+  "tipo": "factual",
+  "fatos": [
+   "30 dias"
+  ]
+ },
+ {
+  "id": "e09",
+  "pergunta": "Em quantos períodos posso dividir as férias?",
+  "tipo": "factual",
+  "fatos": [
+   "três períodos",
+   "14 dias"
+  ]
+ },
+ {
+  "id": "e10",
+  "pergunta": "Posso vender parte das férias?",
+  "tipo": "factual",
+  "fatos": [
+   "um terço"
+  ]
+ },
+ {
+  "id": "e11",
+  "pergunta": "As contas da empresa usam que tipo de autenticação?",
+  "tipo": "factual",
+  "fatos": [
+   "dois fatores"
+  ]
+ },
+ {
+  "id": "e12",
+  "pergunta": "Posso passar minha senha para um colega do time?",
+  "tipo": "factual",
+  "fatos": [
+   "não pode"
+  ]
+ },
+ {
+  "id": "e13",
+  "pergunta": "Posso enviar dados de clientes para uma ferramenta de IA externa?",
+  "tipo": "factual",
+  "fatos": [
+   "aprovação",
+   "segurança"
+  ]
+ },
+ {
+  "id": "e14",
+  "pergunta": "Em quanto tempo devo avisar um incidente de segurança?",
+  "tipo": "factual",
+  "fatos": [
+   "uma hora"
+  ]
+ },
+ {
+  "id": "e15",
+  "pergunta": "Para qual e-mail aviso um incidente de segurança?",
+  "tipo": "factual",
+  "fatos": [
+   "seguranca@empresa.com.br"
+  ]
+ },
+ {
+  "id": "e16",
+  "pergunta": "A empresa paga academia?",
+  "tipo": "fora_do_escopo",
+  "fatos": []
+ },
+ {
+  "id": "e17",
+  "pergunta": "Qual é o valor do vale-refeição?",
+  "tipo": "fora_do_escopo",
+  "fatos": []
+ },
+ {
+  "id": "e18",
+  "pergunta": "Posso incluir dependentes no plano de saúde?",
+  "tipo": "fora_do_escopo",
+  "fatos": []
+ },
+ {
+  "id": "e19",
+  "pergunta": "Como funciona o bônus anual?",
+  "tipo": "fora_do_escopo",
+  "fatos": []
+ },
+ {
+  "id": "e20",
+  "pergunta": "A empresa tem estacionamento?",
+  "tipo": "fora_do_escopo",
+  "fatos": []
+ }
+]
