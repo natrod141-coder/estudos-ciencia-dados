@@ -1,9 +1,9 @@
 # Tópicos ainda em rascunho
 
-A trilha tem 43 tópicos. 38 já foram escritos (estatística, manipulação de dados, visualização
+A trilha tem 43 tópicos. 40 já foram escritos (estatística, manipulação de dados, visualização
 de dados, fundamentos de IA generativa, analytics engineering, APIs de LLM, machine learning
-clássico e busca, RAG e avaliação, marcados com [x] abaixo). Os 5 restantes têm só o cabeçalho
-(título, módulo, horas).
+clássico, busca, RAG e avaliação e IA sobre dados, marcados com [x] abaixo). Os 3 restantes,
+do módulo Colocar em produção, têm só o cabeçalho (título, módulo, horas).
 Falta escrever o texto de leitura, as aulas, o quiz, a pergunta aberta e o desafio. Use
 `conteudo/topicos/estatistica/tendencia_central.md` como modelo do formato completo.
 
@@ -24,7 +24,8 @@ A ordem abaixo segue o calendário: escreva primeiro o que será estudado primei
 1. Fundamentos de IA generativa (Fase 1, estudado em paralelo com estatística e manipulação): escrito
 2. Analytics engineering e APIs de LLM (Fase 2): escrito
 3. Machine learning clássico e Busca, RAG e avaliação (Fase 3): escrito
-4. IA sobre dados e Colocar em produção (Fase 4)
+4. IA sobre dados (Fase 4): escrito
+5. Colocar em produção (Fase 4)
 
 ## Como tirar um tópico do rascunho
 
@@ -98,8 +99,8 @@ A ordem abaixo segue o calendário: escreva primeiro o que será estudado primei
 - [ ] deploy_nuvem: Publicar na nuvem
 
 ### Fase 4, trilha de IA: IA sobre dados
-- [ ] text_to_sql: Text-to-SQL (usa o modelo da Fase 2 e a avaliação da Fase 3)
-- [ ] agentes_mcp: Agentes, ferramentas e MCP
+- [x] text_to_sql: Text-to-SQL (usa o modelo da Fase 2 e a avaliação da Fase 3)
+- [x] agentes_mcp: Agentes, ferramentas e MCP
 
 ## Pendências de conteúdo, além dos tópicos acima
 
