@@ -1,0 +1,15 @@
+{
+  "fonte": "https://cloud.google.com/run/pricing",
+  "conferido_em": "2026-11-09",
+  "observacao": "Cloud Run, serviço com cobrança por requisição, nível 1 de preço (como us-central1), em dólares. Preços mudam: confira na página oficial antes de decidir.",
+  "cpu_ativa_por_vcpu_segundo": 0.000024,
+  "memoria_ativa_por_gib_segundo": 0.0000025,
+  "cpu_ociosa_por_vcpu_segundo": 0.0000025,
+  "memoria_ociosa_por_gib_segundo": 0.0000025,
+  "por_milhao_de_requisicoes": 0.40,
+  "gratuito_por_mes": {
+    "vcpu_segundos": 180000,
+    "gib_segundos": 360000,
+    "requisicoes": 2000000
+  }
+}

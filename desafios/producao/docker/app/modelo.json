@@ -1,0 +1,68 @@
+{
+  "versao": "2026-11-01",
+  "numericas": {
+    "idade": {
+      "media": 44.0386,
+      "desvio": 14.843123
+    },
+    "meses_assinatura": {
+      "media": 21.2998,
+      "desvio": 12.10507
+    },
+    "valor_mensal": {
+      "media": 44.920488,
+      "desvio": 18.578146
+    },
+    "acessos_mes": {
+      "media": 10.2726,
+      "desvio": 3.978629
+    },
+    "chamados_suporte": {
+      "media": 0.7938,
+      "desvio": 0.905804
+    },
+    "atrasos_pagamento": {
+      "media": 0.4516,
+      "desvio": 0.806261
+    },
+    "usa_app": {
+      "media": 0.5504,
+      "desvio": 0.497453
+    },
+    "nota_satisfacao": {
+      "media": 3.3982,
+      "desvio": 1.011354
+    }
+  },
+  "categoricas": {
+    "plano": [
+      "basico",
+      "padrao",
+      "premium"
+    ],
+    "canal": [
+      "anuncio",
+      "indicacao",
+      "organico",
+      "parceiro"
+    ]
+  },
+  "coeficientes": {
+    "idade": 0.005071,
+    "meses_assinatura": -0.186629,
+    "valor_mensal": -0.067856,
+    "acessos_mes": -0.198588,
+    "chamados_suporte": 0.388215,
+    "atrasos_pagamento": 0.484465,
+    "usa_app": -0.163236,
+    "nota_satisfacao": -0.355188,
+    "plano=basico": -0.004815,
+    "plano=padrao": -0.251581,
+    "plano=premium": -0.468755,
+    "canal=anuncio": 0.109515,
+    "canal=indicacao": -0.598635,
+    "canal=organico": -0.15611,
+    "canal=parceiro": -0.079921
+  },
+  "intercepto": -0.836907
+}

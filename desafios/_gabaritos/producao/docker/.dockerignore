@@ -1,0 +1,13 @@
+# Nada disto precisa ir para a imagem. Menos arquivos no contexto: build mais rápido, imagem
+# menor e nenhum segredo por acidente.
+.git
+.venv
+.env
+**/__pycache__
+**/*.pyc
+.pytest_cache
+tests
+*.md
+solucao.py
+Dockerfile
+.dockerignore

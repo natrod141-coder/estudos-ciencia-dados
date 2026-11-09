@@ -12,4 +12,6 @@ dbt-duckdb>=1.9
 # SDK da Anthropic, para os exemplos de IA, e pydantic, para as saídas estruturadas
 anthropic>=2.0
 pydantic>=2.7
+# FastAPI, com o servidor (uvicorn), o comando fastapi e o cliente de testes
+fastapi[standard]>=0.160
 pytest>=8.0

@@ -1,0 +1,38 @@
+[
+  {
+    "plano": "premium",
+    "canal": "indicacao",
+    "idade": 38,
+    "meses_assinatura": 30,
+    "valor_mensal": 79.9,
+    "acessos_mes": 14,
+    "chamados_suporte": 0,
+    "atrasos_pagamento": 0,
+    "usa_app": true,
+    "nota_satisfacao": 5
+  },
+  {
+    "plano": "padrao",
+    "canal": "organico",
+    "idade": 29,
+    "meses_assinatura": 8,
+    "valor_mensal": 49.9,
+    "acessos_mes": 7,
+    "chamados_suporte": 2,
+    "atrasos_pagamento": 1,
+    "usa_app": false,
+    "nota_satisfacao": 3
+  },
+  {
+    "plano": "basico",
+    "canal": "anuncio",
+    "idade": 52,
+    "meses_assinatura": 2,
+    "valor_mensal": 29.9,
+    "acessos_mes": 3,
+    "chamados_suporte": 3,
+    "atrasos_pagamento": 2,
+    "usa_app": false,
+    "nota_satisfacao": 2
+  }
+]

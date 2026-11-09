@@ -1,10 +1,7 @@
 # Tópicos ainda em rascunho
 
-A trilha tem 43 tópicos. 40 já foram escritos (estatística, manipulação de dados, visualização
-de dados, fundamentos de IA generativa, analytics engineering, APIs de LLM, machine learning
-clássico, busca, RAG e avaliação e IA sobre dados, marcados com [x] abaixo). Os 3 restantes,
-do módulo Colocar em produção, têm só o cabeçalho (título, módulo, horas).
-Falta escrever o texto de leitura, as aulas, o quiz, a pergunta aberta e o desafio. Use
+A trilha tem 43 tópicos, todos escritos, com texto de leitura, aulas, quiz, pergunta aberta e
+desafio. Para um tópico novo, crie o cabeçalho com `npm run novo` e use
 `conteudo/topicos/estatistica/tendencia_central.md` como modelo do formato completo.
 
 Todo tópico tem desafio prático em Python com testes, mesmo os de ferramentas que não são Python:
@@ -12,7 +9,9 @@ o desafio de Excel lê e gera planilhas, o de BigQuery usa o DuckDB, o de Git ro
 repositórios temporários, o de Power BI refaz as etapas do Power Query em pandas, e o de DAX
 implementa o contexto de filtro e as medidas em Python. Os tópicos novos seguem a mesma ideia: o
 de dbt roda um projeto dbt de verdade com DuckDB, e os de IA testam a lógica com respostas de
-modelo gravadas em arquivo, para que os testes rodem sem chave de API e sem custo.
+modelo gravadas em arquivo, para que os testes rodem sem chave de API e sem custo. Os de
+produção testam a API com o cliente de teste do FastAPI, conferem o Dockerfile com um
+verificador escrito por quem estuda e fazem as contas de custo da nuvem, sem publicar nada.
 
 Um tópico em rascunho já aparece no mapa da trilha e aceita registro de horas, mas nunca
 chega a "dominado" porque não tem como cumprir os critérios.
@@ -25,7 +24,7 @@ A ordem abaixo segue o calendário: escreva primeiro o que será estudado primei
 2. Analytics engineering e APIs de LLM (Fase 2): escrito
 3. Machine learning clássico e Busca, RAG e avaliação (Fase 3): escrito
 4. IA sobre dados (Fase 4): escrito
-5. Colocar em produção (Fase 4)
+5. Colocar em produção (Fase 4): escrito
 
 ## Como tirar um tópico do rascunho
 
@@ -94,9 +93,9 @@ A ordem abaixo segue o calendário: escreva primeiro o que será estudado primei
 - [x] avaliacao_llm: Avaliação de sistemas com LLM
 
 ### Fase 4, trilha de dados: Colocar em produção
-- [ ] fastapi: FastAPI
-- [ ] docker: Docker
-- [ ] deploy_nuvem: Publicar na nuvem
+- [x] fastapi: FastAPI
+- [x] docker: Docker
+- [x] deploy_nuvem: Publicar na nuvem
 
 ### Fase 4, trilha de IA: IA sobre dados
 - [x] text_to_sql: Text-to-SQL (usa o modelo da Fase 2 e a avaliação da Fase 3)
