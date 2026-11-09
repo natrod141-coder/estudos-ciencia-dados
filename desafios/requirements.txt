@@ -5,6 +5,7 @@ seaborn>=0.13
 plotly>=5.20
 openpyxl>=3.1
 duckdb>=1.2
+scikit-learn>=1.5
 # dbt v1 (dbt Core, em Python) com o adaptador do DuckDB, para o desafio de dbt
 dbt-core>=1.10,<2
 dbt-duckdb>=1.9

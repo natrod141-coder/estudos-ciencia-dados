@@ -1,8 +1,8 @@
 # Tópicos ainda em rascunho
 
-A trilha tem 42 tópicos. 27 já foram escritos (estatística, manipulação de dados, visualização
-de dados, fundamentos de IA generativa, analytics engineering e APIs de LLM, marcados com [x]
-abaixo). Os 15 restantes têm só o cabeçalho (título, módulo, horas).
+A trilha tem 43 tópicos. 35 já foram escritos (estatística, manipulação de dados, visualização
+de dados, fundamentos de IA generativa, analytics engineering, APIs de LLM e machine learning
+clássico, marcados com [x] abaixo). Os 8 restantes têm só o cabeçalho (título, módulo, horas).
 Falta escrever o texto de leitura, as aulas, o quiz, a pergunta aberta e o desafio. Use
 `conteudo/topicos/estatistica/tendencia_central.md` como modelo do formato completo.
 
@@ -77,13 +77,14 @@ A ordem abaixo segue o calendário: escreva primeiro o que será estudado primei
 - [x] prompting: Prompting e saídas estruturadas
 
 ### Fase 3, trilha de dados: Machine learning clássico
-- [ ] regressao_linear: Regressão linear
-- [ ] regressao_logistica: Regressão logística
-- [ ] arvores_decisao: Árvores de decisão
-- [ ] random_forest: Random Forest
-- [ ] gradient_boosting: Gradient Boosting
-- [ ] validacao_cruzada: Validação cruzada
-- [ ] metricas: Métricas de classificação (considere incluir feature engineering em um tópico próprio deste módulo)
+- [x] regressao_linear: Regressão linear
+- [x] regressao_logistica: Regressão logística
+- [x] arvores_decisao: Árvores de decisão
+- [x] random_forest: Random Forest
+- [x] gradient_boosting: Gradient Boosting
+- [x] preparacao_variaveis: Preparação de variáveis (criado em novembro de 2026; as 6 h saíram de gradient boosting e métricas)
+- [x] validacao_cruzada: Validação cruzada
+- [x] metricas: Métricas de classificação
 
 ### Fase 3, trilha de IA: Busca, RAG e avaliação
 - [ ] embeddings: Embeddings e bancos vetoriais
@@ -101,9 +102,6 @@ A ordem abaixo segue o calendário: escreva primeiro o que será estudado primei
 
 ## Pendências de conteúdo, além dos tópicos acima
 
-- Feature engineering não tem tópico próprio. Sugestão: incorporar a `metricas` ou criar um
-  tópico novo no módulo `ml_classico`, antes de `validacao_cruzada`. Se decidir incorporar a um
-  tópico existente, ajuste o campo `horas` do arquivo para refletir o tempo extra.
 - Clusterização e PCA, séries temporais e deep learning saíram da trilha na reestruturação de
   novembro de 2026, por pesarem pouco para vagas júnior de dados. Se quiser de volta, recrie com
   `npm run novo -- ml_classico "Clusterização e PCA" --horas 15`.
