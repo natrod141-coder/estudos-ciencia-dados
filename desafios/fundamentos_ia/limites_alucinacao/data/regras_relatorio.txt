@@ -1,0 +1,15 @@
+Regras do relatório de vendas
+
+1. Faturamento. O faturamento é a soma do valor dos pedidos aprovados, já com os
+descontos aplicados. O valor do frete não entra no faturamento.
+
+2. Pedidos cancelados. Pedidos cancelados em até 7 dias corridos, contados a partir
+da data da compra, são retirados do faturamento do mês em que foram feitos.
+
+3. Fechamento do mês. O mês é considerado fechado no quinto dia útil do mês seguinte.
+Depois do fechamento, os números do mês não mudam mais.
+
+4. Regiões. A loja vende para as regiões Norte, Nordeste, Sudeste e Sul. As vendas
+para o Centro-Oeste começam no segundo semestre.
+
+5. Metas. A meta de cada região é revista a cada trimestre pela diretoria comercial.

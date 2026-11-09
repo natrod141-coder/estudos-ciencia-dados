@@ -1,0 +1,67 @@
+[
+  {
+    "id": "r01",
+    "pergunta": "Qual foi o faturamento da região Sul em março?",
+    "resposta": "Em março, a região Sul faturou R$ 182.450,00.",
+    "sql": "SELECT SUM(faturamento) FROM vendas WHERE regiao = 'Sul' AND mes = '2026-03'"
+  },
+  {
+    "id": "r02",
+    "pergunta": "Qual foi o faturamento total do semestre?",
+    "resposta": "O faturamento do semestre, somando as quatro regiões, foi de R$ 4.180.000,00.",
+    "sql": "SELECT SUM(faturamento) FROM vendas"
+  },
+  {
+    "id": "r03",
+    "pergunta": "Qual região tem o maior ticket médio?",
+    "resposta": "A região Sudeste tem o maior ticket médio, de R$ 312,40.",
+    "sql": "SELECT MAX(ticket_medio) FROM vendas"
+  },
+  {
+    "id": "r04",
+    "pergunta": "Em quantos meses a região Norte faturou mais de cem mil reais?",
+    "resposta": "Em 4 meses: de março a junho, a região Norte passou de cem mil reais.",
+    "sql": "SELECT COUNT(*) FROM vendas WHERE regiao = 'Norte' AND faturamento > 100000"
+  },
+  {
+    "id": "r05",
+    "pergunta": "O frete entra no faturamento?",
+    "resposta": "Não. O faturamento considera só o valor dos pedidos aprovados, com desconto, e o frete fica de fora.",
+    "citacoes": [
+      "O faturamento é a soma do valor dos pedidos aprovados, já com os descontos aplicados.",
+      "O valor do frete não entra no faturamento."
+    ]
+  },
+  {
+    "id": "r06",
+    "pergunta": "Qual foi o faturamento da região Centro-Oeste em junho?",
+    "resposta": "Em junho, a região Centro-Oeste faturou R$ 96.300,00.",
+    "sql": "SELECT SUM(faturamento) FROM vendas WHERE regiao = 'Centro-Oeste' AND mes = '2026-06'"
+  },
+  {
+    "id": "r07",
+    "pergunta": "Um pedido cancelado depois de duas semanas sai do faturamento?",
+    "resposta": "Sim. Todo pedido cancelado é retirado do faturamento, não importa quando o cancelamento acontece.",
+    "citacoes": [
+      "Pedidos cancelados em até 7 dias corridos, contados a partir da data da compra, são retirados do faturamento do mês em que foram feitos.",
+      "Pedidos cancelados a qualquer momento são retirados do faturamento."
+    ]
+  },
+  {
+    "id": "r08",
+    "pergunta": "Os números de março ainda podem mudar?",
+    "resposta": "Sim, os números de qualquer mês podem ser corrigidos a qualquer momento."
+  },
+  {
+    "id": "r09",
+    "pergunta": "Qual é o faturamento médio mensal da região Sudeste?",
+    "resposta": "A região Sudeste faturou em média R$ 251.300,00 por mês.",
+    "sql": "SELECT AVG(faturamento) FROM vendas WHERE regiao = 'Sudeste'"
+  },
+  {
+    "id": "r10",
+    "pergunta": "Quanto o faturamento do Nordeste cresceu de janeiro para junho?",
+    "resposta": "O faturamento do Nordeste cresceu 18,5% de janeiro para junho.",
+    "sql": "SELECT ROUND(100.0 * (SUM(CASE WHEN mes = '2026-06' THEN faturamento END) / SUM(CASE WHEN mes = '2026-01' THEN faturamento END) - 1), 1) FROM vendas WHERE regiao = 'Nordeste'"
+  }
+]

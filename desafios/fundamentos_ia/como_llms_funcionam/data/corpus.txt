@@ -1,0 +1,7 @@
+o modelo lê o texto .
+o modelo prevê o próximo token .
+o próximo token depende do contexto .
+o contexto tem limite .
+o modelo não lembra a conversa .
+a conversa é enviada de novo .
+o modelo prevê o próximo token de novo .

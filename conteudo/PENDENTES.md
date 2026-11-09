@@ -1,7 +1,8 @@
 # Tópicos ainda em rascunho
 
-A trilha tem 42 tópicos. 19 já foram escritos (estatística, manipulação de dados e visualização
-de dados, marcados com [x] abaixo). Os 23 restantes têm só o cabeçalho (título, módulo, horas).
+A trilha tem 42 tópicos. 22 já foram escritos (estatística, manipulação de dados, visualização
+de dados e fundamentos de IA generativa, marcados com [x] abaixo). Os 20 restantes têm só o
+cabeçalho (título, módulo, horas).
 Falta escrever o texto de leitura, as aulas, o quiz, a pergunta aberta e o desafio. Use
 `conteudo/topicos/estatistica/tendencia_central.md` como modelo do formato completo.
 
@@ -19,7 +20,7 @@ chega a "dominado" porque não tem como cumprir os critérios.
 
 A ordem abaixo segue o calendário: escreva primeiro o que será estudado primeiro.
 
-1. Fundamentos de IA generativa (Fase 1, estudado em paralelo com estatística e manipulação)
+1. Fundamentos de IA generativa (Fase 1, estudado em paralelo com estatística e manipulação): escrito
 2. Analytics engineering e APIs de LLM (Fase 2)
 3. Machine learning clássico e Busca, RAG e avaliação (Fase 3)
 4. IA sobre dados e Colocar em produção (Fase 4)
@@ -55,9 +56,9 @@ A ordem abaixo segue o calendário: escreva primeiro o que será estudado primei
 - [x] git_github: Git e GitHub
 
 ### Fase 1, trilha de IA: Fundamentos de IA generativa
-- [ ] como_llms_funcionam: Como um LLM funciona
-- [ ] limites_alucinacao: Limites e alucinação
-- [ ] conferir_codigo_gerado: Conferir código gerado por IA
+- [x] como_llms_funcionam: Como um LLM funciona
+- [x] limites_alucinacao: Limites e alucinação
+- [x] conferir_codigo_gerado: Conferir código gerado por IA
 
 ### Fase 2, trilha de dados: Visualização de dados
 - [x] power_bi: Power BI
