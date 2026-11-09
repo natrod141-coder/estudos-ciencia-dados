@@ -1,0 +1,51 @@
+name: Publicar site
+
+# Publica o site no GitHub Pages a cada push na main:
+# https://natrod141-coder.github.io/estudos-ciencia-dados/
+# Antes de publicar, roda os testes da camada de dados: se algum falhar, o site não é atualizado.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Uma publicação por vez; uma nova espera a anterior terminar.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  gerar:
+    name: Gerar o site
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Testes da camada de dados
+        run: npm test
+      - name: Build com o endereço do GitHub Pages
+        run: npm run build
+        env:
+          PUBLICAR_NO_PAGES: '1'
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  publicar:
+    name: Publicar no GitHub Pages
+    needs: gerar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.publicar.outputs.page_url }}
+    steps:
+      - id: publicar
+        uses: actions/deploy-pages@v4

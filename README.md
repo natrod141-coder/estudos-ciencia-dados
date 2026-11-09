@@ -116,13 +116,14 @@ dependências extras).
 
 ## Publicar o site
 
-O site é estático e pode ser hospedado em qualquer serviço de páginas estáticas (GitHub
-Pages, Netlify, Vercel). Para o GitHub Pages, defina `site` e `base` em `astro.config.mjs`
-com o endereço do repositório antes de gerar o build, por exemplo:
+O site fica publicado no GitHub Pages, em https://natrod141-coder.github.io/estudos-ciencia-dados/,
+e é atualizado sozinho a cada push na `main`: o workflow `.github/workflows/publicar.yml` roda os
+testes, gera o site e publica. Se algum teste falhar, a versão anterior continua no ar.
 
-```js
-export default defineConfig({
-  site: 'https://SEU_USUARIO.github.io',
-  base: '/NOME_DO_REPOSITORIO',
-});
-```
+No GitHub Pages, o site fica dentro do caminho `/estudos-ciencia-dados/`. O workflow define a
+variável `PUBLICAR_NO_PAGES=1`, e o `astro.config.mjs` só usa esse caminho quando ela existe. No
+seu computador, sem a variável, o site continua em http://localhost:4321/.
+
+O site publicado e o `localhost` são endereços diferentes, e cada um guarda o seu próprio
+progresso. Para levar o progresso de um para o outro, use "Exportar progresso" e "Importar
+progresso".
