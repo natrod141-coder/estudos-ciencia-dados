@@ -1,0 +1,22 @@
+[
+  {
+    "documento": "Nota fiscal de serviço 771\nPrestadora: Ponto Analítico Ltda - CNPJ 19.876.543/0001-21\nEmitida em 10/02/2026\nTreinamento em Power BI para 8 pessoas\nValor total: R$ 4.800,00",
+    "saida": {
+      "fornecedor": "Ponto Analítico Ltda",
+      "cnpj": "19.876.543/0001-21",
+      "data_emissao": "2026-02-10",
+      "valor_total": 4800.0,
+      "categoria": "consultoria"
+    }
+  },
+  {
+    "documento": "Recibo\nJoão Mendes, eletricista\nTroca da fiação da sala de servidores\nData: 14/02/2026\nValor: R$ 650,00",
+    "saida": {
+      "fornecedor": "João Mendes",
+      "cnpj": null,
+      "data_emissao": "2026-02-14",
+      "valor_total": 650.0,
+      "categoria": "infraestrutura"
+    }
+  }
+]

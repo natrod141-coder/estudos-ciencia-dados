@@ -1,0 +1,198 @@
+[
+  {
+    "avaliacao": "Chegou antes do prazo e o produto é ótimo.",
+    "content": [
+      {
+        "type": "thinking",
+        "thinking": ""
+      },
+      {
+        "type": "text",
+        "text": "positivo"
+      }
+    ],
+    "stop_reason": "end_turn",
+    "usage": {
+      "input_tokens": 168,
+      "output_tokens": 31,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": 0
+    }
+  },
+  {
+    "avaliacao": "Produto veio quebrado e o suporte não responde.",
+    "content": [
+      {
+        "type": "thinking",
+        "thinking": ""
+      },
+      {
+        "type": "text",
+        "text": "negativo"
+      }
+    ],
+    "stop_reason": "end_turn",
+    "usage": {
+      "input_tokens": 170,
+      "output_tokens": 27,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    }
+  },
+  {
+    "avaliacao": "Entrega no prazo. Produto conforme a descrição.",
+    "content": [
+      {
+        "type": "thinking",
+        "thinking": ""
+      },
+      {
+        "type": "text",
+        "text": "Neutro."
+      }
+    ],
+    "stop_reason": "end_turn",
+    "usage": {
+      "input_tokens": 169,
+      "output_tokens": 44,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    }
+  },
+  {
+    "avaliacao": "Amei o atendimento, voltarei a comprar!",
+    "content": [
+      {
+        "type": "thinking",
+        "thinking": ""
+      },
+      {
+        "type": "text",
+        "text": "positivo"
+      }
+    ],
+    "stop_reason": "end_turn",
+    "usage": {
+      "input_tokens": 166,
+      "output_tokens": 22,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": 0
+    }
+  },
+  {
+    "avaliacao": "Paguei caro e a qualidade é baixa.",
+    "content": [
+      {
+        "type": "thinking",
+        "thinking": ""
+      },
+      {
+        "type": "text",
+        "text": "negativo"
+      }
+    ],
+    "stop_reason": "end_turn",
+    "usage": {
+      "input_tokens": 165,
+      "output_tokens": 25,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    }
+  },
+  {
+    "avaliacao": "A embalagem chegou amassada, mas o produto está perfeito.",
+    "content": [
+      {
+        "type": "thinking",
+        "thinking": ""
+      },
+      {
+        "type": "text",
+        "text": "misto"
+      }
+    ],
+    "stop_reason": "end_turn",
+    "usage": {
+      "input_tokens": 172,
+      "output_tokens": 58,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    }
+  },
+  {
+    "avaliacao": "Recebi o pedido.",
+    "content": [
+      {
+        "type": "thinking",
+        "thinking": ""
+      },
+      {
+        "type": "text",
+        "text": "neutro"
+      }
+    ],
+    "stop_reason": "end_turn",
+    "usage": {
+      "input_tokens": 160,
+      "output_tokens": 19,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": 0
+    }
+  },
+  {
+    "avaliacao": "Péssimo. Pedi reembolso e até agora nada.",
+    "content": [
+      {
+        "type": "thinking",
+        "thinking": ""
+      },
+      {
+        "type": "text",
+        "text": "negativo"
+      }
+    ],
+    "stop_reason": "end_turn",
+    "usage": {
+      "input_tokens": 167,
+      "output_tokens": 24,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    }
+  },
+  {
+    "avaliacao": "Ótimo custo-benefício, recomendo.",
+    "content": [
+      {
+        "type": "thinking",
+        "thinking": ""
+      },
+      {
+        "type": "text",
+        "text": " positivo\n"
+      }
+    ],
+    "stop_reason": "end_turn",
+    "usage": {
+      "input_tokens": 163,
+      "output_tokens": 20,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    }
+  },
+  {
+    "avaliacao": "Comprei para a minha mãe e ela gostou bastante, apesar de a cor ser um pouco diferente da foto e de a entrega ter atrasado dois dias.",
+    "content": [
+      {
+        "type": "thinking",
+        "thinking": ""
+      }
+    ],
+    "stop_reason": "max_tokens",
+    "usage": {
+      "input_tokens": 189,
+      "output_tokens": 256,
+      "cache_creation_input_tokens": null,
+      "cache_read_input_tokens": 0
+    }
+  }
+]

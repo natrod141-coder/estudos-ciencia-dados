@@ -1,0 +1,10 @@
+{
+  "n01": "{\"fornecedor\": \"Nuvem Clara Tecnologia Ltda\", \"cnpj\": \"23.456.789/0001-12\", \"data_emissao\": \"2026-03-03\", \"valor_total\": 1890.00, \"categoria\": \"software\"}",
+  "n02": "Aqui está o JSON com os dados da nota:\n\n```json\n{\n  \"fornecedor\": \"Prisma Dados Consultoria ME\",\n  \"cnpj\": \"31.222.444/0001-07\",\n  \"data_emissao\": \"2026-03-05\",\n  \"valor_total\": 9600.00,\n  \"categoria\": \"consultoria\"\n}\n```",
+  "n03": "{\"fornecedor\": \"Rede Sul Telecom S.A.\", \"cnpj\": \"04.555.666/0001-30\", \"data_emissao\": \"15/03/2026\", \"valor_total\": 3200.00, \"categoria\": \"infraestrutura\"}",
+  "n04": "{\"fornecedor\": \"Byte Forte Infraestrutura Ltda\", \"cnpj\": \"12.987.654/0001-55\", \"data_emissao\": \"2026-03-18\", \"valor_total\": \"R$ 2.450,00\", \"categoria\": \"infraestrutura\"}",
+  "n05": "{\"fornecedor\": \"Hospeda Já Serviços Digitais Ltda\", \"cnpj\": \"45.678.123/0001-90\", \"data_emissao\": \"2026-03-20\", \"valor_total\": 1188.00, \"categoria\": \"hospedagem\", \"observacao\": \"plano anual\"}",
+  "n06": "{\"fornecedor\": \"Ana Paula Ribeiro\", \"cnpj\": null, \"data_emissao\": \"2026-03-22\", \"valor_total\": 1500.00, \"categoria\": \"outros\"}",
+  "n07": "{\"fornecedor\": \"Oficina do Carlos\", \"cnpj\": \"12.345.678/0001-90\", \"data_emissao\": \"2026-03-25\", \"valor_total\": 380.00, \"categoria\": \"outros\"}",
+  "n08": "Não encontrei uma nota fiscal neste e-mail: ele só pergunta sobre um pagamento."
+}

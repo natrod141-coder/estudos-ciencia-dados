@@ -56,7 +56,7 @@ quiz:
   - pergunta: "Para extrair sempre os mesmos campos de notas fiscais, num modelo que permite ajustar a temperatura, que configuração faz mais sentido?"
     opcoes: ["Temperatura alta, para o modelo ser mais criativo", "Temperatura baixa, para concentrar a escolha nos tokens mais prováveis e reduzir a variação entre respostas", "Tanto faz, a temperatura não muda o resultado", "Temperatura alta, com várias tentativas e a escolha da melhor"]
     correta: 1
-    explicacao: "A temperatura baixa deixa o modelo escolher quase sempre o token mais provável, e as respostas variam menos, o que é o desejado numa extração. Temperatura alta serve para tarefas criativas. Nos modelos mais novos do Claude, a temperatura não é mais ajustável: o formato é garantido por instruções e por saídas estruturadas."
+    explicacao: "A temperatura baixa deixa o modelo escolher quase sempre o token mais provável, e as respostas variam menos, o que é o desejado numa extração. Temperatura alta serve para tarefas criativas. Na API do Claude, a temperatura não é mais ajustável desde outubro de 2026: a consistência vem das instruções e das saídas estruturadas."
   - pergunta: "Uma chamada usou 10.000 tokens de entrada e 1.000 de saída, num modelo que cobra US$ 2 por milhão de tokens de entrada e US$ 10 por milhão de saída. Quanto custou?"
     opcoes: ["US$ 0,03", "US$ 0,12", "US$ 0,30", "US$ 30,00"]
     correta: 0
@@ -236,7 +236,7 @@ Dois controles clássicos mudam o sorteio:
 - **Temperatura.** Abaixo de 1, concentra a chance nos tokens mais prováveis e as respostas variam menos. Acima de 1, espalha a chance e as respostas ficam mais variadas, até perderem o sentido. Com temperatura 0,5, a tabela acima vira mais ou menos 0,66, 0,24 e 0,11.
 - **Top-p.** Descarta os tokens menos prováveis e sorteia só entre os que, somados, chegam à probabilidade p. Com p = 0,7, sobram " cresceu" e " caiu".
 
-Em muitos modelos, a regra prática é temperatura baixa para extração, classificação e código, e mais alta para tarefas criativas. Nos **modelos mais novos do Claude**, porém, temperatura e top-p deixaram de ser ajustáveis pela API: o comportamento é controlado pelas instruções, pelo nível de esforço e, quando o formato importa, por **saídas estruturadas**, que você vai ver no tópico de prompting. Em modelos anteriores e em outros provedores, os dois parâmetros continuam existindo.
+Onde esses controles existem, a regra prática é temperatura baixa para extração, classificação e código, e mais alta para tarefas criativas. Na **API do Claude**, porém, eles deixaram de ser ajustáveis: desde a versão da API de 21 de outubro de 2026, uma requisição que envia temperatura ou top-p é recusada, em qualquer modelo, e os SDKs atuais nem aceitam mais esses parâmetros. O comportamento passa a ser controlado pelas instruções, pelo nível de esforço e, quando o formato importa, por **saídas estruturadas**, que você vai ver no tópico de prompting. Em outros provedores, e em muito código e documentação mais antigos, os dois parâmetros ainda aparecem, por isso vale entender o que fazem.
 
 A lição para quem trabalha com dados: **uma resposta de LLM é uma amostra, e não um resultado determinístico**. Rodar a mesma análise duas vezes pode dar textos diferentes. Por isso, os números de uma análise devem vir de código que você consegue rodar de novo, e não do texto do modelo.
 

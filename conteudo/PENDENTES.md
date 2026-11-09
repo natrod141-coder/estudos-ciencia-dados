@@ -1,8 +1,8 @@
 # Tópicos ainda em rascunho
 
-A trilha tem 42 tópicos. 25 já foram escritos (estatística, manipulação de dados, visualização
-de dados, fundamentos de IA generativa e analytics engineering, marcados com [x] abaixo). Os 17
-restantes têm só o cabeçalho (título, módulo, horas).
+A trilha tem 42 tópicos. 27 já foram escritos (estatística, manipulação de dados, visualização
+de dados, fundamentos de IA generativa, analytics engineering e APIs de LLM, marcados com [x]
+abaixo). Os 15 restantes têm só o cabeçalho (título, módulo, horas).
 Falta escrever o texto de leitura, as aulas, o quiz, a pergunta aberta e o desafio. Use
 `conteudo/topicos/estatistica/tendencia_central.md` como modelo do formato completo.
 
@@ -21,7 +21,7 @@ chega a "dominado" porque não tem como cumprir os critérios.
 A ordem abaixo segue o calendário: escreva primeiro o que será estudado primeiro.
 
 1. Fundamentos de IA generativa (Fase 1, estudado em paralelo com estatística e manipulação): escrito
-2. Analytics engineering e APIs de LLM (Fase 2)
+2. Analytics engineering e APIs de LLM (Fase 2): escrito
 3. Machine learning clássico e Busca, RAG e avaliação (Fase 3)
 4. IA sobre dados e Colocar em produção (Fase 4)
 
@@ -73,8 +73,8 @@ A ordem abaixo segue o calendário: escreva primeiro o que será estudado primei
 - [x] camada_semantica: Métricas e camada semântica
 
 ### Fase 2, trilha de IA: APIs de LLM
-- [ ] apis_llm: APIs de LLM
-- [ ] prompting: Prompting e saídas estruturadas
+- [x] apis_llm: APIs de LLM
+- [x] prompting: Prompting e saídas estruturadas
 
 ### Fase 3, trilha de dados: Machine learning clássico
 - [ ] regressao_linear: Regressão linear
